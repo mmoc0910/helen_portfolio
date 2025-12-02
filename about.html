@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/target.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1958/1958290.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="scrollTopBtn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="white">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </div>
+  <!-- <canvas id="particleCanvas"></canvas> -->
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower">
+    <!-- <span class="cursor-text">OPEN</span> -->
+  </div>
+
+  <!-- Header -->
+  <div class="header-wrapper">
+    <header class="site-header">
+      <div class="container">
+        <div class="top-row">
+          <div class="logo" id="logo"><span class="highlight-pink">Helen</span></div>
+          <div class="menu-toggle" onclick="toggleMenu(this)">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+
+        <nav class="menu">
+          <a href="about.html" class="clickable ac xnx">About Me</a>
+          <a href="myport.html" class="clickable xnx">Portfolio</a>
+          <a href="target.html" class="clickable xnx">Expertise</a>
+          <a href="resume.html" class="clickable xnx">Resume</a>
+          <div class="icon-group">
+            <a href="https://ca.linkedin.com/in/helenvodesign" target="_blank" class="clickable">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank" class="clickable"><i class="fab fa-instagram"></i></a>
+          </div>
+          <a href="#" class="clickable hire-btn">Hire Me!</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <!-- Intro Section -->
+  <section class="intro-wrapper">
+    <div class="intro container">
+      <div class="intro-text">
+        <div class="available">📌 Available for freelance</div>
+        <h1 id="typewriter"></h1>
+        <p class="description">I’m a Vietnamese designer based in Vancouver, blending cultural storytelling with digital
+          design. My background in graphic design and curiosity about human behavior help me craft experiences that feel
+          both intuitive and personal.
+        </p>
+        <p class="description">I see design as a way to connect — whether it’s through a thoughtful interface or a
+          mascot that makes someone
+          smile. I value clarity, empathy, and playful creativity in everything I do</p>
+        <div class="location">📍 Vancouver, British Columbia</div>
+      </div>
+      <div class="intro-image">
+        <img src="assets/img/intro.png" alt="Helen Portrait">
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 80px; margin-bottom: 30px;" class="slider-section abit">
+    <div class="section-title">
+      <span>A Bit About Me</span>
+      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
+    </div>
+  </section>
+
+  <section class="facts-wrapper">
+    <div class="facts-image">
+    </div>
+    <div class="facts-column">
+      <div class="fact-box">
+        <span class="number">1</span>
+        <div class="line"></div>
+        <p class="fact-text">I grew up surrounded by art and Vietnamese folklore — and it shaped how I see the world.
+        </p>
+        <span class="dot"></span>
+      </div>
+
+      <div class="fact-box">
+        <span class="number">2</span>
+        <div class="line"></div>
+        <p class="fact-text">I’m drawn to projects that involve emotion, interaction, and story.</p>
+        <span class="dot"></span>
+      </div>
+
+      <div class="fact-box">
+        <span class="number">3</span>
+        <div class="line"></div>
+        <p class="fact-text">I love creating characters that reflect charm and cultural nuance.</p>
+        <span class="dot"></span>
+      </div>
+
+      <div class="fact-box">
+        <span class="number">4</span>
+        <div class="line"></div>
+        <p class="fact-text">Outside of design, I enjoy playing badminton, ambient music, and cozy cafes.</p>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section: Design Connect -->
+  <section class="design-section">
+    <div class="design-content">
+      <div class="image-group left">
+        <img src="assets/img/lx1.png" class="img tilt-left" alt="photo1">
+        <img src="assets/img/lx2.png" class="img tilt-more-left" alt="photo2">
+      </div>
+
+      <div class="text-center">
+        <h2>I See Design</h2>
+        <h2><span>As A Way To Connect</span></h2>
+        <div class="arrow">
+          <img src="assets/img/arrow-handdrawn.png" alt="arrow">
+        </div>
+        <p class="desc">
+          Whether it’s through a thoughtful interface or a<br />
+          mascot that makes someone smile. I value<br />
+          clarity, empathy, and playful creativity in<br />
+          everything I do.
+        </p>
+      </div>
+
+      <div class="image-group right">
+        <img src="assets/img/rx2.png" class="img tilt-more-right" alt="photo3">
+        <img src="assets/img/rx1.png" class="img tilt-right" alt="photo4">
+      </div>
+    </div>
+  </section>
+
+  <!-- My design -->
+  <section class="design-philosophy">
+    <div class="section-title">
+      <span>My Design Philosophy</span>
+      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
+    </div>
+    <div class="philosophy-container">
+      <div class="image-box left">
+        <img src="assets/img/my1.png" alt="Left Design" />
+        <div class="caption-box b1">
+          <p>I don’t just design for screens — I design for people.</p>
+          <span class="circle"></span>
+        </div>
+      </div>
+
+      <div class="image-box right">
+        <img src="assets/img/my2.png" alt="Right Design" />
+        <div class="caption-box b2">
+          <p>My goal is to make someone feel understood the moment they interact with my work.</p>
+          <span class="circle"></span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- My Experience -->
+  <section class="my-experience">
+    <div class="section-title">
+      <span>My Experience</span>
+      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
+    </div>
+    <div style="margin-top: 30px;" class="experience-stack">
+      <div class="experience-list container">
+        <div class="experience-box blue">
+          <div class="pin-icon">
+            <img src="assets/img/pin-icon.png" alt="Pin icon">
+          </div>
+          <p class="experience-date">May 2023 - Present</p>
+          <h3 class="experience-place">Graphic Design Student </h3>
+          <hr class="divider" />
+          <p class="experience-detail">I designed layouts and graphics for product illustrations, company logos, and
+            websites, applying strong visual principles and aesthetic design. I determined the arrangement of images and
+            text, selected typography, and used software to generate visuals. I also reviewed final designs, presented
+            drafts to clients or professors, and made improvements based on their feedback.</p>
+        </div>
+
+        <div class="experience-box yellow">
+          <div class="pin-icon">
+            <img src="assets/img/pin-icon.png" alt="Pin icon">
+          </div>
+          <p class="experience-date">2019 - 2021</p>
+          <h3 class="experience-place">Graphic Design Freelancer</h3>
+          <hr class="divider" />
+          <p class="experience-detail">I assisted in the design and execution of branding packages for new businesses,
+            focusing on logo creation, brand identity, and the development of marketing materials.</p>
+        </div>
+
+        <div class="experience-box pink">
+          <div class="pin-icon">
+            <img src="assets/img/pin-icon.png" alt="Pin icon">
+          </div>
+          <p class="experience-date">Apr 2022 - May 2023</p>
+          <h3 class="experience-place">Assistant Event Manager, iaeCanada</h3>
+          <hr class="divider" />
+          <p class="experience-detail">Designed promotional materials for digital and print campaigns. Coordinated event
+            evaluations and timelines with team members. Worked with editors and marketing staff to ensure smooth
+            execution, using reference materials from various sources to support planning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: -50px;" class="design-focus-section">
+    <div class="design-focus-card">
+      <img src="assets/img/fl_y.png" alt="Helen Logo" />
+    </div>
+  </section>
+
+  <!-- Crafting -->
+  <section class="statistics-section">
+    <div class="section-title">
+      <span>Crafting Unique Skills</span>
+      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
+    </div>
+    <div class="statistics-container">
+      <div class="statistic-box blue-stat">
+        <h2 class="statistic-number" data-target="2">0+</h2>
+        <p style="margin-top: 1px !important;" class="statistic-label">years of experience</p>
+        <hr style="margin-top: -10px !important;" class="divider xx" />
+        <p class="statistic-description">From startups to established brands, helping them achieve their digital goals.
+        </p>
+      </div>
+
+      <div class="statistic-box yellow-stat">
+        <h2 class="statistic-number" data-target="50">0+</h2>
+        <p class="statistic-label">school projects</p>
+        <hr class="divider" />
+        <p class="statistic-description">Worked with a variety of clients, from startups to established brands, helping
+          them achieve their digital goals.</p>
+      </div>
+
+      <div class="statistic-box pink-stat">
+        <h2 class="statistic-number" data-target="12">0+</h2>
+        <p class="statistic-label">collaboration projects</p>
+        <hr class="divider" />
+        <p class="statistic-description">Collaborative and client-focused, ensuring that every project reflects the
+          unique vision.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slider-section">
+    <div class="section-title">
+      <span>Some Kind Words</span>
+      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
+    </div>
+    <div class="slider-container">
+      <div class="slide slide-prev">
+        <div class="profile">
+          <img src="assets/img/tg.png" alt="Jane Doe">
+          <h3>Giulia Bonforte</h3>
+          <p>BCIT Instructor</p>
+        </div>
+        <p>As a student, Helen always possessed a curious mind and was eager to learn. During her time in my class, she
+          worked on various projects regarding visual language and when questioned she offered brilliant insights</p>
+      </div>
+      <div class="slide slide-active">
+        <div class="profile">
+          <img src="assets/img/tg.png" alt="Jane Doe">
+          <h3>Christine Shiels</h3>
+          <p>BCIT Instructor</p>
+        </div>
+        <p>"Excellent job, Helen! I love your palette, it's very playful and inviting. The logo variations look simple,
+          but the little details really make them special!”</p>
+      </div>
+      <div class="slide slide-next">
+        <div class="profile">
+          <img src="assets/img/ttp.png" alt="Jane Doe">
+          <h3>Kien Vo</h3>
+          <p>BCIT Student</p>
+        </div>
+        <p>"Working with Helen was a great experience. She's super organized, creative, and always brings positive
+          energy to the team. Her attention to detail really elevated our project."</p>
+      </div>
+    </div>
+    <div class="slider-navigation">
+      <button class="nav-button prev-button">&lt;</button>
+      <button class="nav-button next-button">&gt;</button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>Let’s Create Something</h2>
+    <h2><span class="highlight">Something Together</span></h2>
+    <a href="#" class="btn">Get In Touch!!!</a>
+    <div class="social-links">
+      <a href="#">Instagram <span>↗</span></a>
+      <a href="https://ca.linkedin.com/in/helenvodesign">LinkedIn <span>↗</span></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-row">
+        <nav class="footer-nav">
+          <a href="#">Portfolio</a>
+          <a href="#">Expertise</a>
+          <a href="#">Resume</a>
+          <a href="#">FAQ</a>
+        </nav>
+
+        <div class="icon-group">
+          <a href="https://ca.linkedin.com/in/helenvodesign" target="_blank" class="clickable">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="clickable"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <h1 class="footer-title">Ready to Bring Your Vision to Life?</h1>
+      <p class="footer-text">
+        Let’s make something incredible together! Reach out to discuss your project,<br />
+        and let’s create designs that resonate and inspire.
+      </p>
+
+      <a href="#contact" class="footer-btn">Contact Me</a>
+
+
+      <p class="footer-copy">Helen ©all rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    /**
+     * ParticleNetwork Class
+     * Creates and manages an interactive particle network animation
+     */
+    class ParticleNetwork {
+      constructor(canvas, config = {}) {
+        this.canvas = canvas;
+        this.ctx = canvas.getContext('2d', { alpha: true });
+        if (!this.ctx) {
+          throw new Error('Could not initialize canvas context');
+        }
+
+        this.config = this.validateConfig({
+          particleCount: 120,
+          minRadius: 2,
+          maxRadius: 6,
+          particleColor: '#ffffff',
+          lineColor: '#ffffff',
+          lineWidth: 1,
+          lineOpacity: 0.15,
+          maxDistance: 150,
+          moveSpeed: 1,
+          backgroundColor: '#111111',
+          backgroundOpacity: 1,
+          particleOpacity: 0.8,
+          mouseRadius: 200,
+          mouseInteraction: true,
+          pulseEnabled: true,
+          pulseSpeed: 0.02,
+          ...config
+        });
+
+        this.particles = [];
+        this.animationId = null;
+        this.isRunning = false;
+        this.mousePosition = null;
+        this.pulseAngle = 0;
+        this.boundHandleResize = this.handleResize.bind(this);
+        this.boundHandleMouseMove = this.handleMouseMove.bind(this);
+        this.boundHandleMouseLeave = this.handleMouseLeave.bind(this);
+
+        this.handleResize();
+        this.createParticles();
+        this.setupEventListeners();
+      }
+
+      validateConfig(config) {
+        const numericParams = [
+          'particleCount', 'minRadius', 'maxRadius', 'lineWidth',
+          'lineOpacity', 'maxDistance', 'moveSpeed', 'backgroundOpacity',
+          'particleOpacity', 'mouseRadius', 'pulseSpeed'
+        ];
+        numericParams.forEach(param => {
+          if (typeof config[param] !== 'number' || isNaN(config[param])) {
+            throw new Error(`Invalid ${param}: must be a number`);
+          }
+        });
+
+        const booleanParams = ['mouseInteraction', 'pulseEnabled'];
+        booleanParams.forEach(param => {
+          if (typeof config[param] !== 'boolean') {
+            throw new Error(`Invalid ${param}: must be a boolean`);
+          }
+        });
+
+        const colorParams = ['backgroundColor', 'particleColor', 'lineColor'];
+        const hexColorRegex = /^#[0-9A-Fa-f]{6}$/;
+        colorParams.forEach(param => {
+          if (!hexColorRegex.test(config[param])) {
+            throw new Error(`Invalid ${param}: must be a valid hex color`);
+          }
+        });
+
+        return config;
+      }
+
+      setupEventListeners() {
+        window.addEventListener('resize', this.boundHandleResize);
+        this.canvas.addEventListener('mousemove', this.boundHandleMouseMove);
+        this.canvas.addEventListener('mouseleave', this.boundHandleMouseLeave);
+      }
+
+      cleanup() {
+        window.removeEventListener('resize', this.boundHandleResize);
+        this.canvas.removeEventListener('mousemove', this.boundHandleMouseMove);
+        this.canvas.removeEventListener('mouseleave', this.boundHandleMouseLeave);
+        this.stop();
+      }
+
+      handleMouseMove(e) {
+        const rect = this.canvas.getBoundingClientRect();
+        this.mousePosition = {
+          x: e.clientX - rect.left,
+          y: e.clientY - rect.top
+        };
+      }
+
+      handleMouseLeave() {
+        this.mousePosition = null;
+      }
+
+      handleResize() {
+        this.canvas.width = this.canvas.clientWidth;
+        this.canvas.height = this.canvas.clientHeight;
+      }
+
+      createParticles() {
+        this.particles = [];
+        for (let i = 0; i < this.config.particleCount; i++) {
+          const sizeRange = this.config.maxRadius - this.config.minRadius;
+          const randomSize = Math.random() * sizeRange + this.config.minRadius;
+          this.particles.push({
+            x: Math.random() * this.canvas.width,
+            y: Math.random() * this.canvas.height,
+            dx: (Math.random() - 0.5) * this.config.moveSpeed,
+            dy: (Math.random() - 0.5) * this.config.moveSpeed,
+            radius: randomSize
+          });
+        }
+      }
+
+      updateParticles() {
+        this.pulseAngle += this.config.pulseSpeed;
+        this.particles.forEach(particle => {
+          if (this.config.pulseEnabled) {
+            const pulseScale = Math.sin(this.pulseAngle) * 0.5 + 1;
+            particle.currentRadius = particle.radius * pulseScale;
+          } else {
+            particle.currentRadius = particle.radius;
+          }
+
+          particle.x += particle.dx;
+          particle.y += particle.dy;
+
+          if (this.config.mouseInteraction && this.mousePosition) {
+            const dx = this.mousePosition.x - particle.x;
+            const dy = this.mousePosition.y - particle.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < this.config.mouseRadius) {
+              const force = (this.config.mouseRadius - distance) / this.config.mouseRadius;
+              const angle = Math.atan2(dy, dx);
+              const repelX = Math.cos(angle) * force * 0.5;
+              const repelY = Math.sin(angle) * force * 0.5;
+              particle.dx -= repelX;
+              particle.dy -= repelY;
+            }
+          }
+
+          if (particle.x < 0 || particle.x > this.canvas.width) {
+            particle.dx = -particle.dx;
+          }
+          if (particle.y < 0 || particle.y > this.canvas.height) {
+            particle.dy = -particle.dy;
+          }
+
+          const speed = Math.sqrt(particle.dx * particle.dx + particle.dy * particle.dy);
+          if (speed > this.config.moveSpeed) {
+            particle.dx = (particle.dx / speed) * this.config.moveSpeed;
+            particle.dy = (particle.dy / speed) * this.config.moveSpeed;
+          }
+        });
+      }
+
+      drawParticles() {
+        this.ctx.fillStyle = this.config.particleColor;
+        this.ctx.globalAlpha = this.config.particleOpacity;
+        this.particles.forEach(particle => {
+          this.ctx.beginPath();
+          this.ctx.arc(particle.x, particle.y, particle.currentRadius || particle.radius, 0, Math.PI * 2);
+          this.ctx.fill();
+        });
+        this.ctx.globalAlpha = 1;
+      }
+      drawBackgroundGradient() {
+        const ctx = this.ctx;
+        const gradient = ctx.createLinearGradient(0, 0, 0, this.canvas.height);
+        gradient.addColorStop(0, '#ffFFFF');   // Trên: trắng
+        gradient.addColorStop(1, '#ffffff');   // Dưới: xanh nhạt
+
+        ctx.fillStyle = gradient;
+        ctx.globalAlpha = this.config.backgroundOpacity;
+        ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+        ctx.globalAlpha = 1;
+      }
+
+      drawConnections() {
+        for (let i = 0; i < this.particles.length; i++) {
+          for (let j = i + 1; j < this.particles.length; j++) {
+            const dx = this.particles[i].x - this.particles[j].x;
+            const dy = this.particles[i].y - this.particles[j].y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < this.config.maxDistance) {
+              const opacity = 1 - (distance / this.config.maxDistance);
+              const color = this.hexToRgb(this.config.lineColor);
+              this.ctx.beginPath();
+              this.ctx.strokeStyle = `rgba(${color}, ${opacity * this.config.lineOpacity})`;
+              this.ctx.lineWidth = this.config.lineWidth;
+              this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
+              this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
+              this.ctx.stroke();
+            }
+          }
+        }
+      }
+
+      hexToRgb(hex) {
+        hex = hex.replace(/^#/, '');
+
+        if (hex.length === 3) {
+          hex = hex.split('').map(c => c + c).join('');
+        }
+
+        const result = /^([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        if (!result) {
+          return '255,255,255';
+        }
+
+        return result.slice(1).map(n => parseInt(n, 16)).join(',');
+      }
+
+      stop() {
+        this.isRunning = false;
+        if (this.animationId) {
+          cancelAnimationFrame(this.animationId);
+          this.animationId = null;
+        }
+      }
+
+      start() {
+        if (!this.isRunning) {
+          this.isRunning = true;
+          this.animate();
+        }
+      }
+
+      animate() {
+        this.drawBackgroundGradient();
+
+        this.updateParticles();
+        this.drawConnections();
+        this.drawParticles();
+
+        if (this.isRunning) {
+          this.animationId = requestAnimationFrame(this.animate.bind(this));
+        }
+      }
+    }
+
+    // Khởi tạo khi DOM sẵn sàng
+    function getParticleCount() {
+      if (window.innerWidth <= 480) { // màn hình nhỏ (điện thoại)
+        return 20; // giảm particle
+      } else if (window.innerWidth <= 768) { // tablet
+        return 200;
+      }
+      return 340; // desktop hoặc lớn hơn
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const canvas = document.getElementById('particleCanvas');
+
+      function resizeCanvas() {
+        canvas.width = canvas.clientWidth;
+        canvas.height = canvas.clientHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', () => {
+        resizeCanvas();
+        // Có thể thêm restart hoặc update config nếu muốn
+      });
+
+      const network = new ParticleNetwork(canvas, {
+        particleCount: getParticleCount(),
+        minRadius: 0.7,
+        maxRadius: 0.8,
+        particleColor: '#1D6584',
+        lineColor: '#244655',
+        lineWidth: 0.4,
+        lineOpacity: 0.55,
+        maxDistance: 90,
+        moveSpeed: 0.8,
+        backgroundColor: '#BDE5F6',
+        backgroundOpacity: 1,
+        particleOpacity: 0.5,
+        mouseRadius: 100,
+        mouseInteraction: true,
+        pulseEnabled: true,
+        pulseSpeed: 0.02
+      });
+
+      network.start();
+    });
+
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const statisticsSection = document.querySelector('.statistics-section');
+      const statisticNumbers = document.querySelectorAll('.statistic-number');
+      let animationStarted = false;
+
+      const startCounter = (entry) => {
+        if (entry.isIntersecting && !animationStarted) {
+          statisticNumbers.forEach(numElement => {
+            const target = parseInt(numElement.dataset.target);
+            let current = 0;
+            const duration = 500; // 2 seconds
+            const increment = target / (duration / 10); // Calculate increment for smooth animation
+
+            const updateCounter = () => {
+              if (current < target) {
+                current += increment;
+                numElement.textContent = Math.ceil(current) + '+';
+                requestAnimationFrame(updateCounter);
+              } else {
+                numElement.textContent = target + '+';
+              }
+            };
+            updateCounter();
+          });
+          animationStarted = true; // Set flag to true after animation starts
+        }
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          startCounter(entry);
+        });
+      }, {
+        threshold: 0.5 // Trigger when 50% of the section is visible
+      });
+
+      if (statisticsSection) {
+        observer.observe(statisticsSection);
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slides = document.querySelectorAll('.slide');
+      const prevButton = document.querySelector('.prev-button');
+      const nextButton = document.querySelector('.next-button');
+      let currentIndex = 1;
+
+      const updateSlider = () => {
+        slides.forEach(slide => {
+          slide.classList.remove('slide-active', 'slide-prev', 'slide-next');
+        });
+
+        const totalSlides = slides.length;
+        const currentActiveIndex = currentIndex;
+        const currentPrevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        const currentNextIndex = (currentIndex + 1) % totalSlides;
+
+        slides[currentActiveIndex].classList.add('slide-active');
+        slides[currentPrevIndex].classList.add('slide-prev');
+        slides[currentNextIndex].classList.add('slide-next');
+
+      };
+
+      const navigate = (direction) => {
+        if (direction === 'next') {
+          currentIndex = (currentIndex + 1) % slides.length;
+        } else {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        }
+        updateSlider();
+      };
+
+      prevButton.addEventListener('click', () => navigate('prev'));
+      nextButton.addEventListener('click', () => navigate('next'));
+
+      // Initial setup
+      updateSlider();
+    });
+  </script>
+</body>
+
+</html>

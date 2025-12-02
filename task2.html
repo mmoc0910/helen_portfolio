@@ -1,0 +1,202 @@
+<section class="auto-scroll-section">
+  <div class="scroll-track" id="scrollTrack">
+
+    <div class="scroll-item" style="background-image:url('test/image.png')">
+      <div class="card-overlay">
+        <div class="card-box">
+          <h3>Street Pulse - Event Branding</h3>
+          <p>Event Design</p>
+          <button class="btn">See Project</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-item" style="background-image:url('test/image1.png')">
+      <div class="card-overlay">
+        <div class="card-box">
+          <h3>I Like Me Better – Graphic Music Video</h3>
+          <p>Motion Graphic /  Illustration</p>
+          <button class="btn">See Project</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-item" style="background-image:url('test/image2.png')">
+      <div class="card-overlay">
+        <div class="card-box">
+          <h3>Whispurr - Cozy Diary App</h3>
+          <p>UI/UX Design</p>
+          <button class="btn">See Project</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-item" style="background-image:url('test/image3.png')">
+      <div class="card-overlay">
+        <div class="card-box">
+          <h3>Pluff - Marshmallow Brand Identity</h3>
+          <p>Branding & Packaging</p>
+          <button class="btn">See Project</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-item" style="background-image:url('test/image4.png')">
+      <div class="card-overlay">
+        <div class="card-box">
+          <h3>Courtly - Interactive Booking Platform</h3>
+          <p>UI/UX Design</p>
+          <button class="btn">See Project</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-item" style="background-image:url('test/image5.png')">
+      <div class="card-overlay">
+        <div class="card-box">
+          <h3>Black Cat - Storytelling Video</h3>
+          <p>Motion Graphic /  Illustration</p>
+          <button class="btn">See Project</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+  /* ==== Layout ==== */
+  .auto-scroll-section {
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .scroll-track {
+    display: flex;
+    gap: 40px;
+    will-change: transform;
+  }
+
+  .scroll-item {
+    position: relative;
+    flex: 0 0 400px;
+    height: 250px;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    transition: transform .4s ease;
+    border: 6px solid #ffe8f4;
+    outline: 1px solid #000;
+    outline-offset: 0px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+
+  .card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: .4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Card text */
+  .card-box {
+    width: 75%;
+    background: #ffe8f4;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .45s ease;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .card-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #000;
+  }
+
+  .card-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  /* Button */
+  .btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 14px;
+  }
+
+  .btn:hover {
+    background: #444;
+  }
+
+  /* Hover effect */
+  .scroll-item:hover {
+    transform: scale(1.08);
+  }
+
+  .scroll-item:hover .card-overlay {
+    background: rgba(0, 0, 0, 0.35);
+  }
+
+  .scroll-item:hover .card-box {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Responsive */
+  @media (max-width:768px) {
+    .scroll-item {
+      flex: 0 0 260px;
+      height: 200px;
+    }
+
+    .card-box h3 {
+      font-size: 14px;
+    }
+
+    .btn {
+      padding: 6px 14px;
+      font-size: 12px;
+    }
+  }
+</style>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+  const track = document.querySelector("#scrollTrack");
+  const repeatTimes = 12;
+  const items = [...track.children];
+
+  for (let i = 0; i < repeatTimes; i++) {
+    items.forEach(item => track.appendChild(item.cloneNode(true)));
+  }
+
+  const totalWidth = track.scrollWidth - window.innerWidth;
+  const tl = gsap.timeline({ repeat: -1 });
+  tl.to(track, { x: -totalWidth, duration: 350, ease: "none" });
+
+  track.addEventListener("mouseenter", () => tl.pause());
+  track.addEventListener("mouseleave", () => tl.resume());
+</script>

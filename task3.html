@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>4 Models Smooth Orbit</title>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    model-viewer {
+      width: 200px;
+      height: 200px;
+      border-radius: 16px;
+    }
+
+    model-viewer::part(interaction-prompt) {
+      display: none !important;
+    }
+
+    model-viewer#crayon {
+      transform: rotate(-150deg) !important;
+    }
+  </style>
+</head>
+
+<body>
+  <model-viewer id="cat" src="./3d model/cat/textured.glb" alt="Cute Cat 3D" camera-controls disable-zoom
+    shadow-intensity="1" interaction-prompt="none" camera-orbit="45deg 70deg auto">
+  </model-viewer>
+
+  <model-viewer id="car" src="./3d model/car/textured.glb" alt="Car 3D" camera-controls disable-zoom
+    shadow-intensity="1" interaction-prompt="none" camera-orbit="45deg 70deg auto">
+  </model-viewer>
+
+  <model-viewer id="crayon" src="./3d model/crayon/textured.glb" alt="Crayon 3D" camera-controls disable-zoom
+    shadow-intensity="1" interaction-prompt="none" camera-orbit="45deg 70deg auto">
+  </model-viewer>
+
+  <model-viewer id="flower" src="./3d model/flower/textured.glb" alt="Flower 3D" camera-controls disable-zoom
+    shadow-intensity="1" interaction-prompt="none" camera-orbit="45deg 70deg auto">
+  </model-viewer>
+
+  <script>
+    function smoothOrbit(viewer, {
+      speed = 0.01,
+      offset = 0,
+      baseAzimuth = 45,
+      baseElevation = 70,
+      ampAzimuth = 20,
+      ampElevation = 10
+    } = {}) {
+      let t = offset;
+      function animate() {
+        t += speed;
+        const azimuth = baseAzimuth + Math.sin(t) * ampAzimuth;
+        const elevation = baseElevation + Math.sin(t * 1.3) * ampElevation;
+        viewer.cameraOrbit = `${azimuth}deg ${elevation}deg auto`;
+        viewer.requestUpdate('cameraOrbit');
+        requestAnimationFrame(animate);
+      }
+      viewer.addEventListener('load', animate);
+    }
+
+    smoothOrbit(document.getElementById('cat'), {
+      speed: 0.030, offset: 0, baseAzimuth: 5, baseElevation: 80
+    });
+
+    smoothOrbit(document.getElementById('car'), {
+      speed: 0.03, offset: 0, baseAzimuth: 90, baseElevation: 100
+    });
+
+    smoothOrbit(document.getElementById('flower'), {
+      speed: 0.020, offset: 4.5, baseAzimuth: 30, baseElevation: 75
+    });
+    const crayon = document.getElementById('crayon');
+
+    crayon.addEventListener('load', () => {
+      let angle = 0;
+      function spin() {
+        angle += 1;
+        const radians = angle * Math.PI / 180;
+
+        const scene = crayon.scene;
+        if (scene && scene.model) {
+          scene.model.rotation.x = radians;
+        }
+
+        requestAnimationFrame(spin);
+      }
+      spin();
+    });
+
+  </script>
+
+</body>
+
+</html>

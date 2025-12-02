@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helen Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/1958/1958290.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js"
+      type="module"
+    ></script>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="scrollTopBtn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="48"
+        height="48"
+        fill="white"
+      >
+        <path
+          d="M12 19V5M5 12l7-7 7 7"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+    <!-- <canvas id="particleCanvas"></canvas> -->
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower">
+      <!-- <span class="cursor-text">OPEN</span> -->
+    </div>
+
+    <!-- Header -->
+    <div class="header-wrapper">
+      <header class="site-header">
+        <div class="container">
+          <div class="top-row">
+            <div class="logo" id="logo">
+              <span class="highlight-pink">Helen</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu(this)">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+
+          <nav class="menu">
+            <a href="about.html" class="clickable xnx">About Me</a>
+            <a href="myport.html" class="clickable xnx">Portfolio</a>
+            <a href="target.html" class="clickable xnx">Expertise</a>
+            <a href="resume.html" class="clickable xnx">Resume</a>
+            <div class="icon-group">
+              <a
+                href="https://ca.linkedin.com/in/helenvodesign"
+                target="_blank"
+                class="clickable"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="clickable"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <a href="#" class="clickable hire-btn">Hire Me!</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <!-- Intro Section -->
+    <div id="intro">
+      <dotlottie-wc
+        src="https://lottie.host/700150ac-b207-4ac3-a4a9-f01dc0a8ad17/EzL00AT0Ff.lottie"
+        style="width: 300px; height: 300px"
+        autoplay
+      ></dotlottie-wc>
+    </div>
+    <!-- <style>
+      iframe {
+        width: 100%;
+        height: 100vh;
+        border: none;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style> -->
+
+    <!-- <iframe id="iframe-desktop" src="https://lovely-shortbread-5091aa.netlify.app/"></iframe>
+  <iframe id="iframe-mobile" src="https://mellow-kheer-603562.netlify.app/" class="hidden"></iframe> -->
+
+    <style>
+      .hero-wrapper {
+        perspective: 1200px;
+        height: 100vh;
+        padding: 0px 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e8e8e8;
+      }
+
+      .hero-card {
+        position: relative;
+        width: 100%;
+        transform-style: preserve-3d;
+        transform: rotateX(0deg) rotateY(0deg);
+        transition: box-shadow 0.2s ease-out;
+      }
+      .headline span {
+        font-family: "Varela Round", sans-serif;
+        font-size: 10rem;
+        line-height: 1.15;
+        font-weight: 400;
+        color: #111827;
+      }
+
+      .hero-icon {
+        position: absolute;
+      }
+
+      .icon-car {
+        right: -70%;
+        top: 6%;
+      }
+
+      .icon-car img {
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+      }
+
+      .icon-flower {
+        right: 5%;
+        top: -65%;
+      }
+
+      .icon-flower img {
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      .icon-crayon {
+        right: -20%;
+        bottom: 0;
+      }
+
+      .icon-crayon img {
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+      }
+
+      .icon-cat {
+        left: -20%;
+        bottom: 25%;
+      }
+
+      .icon-cat img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      @media (max-width: 1025px) {
+        .hero-wrapper {
+          padding: 0px 20px;
+        }
+
+        .headline span {
+          font-size: 8rem;
+        }
+
+        .icon-car {
+          right: -100%;
+          top: 0;
+        }
+
+        .icon-car img {
+          width: 170px;
+          height: 170px;
+          object-fit: cover;
+        }
+
+        .icon-flower {
+          right: 5%;
+          top: -80%;
+        }
+
+        .icon-flower img {
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+        }
+
+        .icon-crayon {
+          right: -20%;
+          bottom: 0;
+        }
+
+        .icon-crayon img {
+          width: 170px;
+          height: 170px;
+          object-fit: cover;
+        }
+
+        .icon-cat {
+          left: -30%;
+          bottom: 0;
+        }
+
+        .icon-cat img {
+          width: 170px;
+          height: 170px;
+          object-fit: cover;
+        }
+      }
+      @media (max-width: 769px) {
+        .hero-wrapper {
+          background-color: inherit;
+        }
+        .icon-car {
+          right: -100%;
+          top: 0;
+        }
+
+        .icon-car img {
+          width: 170px;
+          height: 170px;
+          object-fit: cover;
+        }
+
+        .icon-flower {
+          right: 0;
+          top: 0;
+        }
+
+        .icon-flower img {
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+        }
+
+        .icon-crayon {
+          right: -20%;
+          bottom: 0;
+        }
+
+        .icon-crayon img {
+          width: 170px;
+          height: 170px;
+          object-fit: cover;
+        }
+
+        .icon-cat {
+          left: -20%;
+          top: -55%;
+        }
+
+        .icon-cat img {
+          width: 170px;
+          height: 170px;
+          object-fit: cover;
+        }
+      }
+      @media (max-width: 568px) {
+        .hero-wrapper {
+          background-color: inherit;
+        }
+        .hero-wrapper {
+          padding: 0px;
+        }
+        .headline:first-child {
+          gap: 0 !important;
+          flex-wrap: wrap;
+        }
+        .headline span {
+          font-size: 5rem;
+          line-height: 1.5;
+        }
+        .icon-car {
+          right: -150%;
+          top: -140%;
+        }
+
+        .icon-car img {
+          width: 170px;
+          height: 170px;
+          object-fit: cover;
+        }
+
+        .icon-flower {
+          right: -11%;
+          top: -106%;
+        }
+
+        .icon-flower img {
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+        }
+
+        .icon-crayon {
+          right: -3%;
+          bottom: -128%;
+        }
+
+        .icon-crayon img {
+          width: 170px;
+          height: 170px;
+          object-fit: cover;
+        }
+
+        .icon-cat {
+          left: -20%;
+          top: -210%;
+        }
+
+        .icon-cat img {
+          width: 170px;
+          height: 170px;
+          object-fit: cover;
+        }
+      }
+    </style>
+
+    <section class="hero-wrapper">
+      <section class="hero-card" id="hero">
+        <div
+          class="headline"
+          style="display: flex; justify-content: center; gap: 180px"
+        >
+          <div style="position: relative">
+            <span>Hi,</span>
+            <div class="hero-icon icon-car">
+              <img src="assets/img/Car-loop-F.gif" alt="Car" />
+            </div>
+          </div>
+          <div style="position: relative; background-color: #ff88c2">
+            <span>I'm Helen</span>
+            <div class="hero-icon icon-flower">
+              <img src="assets/img/Flower-Loop-F.gif" alt="Flower" />
+            </div>
+          </div>
+        </div>
+        <div class="headline" style="display: flex; justify-content: center">
+          <div style="position: relative">
+            <span>and I'm a</span>
+            <div class="hero-icon icon-cat">
+              <img src="assets/img/Cat-loop-F.gif" alt="Car" />
+            </div>
+            <div class="hero-icon icon-crayon">
+              <img src="assets/img/Pen-loop-F.gif" alt="Crayon" />
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center">
+          <div class="headline" style="background-color: #72daff">
+            <span>Visual Creator</span>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script>
+      const hero = document.getElementById("hero");
+      const maxRotate = 7;
+
+      let targetX = 0;
+      let targetY = 0;
+      let currentX = 0;
+      let currentY = 0;
+
+      function handleMouseMove(e) {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+
+        const percentX = (e.clientX - w / 2) / (w / 2);
+        const percentY = (e.clientY - h / 2) / (h / 2);
+
+        targetY = percentX * maxRotate;
+
+        targetX = -percentY * maxRotate;
+
+        hero.classList.add("is-hovered");
+      }
+
+      function handleMouseLeave() {
+        targetX = 0;
+        targetY = 0;
+        hero.classList.remove("is-hovered");
+      }
+
+      window.addEventListener("mousemove", handleMouseMove);
+      window.addEventListener("mouseleave", handleMouseLeave);
+      window.addEventListener("mouseout", (e) => {
+        if (!e.relatedTarget) handleMouseLeave();
+      });
+
+      function animate() {
+        currentX += (targetX - currentX) * 0.1;
+        currentY += (targetY - currentY) * 0.1;
+
+        hero.style.transform = `rotateX(${currentX}deg) rotateY(${currentY}deg)`;
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    </script>
+
+    <!-- <script>
+      const mob = document.getElementById("iframe-mobile");
+      const des = document.getElementById("iframe-desktop");
+      const heroWrapper = document.querySelector(".hero-wrapper");
+      const header = document.querySelector(".header-wrapper");
+
+      function showCorrect() {
+        if (window.innerWidth <= 767) {
+          mob.classList.remove("hidden");
+          des.classList.add("hidden");
+        } else {
+          des.classList.remove("hidden");
+          mob.classList.add("hidden");
+        }
+      }
+
+      function toggleHeader() {
+        const activeIframe = window.innerWidth <= 767 ? mob : des;
+        const mainBottom = activeIframe.getBoundingClientRect().bottom;
+
+        if (mainBottom <= 0) {
+          header.classList.add("show-header");
+        } else {
+          header.classList.remove("show-header");
+        }
+      }
+
+      window.addEventListener("scroll", toggleHeader);
+      window.addEventListener("load", () => {
+        showCorrect();
+        toggleHeader();
+      });
+
+      window.addEventListener("resize", () => {
+        showCorrect();
+        toggleHeader();
+      });
+    </script> -->
+    <script>
+      const header = document.querySelector(".header-wrapper");
+      const heroWrapper = document.querySelector(".hero-wrapper");
+
+      function toggleHeader() {
+        if (!heroWrapper) return;
+
+        const rect = heroWrapper.getBoundingClientRect();
+
+        if (rect.bottom <= 0) {
+          header.classList.add("show-header");
+        } else {
+          header.classList.remove("show-header");
+        }
+      }
+
+      window.addEventListener("scroll", toggleHeader);
+      window.addEventListener("load", toggleHeader);
+      window.addEventListener("resize", toggleHeader);
+    </script>
+    <style>
+      iframe {
+        width: 100%;
+        height: 100vh;
+        border: none;
+      }
+
+      .header-wrapper {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s ease;
+      }
+
+      .header-wrapper.show-header {
+        opacity: 1;
+        pointer-events: all;
+      }
+    </style>
+    <!-- <section class="intro-wrapper">
+    <div class="intro container">
+      <div class="intro-text">
+        <div class="available">📌 Available for freelance</div>
+        <h1 id="typewriter"></h1>
+        <p class="description">A Graphic Design Student with 2+ years of experience in Freelancing and helping
+          community. I love to build awesome logos and brand identity for cool companies :)</p>
+        <div class="intro-buttons">
+          <a href="#" class="btn-black">Hire Me!</a>
+          <a href="myport.html" class="btn-outline">See My Portfolio</a>
+        </div>
+        <div class="location">📍 Vancouver, British Columbia</div>
+      </div>
+      <div class="intro-image">
+        <img src="assets/img/intro.png" alt="Helen Portrait">
+      </div>
+    </div>
+  </section> -->
+    <!-- <div id="main-content">
+    <div class="wrap" id="wrap">
+      <model-viewer id="cat" src="./3d model/cat/textured.glb" alt="Cute Cat 3D" camera-controls disable-zoom
+        shadow-intensity="1" interaction-prompt="none" camera-orbit="45deg 70deg auto">
+      </model-viewer>
+
+      <model-viewer id="car" src="./3d model/car/textured.glb" alt="Car 3D" camera-controls disable-zoom
+        shadow-intensity="1" interaction-prompt="none" camera-orbit="45deg 70deg auto">
+      </model-viewer>
+
+      <model-viewer id="crayon" src="./3d model/crayon/textured.glb" alt="Crayon 3D" camera-controls disable-zoom
+        shadow-intensity="1" interaction-prompt="none" camera-orbit="45deg 70deg auto">
+      </model-viewer>
+
+      <model-viewer id="flower" src="./3d model/flower/textured.glb" alt="Flower 3D" camera-controls disable-zoom
+        shadow-intensity="1" interaction-prompt="none" camera-orbit="45deg 70deg auto">
+      </model-viewer>
+      <h1 style="white-space: pre;" id="hero" data-text="Hi, I'm Helen">Hi,    I'm <i>Helen</i> <br> and I'm a <br><i>Visual Creator</i></h1>
+    </div>
+
+  </div>
+  <style>
+    .header-wrapper {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+    }
+
+    .header-wrapper.show-header {
+      opacity: 1;
+      pointer-events: all;
+    }
+  </style> -->
+    <!-- Featured  -->
+    <section class="featured-projects">
+      <div class="section-title">
+        <span>Featured Projects</span>
+        <img
+          src="assets/img/arrow-handdrawn.png"
+          alt="arrow"
+          class="arrow-icon"
+        />
+      </div>
+
+      <!-- <div class="projects-wrapper">
+      <div class="project-card blue tilt-left" onclick="window.location.href='project_courtly.html'">
+        <img src="assets/img/courtly.png" alt="Courtly project">
+        <h3>Courtly<br>
+          <p style="font-weight: 300; margin: 0; font-size: 13px;">Court booking platform for tennis, pickleball, and
+            badminton.</p>
+        </h3>
+        <button class="btn"><span>See Project</span></button>
+      </div>
+      <div class="project-card yellow tilt-none" onclick="window.location.href='project_street.html'">
+        <img src="assets/img/streetpulse.png" alt="Street Pulse project">
+        <h3>Street Pulse<br>
+          <p style="font-weight: 300; margin: 0; font-size: 13px;">Bold event branding inspired by street culture.</p>
+        </h3>
+        <button class="btn"><span>See Project</span></button>
+      </div>
+      <div class="project-card pink tilt-right" onclick="window.location.href='project_whispurr.html'">
+        <img src="assets/img/whis.png" alt="Pluff project">
+        <h3>Whispurr<br>
+          <p style="font-weight: 300; margin: 0; font-size: 13px;">Cozy diary app with interactive stuffies.</p>
+        </h3>
+        <button class="btn"><span>See Project</span></button>
+      </div>
+    </div>
+
+    <div class="portfolio-btn-wrapper">
+      <a href="myport.html" class="portfolio-btn" target="_blank">Check my Portfolio</a>
+    </div> -->
+    </section>
+
+    <section class="auto-scroll-section">
+      <div class="scroll-track" id="scrollTrack">
+        <div
+          class="scroll-item"
+          style="background-image: url('test/image.png')"
+        >
+          <div class="card-overlay">
+            <div class="card-box">
+              <h3>Street Pulse - Event Branding</h3>
+              <p>Event Design</p>
+              <button
+                class="btn"
+                onclick="window.open('project_street.html', '_blank')"
+              >
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="scroll-item"
+          style="background-image: url('test/image1.png')"
+        >
+          <div class="card-overlay">
+            <div class="card-box">
+              <h3>I Like Me Better – Graphic Music Video</h3>
+              <p>Motion Graphic / Illustration</p>
+              <button class="btn">See Project</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="scroll-item"
+          style="background-image: url('test/image2.png')"
+        >
+          <div class="card-overlay">
+            <div class="card-box">
+              <h3>Whispurr - Cozy Diary App</h3>
+              <p>UI/UX Design</p>
+              <button
+                class="btn"
+                onclick="window.open('project_whispurr.html', '_blank')"
+              >
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="scroll-item"
+          style="background-image: url('test/image3.png')"
+        >
+          <div class="card-overlay">
+            <div class="card-box">
+              <h3>Pluff - Marshmallow Brand Identity</h3>
+              <p>Branding & Packaging</p>
+              <button class="btn">See Project</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="scroll-item"
+          style="background-image: url('test/image4.png')"
+        >
+          <div class="card-overlay">
+            <div class="card-box">
+              <h3>Courtly - Interactive Booking Platform</h3>
+              <p>UI/UX Design</p>
+              <button
+                class="btn"
+                onclick="window.open('project_courtly.html', '_blank')"
+              >
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="scroll-item"
+          style="background-image: url('test/image5.png')"
+        >
+          <div class="card-overlay">
+            <div class="card-box">
+              <h3>Black Cat - Storytelling Video</h3>
+              <p>Motion Graphic / Illustration</p>
+              <button class="btn">See Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I Do -->
+    <section class="what-i-do">
+      <div class="section-title">
+        <span>What I do</span>
+        <img
+          src="assets/img/arrow-handdrawn.png"
+          alt="arrow"
+          class="arrow-icon"
+        />
+      </div>
+
+      <div class="what-i-do-grid">
+        <div class="what-box">
+          <div class="pin"></div>
+          <h4>Branding and Identity</h4>
+          <div class="bubble"></div>
+        </div>
+        <div class="what-box">
+          <div class="pin"></div>
+          <h4>Print Design</h4>
+          <div class="bubble"></div>
+        </div>
+        <div class="what-box">
+          <div class="pin"></div>
+          <h4>Packaging Design</h4>
+          <div class="bubble"></div>
+        </div>
+        <div class="what-box">
+          <div class="pin"></div>
+          <h4>Illustration and Art</h4>
+          <div class="bubble"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Experience -->
+    <!-- <section class="my-experience">
+    <div class="section-title">
+      <span>My Experience</span>
+      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
+    </div>
+    <div class="experience-stack">
+      <div class="experience-list container">
+        <div class="experience-box blue">
+          <div class="pin-icon">
+            <img src="assets/img/pin-icon.png" alt="Pin icon">
+          </div>
+          <p class="experience-date">May 2023 - Present</p>
+          <h3 class="experience-place">Graphic Design Student </h3>
+          <hr class="divider" />
+          <p class="experience-detail">I designed layouts and graphics for product illustrations, company logos, and
+            websites, applying strong visual principles and aesthetic design. I determined the arrangement of images and
+            text, selected typography, and used software to generate visuals. I also reviewed final designs, presented
+            drafts to clients or professors, and made improvements based on their feedback.</p>
+        </div>
+
+        <div class="experience-box yellow">
+          <div class="pin-icon">
+            <img src="assets/img/pin-icon.png" alt="Pin icon">
+          </div>
+          <p class="experience-date">2019 - 2021</p>
+          <h3 class="experience-place">Graphic Design Freelancer</h3>
+          <hr class="divider" />
+          <p class="experience-detail">I assisted in the design and execution of branding packages for new businesses,
+            focusing on logo creation, brand identity, and the development of marketing materials.</p>
+        </div>
+
+        <div class="experience-box pink">
+          <div class="pin-icon">
+            <img src="assets/img/pin-icon.png" alt="Pin icon">
+          </div>
+          <p class="experience-date">Apr 2022 - May 2023</p>
+          <h3 class="experience-place">Assistant Event Manager, iaeCanada</h3>
+          <hr class="divider" />
+          <p class="experience-detail">Designed promotional materials for digital and print campaigns. Coordinated event
+            evaluations and timelines with team members. Worked with editors and marketing staff to ensure smooth
+            execution, using reference materials from various sources to support planning.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+    <!-- About me -->
+    <!-- <section class="about-me">
+    <div class="section-title">
+      <span>About me</span>
+      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
+    </div>
+    <div class="about-container">
+      <div class="photo-stack">
+        <div class="pin-icon">📌</div>
+        <div class="stack-layer layer-1"></div>
+        <div class="stack-layer layer-2"></div>
+        <div class="stack-layer layer-3"></div>
+        <div class="photo-stack-rotate">
+          <img src="assets/img/intro.png" class="photo" />
+          <img src="assets/img/intro.png" class="photo" />
+          <img src="assets/img/intro.png" class="photo" />
+        </div>
+      </div>
+      <div class="intro-text">
+        <p>Hi, I’m Helen — a UI/UX and graphic designer who finds joy in creating designs that feel both playful and
+          purposeful.
+          .</p>
+        <p>
+          My work is inspired by crayon textures, soft colors, and everyday moments. I love blending hand-drawn charm
+          with clean digital layouts to craft visuals that connect, communicate, and spark curiosity. Whether it’s a
+          logo, interface, or tiny sticker, I always aim to make something honest, friendly, and full of heart.
+        </p>
+        <a href="#branding" class="btn-outline">My Branding</a>
+      </div>
+    </div>
+  </section> -->
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="section-title">
+        <span>FAQ</span>
+        <img
+          src="assets/img/arrow-handdrawn.png"
+          alt="arrow"
+          class="arrow-icon"
+        />
+      </div>
+      <div class="faq-container">
+        <div class="faq-card">
+          <div class="faq-question">
+            <span>What services do you offer?</span>
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            I offer branding, web design, and illustration services tailored to
+            your unique vision and needs.
+          </div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">
+            <span>How do I start a project with you?</span>
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Simply reach out via the contact form on my website. We’ll schedule
+            a consultation to discuss your needs, the scope of your project, and
+            how we can achieve your goals together.
+          </div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">
+            <span>How long does a typical project take?</span>
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            The timeline varies based on the project’s complexity and scope.
+            Simple designs can take a few days, whereas more involved projects
+            might take several weeks. I strive to work efficiently while
+            ensuring high-quality results.
+          </div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">
+            <span>Can you work within my budget?</span>
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            I’m committed to delivering exceptional design solutions that cater
+            to various budgets. Let’s discuss what you have in mind, and I will
+            tailor a proposal that aligns with your financial considerations.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-row">
+          <nav class="footer-nav">
+            <a href="#">Portfolio</a>
+            <a href="#">Expertise</a>
+            <a href="#">Resume</a>
+            <a href="#">FAQ</a>
+          </nav>
+
+          <div class="icon-group">
+            <a
+              href="https://ca.linkedin.com/in/helenvodesign"
+              target="_blank"
+              class="clickable"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="clickable"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <h1 class="footer-title">Ready to Bring Your Vision to Life?</h1>
+        <p class="footer-text">
+          Let’s make something incredible together! Reach out to discuss your
+          project,<br />
+          and let’s create designs that resonate and inspire.
+        </p>
+
+        <a href="#contact" class="footer-btn">Contact Me</a>
+
+        <p class="footer-copy">Helen ©all rights reserved</p>
+      </div>
+    </footer>
+    <!-- <script>
+    function smoothOrbit(viewer, {
+      speed = 0.01,
+      offset = 0,
+      baseAzimuth = 45,
+      baseElevation = 70,
+      ampAzimuth = 20,
+      ampElevation = 10
+    } = {}) {
+      let t = offset;
+      function animate() {
+        t += speed;
+        const azimuth = baseAzimuth + Math.sin(t) * ampAzimuth;
+        const elevation = baseElevation + Math.sin(t * 1.3) * ampElevation;
+        viewer.cameraOrbit = `${azimuth}deg ${elevation}deg auto`;
+        viewer.requestUpdate('cameraOrbit');
+        requestAnimationFrame(animate);
+      }
+      viewer.addEventListener('load', animate);
+    }
+
+    smoothOrbit(document.getElementById('cat'), {
+      speed: 0.030, offset: 0, baseAzimuth: 5, baseElevation: 80
+    });
+
+    smoothOrbit(document.getElementById('car'), {
+      speed: 0.02, offset: 0, baseAzimuth: -10, baseElevation: 70
+    });
+
+    smoothOrbit(document.getElementById('flower'), {
+      speed: 0.020, offset: 4.5, baseAzimuth: 30, baseElevation: 75
+    });
+    const crayon = document.getElementById('crayon');
+
+    crayon.addEventListener('load', () => {
+      let angle = 0;
+      function spin() {
+        angle += 1;
+        const radians = angle * Math.PI / 180;
+
+        const scene = crayon.scene;
+        if (scene && scene.model) {
+          scene.model.rotation.x = radians;
+        }
+
+        requestAnimationFrame(spin);
+      }
+      spin();
+    });
+
+  </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script>
+    /**
+     * ParticleNetwork Class
+     * Creates and manages an interactive particle network animation
+     */
+    class ParticleNetwork {
+      constructor(canvas, config = {}) {
+        this.canvas = canvas;
+        this.ctx = canvas.getContext('2d', { alpha: true });
+        if (!this.ctx) {
+          throw new Error('Could not initialize canvas context');
+        }
+
+        this.config = this.validateConfig({
+          particleCount: 120,
+          minRadius: 2,
+          maxRadius: 6,
+          particleColor: '#ffffff',
+          lineColor: '#ffffff',
+          lineWidth: 1,
+          lineOpacity: 0.15,
+          maxDistance: 150,
+          moveSpeed: 1,
+          backgroundColor: '#111111',
+          backgroundOpacity: 1,
+          particleOpacity: 0.8,
+          mouseRadius: 200,
+          mouseInteraction: true,
+          pulseEnabled: true,
+          pulseSpeed: 0.02,
+          ...config
+        });
+
+        this.particles = [];
+        this.animationId = null;
+        this.isRunning = false;
+        this.mousePosition = null;
+        this.pulseAngle = 0;
+        this.boundHandleResize = this.handleResize.bind(this);
+        this.boundHandleMouseMove = this.handleMouseMove.bind(this);
+        this.boundHandleMouseLeave = this.handleMouseLeave.bind(this);
+
+        this.handleResize();
+        this.createParticles();
+        this.setupEventListeners();
+      }
+
+      validateConfig(config) {
+        const numericParams = [
+          'particleCount', 'minRadius', 'maxRadius', 'lineWidth',
+          'lineOpacity', 'maxDistance', 'moveSpeed', 'backgroundOpacity',
+          'particleOpacity', 'mouseRadius', 'pulseSpeed'
+        ];
+        numericParams.forEach(param => {
+          if (typeof config[param] !== 'number' || isNaN(config[param])) {
+            throw new Error(`Invalid ${param}: must be a number`);
+          }
+        });
+
+        const booleanParams = ['mouseInteraction', 'pulseEnabled'];
+        booleanParams.forEach(param => {
+          if (typeof config[param] !== 'boolean') {
+            throw new Error(`Invalid ${param}: must be a boolean`);
+          }
+        });
+
+        const colorParams = ['backgroundColor', 'particleColor', 'lineColor'];
+        const hexColorRegex = /^#[0-9A-Fa-f]{6}$/;
+        colorParams.forEach(param => {
+          if (!hexColorRegex.test(config[param])) {
+            throw new Error(`Invalid ${param}: must be a valid hex color`);
+          }
+        });
+
+        return config;
+      }
+
+      setupEventListeners() {
+        window.addEventListener('resize', this.boundHandleResize);
+        this.canvas.addEventListener('mousemove', this.boundHandleMouseMove);
+        this.canvas.addEventListener('mouseleave', this.boundHandleMouseLeave);
+      }
+
+      cleanup() {
+        window.removeEventListener('resize', this.boundHandleResize);
+        this.canvas.removeEventListener('mousemove', this.boundHandleMouseMove);
+        this.canvas.removeEventListener('mouseleave', this.boundHandleMouseLeave);
+        this.stop();
+      }
+
+      handleMouseMove(e) {
+        const rect = this.canvas.getBoundingClientRect();
+        this.mousePosition = {
+          x: e.clientX - rect.left,
+          y: e.clientY - rect.top
+        };
+      }
+
+      handleMouseLeave() {
+        this.mousePosition = null;
+      }
+
+      handleResize() {
+        this.canvas.width = this.canvas.clientWidth;
+        this.canvas.height = this.canvas.clientHeight;
+      }
+
+      createParticles() {
+        this.particles = [];
+        for (let i = 0; i < this.config.particleCount; i++) {
+          const sizeRange = this.config.maxRadius - this.config.minRadius;
+          const randomSize = Math.random() * sizeRange + this.config.minRadius;
+          this.particles.push({
+            x: Math.random() * this.canvas.width,
+            y: Math.random() * this.canvas.height,
+            dx: (Math.random() - 0.5) * this.config.moveSpeed,
+            dy: (Math.random() - 0.5) * this.config.moveSpeed,
+            radius: randomSize
+          });
+        }
+      }
+
+      updateParticles() {
+        this.pulseAngle += this.config.pulseSpeed;
+        this.particles.forEach(particle => {
+          if (this.config.pulseEnabled) {
+            const pulseScale = Math.sin(this.pulseAngle) * 0.5 + 1;
+            particle.currentRadius = particle.radius * pulseScale;
+          } else {
+            particle.currentRadius = particle.radius;
+          }
+
+          particle.x += particle.dx;
+          particle.y += particle.dy;
+
+          if (this.config.mouseInteraction && this.mousePosition) {
+            const dx = this.mousePosition.x - particle.x;
+            const dy = this.mousePosition.y - particle.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < this.config.mouseRadius) {
+              const force = (this.config.mouseRadius - distance) / this.config.mouseRadius;
+              const angle = Math.atan2(dy, dx);
+              const repelX = Math.cos(angle) * force * 0.5;
+              const repelY = Math.sin(angle) * force * 0.5;
+              particle.dx -= repelX;
+              particle.dy -= repelY;
+            }
+          }
+
+          if (particle.x < 0 || particle.x > this.canvas.width) {
+            particle.dx = -particle.dx;
+          }
+          if (particle.y < 0 || particle.y > this.canvas.height) {
+            particle.dy = -particle.dy;
+          }
+
+          const speed = Math.sqrt(particle.dx * particle.dx + particle.dy * particle.dy);
+          if (speed > this.config.moveSpeed) {
+            particle.dx = (particle.dx / speed) * this.config.moveSpeed;
+            particle.dy = (particle.dy / speed) * this.config.moveSpeed;
+          }
+        });
+      }
+
+      drawParticles() {
+        this.ctx.fillStyle = this.config.particleColor;
+        this.ctx.globalAlpha = this.config.particleOpacity;
+        this.particles.forEach(particle => {
+          this.ctx.beginPath();
+          this.ctx.arc(particle.x, particle.y, particle.currentRadius || particle.radius, 0, Math.PI * 2);
+          this.ctx.fill();
+        });
+        this.ctx.globalAlpha = 1;
+      }
+      drawBackgroundGradient() {
+        const ctx = this.ctx;
+        const gradient = ctx.createLinearGradient(0, 0, 0, this.canvas.height);
+        gradient.addColorStop(0, '#ffFFFF');   // Trên: trắng
+        gradient.addColorStop(1, '#ffffff');   // Dưới: xanh nhạt
+
+        ctx.fillStyle = gradient;
+        ctx.globalAlpha = this.config.backgroundOpacity;
+        ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+        ctx.globalAlpha = 1;
+      }
+
+      drawConnections() {
+        for (let i = 0; i < this.particles.length; i++) {
+          for (let j = i + 1; j < this.particles.length; j++) {
+            const dx = this.particles[i].x - this.particles[j].x;
+            const dy = this.particles[i].y - this.particles[j].y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < this.config.maxDistance) {
+              const opacity = 1 - (distance / this.config.maxDistance);
+              const color = this.hexToRgb(this.config.lineColor);
+              this.ctx.beginPath();
+              this.ctx.strokeStyle = `rgba(${color}, ${opacity * this.config.lineOpacity})`;
+              this.ctx.lineWidth = this.config.lineWidth;
+              this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
+              this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
+              this.ctx.stroke();
+            }
+          }
+        }
+      }
+
+      hexToRgb(hex) {
+        hex = hex.replace(/^#/, '');
+
+        if (hex.length === 3) {
+          hex = hex.split('').map(c => c + c).join('');
+        }
+
+        const result = /^([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        if (!result) {
+          return '255,255,255';
+        }
+
+        return result.slice(1).map(n => parseInt(n, 16)).join(',');
+      }
+
+      stop() {
+        this.isRunning = false;
+        if (this.animationId) {
+          cancelAnimationFrame(this.animationId);
+          this.animationId = null;
+        }
+      }
+
+      start() {
+        if (!this.isRunning) {
+          this.isRunning = true;
+          this.animate();
+        }
+      }
+
+      animate() {
+        this.drawBackgroundGradient();
+
+        this.updateParticles();
+        this.drawConnections();
+        this.drawParticles();
+
+        if (this.isRunning) {
+          this.animationId = requestAnimationFrame(this.animate.bind(this));
+        }
+      }
+    }
+
+    // Khởi tạo khi DOM sẵn sàng
+    function getParticleCount() {
+      if (window.innerWidth <= 480) { // màn hình nhỏ (điện thoại)
+        return 20; // giảm particle
+      } else if (window.innerWidth <= 768) { // tablet
+        return 200;
+      }
+      return 340; // desktop hoặc lớn hơn
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const canvas = document.getElementById('particleCanvas');
+
+      function resizeCanvas() {
+        canvas.width = canvas.clientWidth;
+        canvas.height = canvas.clientHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', () => {
+        resizeCanvas();
+        // Có thể thêm restart hoặc update config nếu muốn
+      });
+
+      const network = new ParticleNetwork(canvas, {
+        particleCount: getParticleCount(),
+        minRadius: 0.7,
+        maxRadius: 0.8,
+        particleColor: '#1D6584',
+        lineColor: '#244655',
+        lineWidth: 0.4,
+        lineOpacity: 0.55,
+        maxDistance: 90,
+        moveSpeed: 0.8,
+        backgroundColor: '#BDE5F6',
+        backgroundOpacity: 1,
+        particleOpacity: 0.5,
+        mouseRadius: 100,
+        mouseInteraction: true,
+        pulseEnabled: true,
+        pulseSpeed: 0.02
+      });
+
+      network.start();
+    });
+
+  </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+      const track = document.querySelector("#scrollTrack");
+      const repeatTimes = 12;
+      const items = [...track.children];
+
+      for (let i = 0; i < repeatTimes; i++) {
+        items.forEach((item) => track.appendChild(item.cloneNode(true)));
+      }
+
+      const totalWidth = track.scrollWidth - window.innerWidth;
+      const tl = gsap.timeline({ repeat: -1 });
+      tl.to(track, { x: -totalWidth, duration: 350, ease: "none" });
+
+      track.addEventListener("mouseenter", () => tl.pause());
+      track.addEventListener("mouseleave", () => tl.resume());
+    </script>
+    <!-- <script>
+    const wrap = document.getElementById('wrap');
+    const hero = document.getElementById('hero');
+
+    const CONFIG = {
+      maxTilt: 28,
+      maxTranslate: 60,
+      maxDepth: 220,
+      ease: 'power3.out',
+      duration: 0.55
+    };
+
+    const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
+
+    function handlePointer(clientX, clientY) {
+      const rect = wrap.getBoundingClientRect();
+      const px = clientX - rect.left;
+      const py = clientY - rect.top;
+      wrap.style.setProperty('--px', px + 'px');
+      wrap.style.setProperty('--py', py + 'px');
+      const nx = (px - rect.width / 2) / rect.width;
+      const ny = (py - rect.height / 2) / rect.height;
+      const rotateY = clamp(nx * CONFIG.maxTilt * 1.4, -CONFIG.maxTilt, CONFIG.maxTilt);
+      const rotateX = clamp(-ny * CONFIG.maxTilt, -CONFIG.maxTilt, CONFIG.maxTilt);
+      const tx = clamp(nx * CONFIG.maxTranslate, -CONFIG.maxTranslate, CONFIG.maxTranslate);
+      const ty = clamp(ny * CONFIG.maxTranslate, -CONFIG.maxTranslate, CONFIG.maxTranslate);
+      const dist = Math.min(1, Math.hypot(nx, ny) * 2);
+      const tz = clamp(-dist * CONFIG.maxDepth, -CONFIG.maxDepth, 0);
+      gsap.to(hero, { duration: CONFIG.duration, rotateX, rotateY, x: tx, y: ty, z: tz, ease: CONFIG.ease });
+    }
+
+    function reset() {
+      gsap.to(hero, { duration: 0.8, rotateX: 0, rotateY: 0, x: 0, y: 0, z: 0, ease: 'elastic.out(1,0.6)' });
+    }
+
+    window.addEventListener('pointermove', e => handlePointer(e.clientX, e.clientY));
+    window.addEventListener('touchmove', e => {
+      if (e.touches.length > 0) handlePointer(e.touches[0].clientX, e.touches[0].clientY);
+    });
+    window.addEventListener('pointerleave', reset);
+    document.body.addEventListener('mouseleave', reset);
+  </script> -->
+    <script>
+      window.addEventListener("load", () => {
+        const intro = document.getElementById("intro");
+
+        setTimeout(() => {
+          intro.classList.add("hidden");
+          setTimeout(() => {
+            intro.style.display = "none";
+          }, 800);
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>

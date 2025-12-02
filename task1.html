@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hi, I'm Helen - Intro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js" type="module"></script>
+
+  <style>
+    :root {
+      --bg: #efefef;
+      --text: #0b0b0b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Intro (Lottie) */
+    #intro {
+      position: fixed;
+      inset: 0;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 10vh;
+      z-index: 999;
+      opacity: 1;
+      transition: opacity 1s ease;
+    }
+
+    /* Main content */
+    #main-content {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 14vh;
+      opacity: 0;
+      transition: opacity 1s ease;
+      z-index: 1;
+    }
+
+
+
+    .wrap {
+      perspective: 1600px;
+      --px: 50%;
+      --py: 50%;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    h1#hero {
+      margin: 0;
+      font-size: clamp(48px, 12vw, 180px);
+      color: var(--text);
+      transform-style: preserve-3d;
+      will-change: transform;
+      text-align: center;
+      font-weight: 900;
+      letter-spacing: -2px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .wrap::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 2;
+      mix-blend-mode: multiply;
+      opacity: 0.9;
+      transition: opacity 0.35s ease;
+    }
+
+    .wrap::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      mix-blend-mode: screen;
+      opacity: 0.9;
+      transition: opacity 0.35s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Intro Animation -->
+  <div id="intro">
+    <dotlottie-wc src="https://lottie.host/700150ac-b207-4ac3-a4a9-f01dc0a8ad17/EzL00AT0Ff.lottie"
+      style="width: 300px; height: 300px" autoplay></dotlottie-wc>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <div class="wrap" id="wrap">
+      <h1 id="hero" data-text="Hi, I'm Helen">Hi, I'm Helen</h1>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      const intro = document.getElementById("intro");
+      const main = document.getElementById("main-content");
+
+      setTimeout(() => {
+        intro.style.opacity = "0";
+        setTimeout(() => {
+          intro.style.display = "none";
+          main.style.display = "flex";
+          requestAnimationFrame(() => {
+            main.style.opacity = "1";
+          });
+        }, 1000);
+      }, 3000);
+
+      const wrap = document.getElementById('wrap');
+      const hero = document.getElementById('hero');
+      const CONFIG = {
+        maxTilt: 28,
+        maxTranslate: 60,
+        maxDepth: 220,
+        ease: 'power3.out',
+        duration: 0.55
+      };
+      const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
+      function handlePointer(clientX, clientY) {
+        const rect = wrap.getBoundingClientRect();
+        const px = clientX - rect.left;
+        const py = clientY - rect.top;
+        wrap.style.setProperty('--px', px + 'px');
+        wrap.style.setProperty('--py', py + 'px');
+        const nx = (px - rect.width / 2) / rect.width;
+        const ny = (py - rect.height / 2) / rect.height;
+        const rotateY = clamp(nx * CONFIG.maxTilt * 1.4, -CONFIG.maxTilt, CONFIG.maxTilt);
+        const rotateX = clamp(-ny * CONFIG.maxTilt, -CONFIG.maxTilt, CONFIG.maxTilt);
+        const tx = clamp(nx * CONFIG.maxTranslate, -CONFIG.maxTranslate, CONFIG.maxTranslate);
+        const ty = clamp(ny * CONFIG.maxTranslate, -CONFIG.maxTranslate, CONFIG.maxTranslate);
+        const dist = Math.min(1, Math.hypot(nx, ny) * 2);
+        const tz = clamp(-dist * CONFIG.maxDepth, -CONFIG.maxDepth, 0);
+        gsap.to(hero, { duration: CONFIG.duration, rotateX, rotateY, x: tx, y: ty, z: tz, ease: CONFIG.ease });
+      }
+      function reset() {
+        gsap.to(hero, { duration: 0.8, rotateX: 0, rotateY: 0, x: 0, y: 0, z: 0, ease: 'elastic.out(1,0.6)' });
+      }
+      window.addEventListener('pointermove', e => handlePointer(e.clientX, e.clientY));
+      window.addEventListener('touchmove', e => {
+        if (e.touches.length > 0) {
+          const touch = e.touches[0];
+          handlePointer(touch.clientX, touch.clientY);
+        }
+      });
+      window.addEventListener('pointermove', e => handlePointer(e.clientX, e.clientY));
+      window.addEventListener('pointerleave', reset);
+      document.body.addEventListener('mouseleave', reset);
+
+
+      gsap.from(hero, { duration: 1.2, y: 30, opacity: 0, ease: 'power3.out', delay: 3.1 });
+    });
+  </script>
+</body>
+
+</html>

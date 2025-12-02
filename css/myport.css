@@ -1,0 +1,123 @@
+* {
+  cursor: none !important;
+  text-decoration: none;
+}
+/* Section Style */
+.portfolio-section {
+  margin-top: 140px;
+  max-width: 1400px;
+  margin-inline: auto;
+  border-radius: 40px;
+}
+
+/* Header */
+.portfolio-header h2 span {
+  background-color: #ffe978;
+  padding: 5px 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+}
+.portfolio-header p {
+  max-width: 700px;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Cards Container */
+.portfolio-cards {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card Style */
+.portfolio-card {
+  background-color: #ffc9ef;
+  border: 2px solid #000;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 3px 3px 0 #000;
+  display: flex;
+  padding: 10px 10px;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+.port-title {
+  margin-top: -30px;
+  width: 300px;
+}
+/* Image */
+.portfolio-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Footer of Card */
+.portfolio-cards .card-footer {
+  padding: 15px 5px 7px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio-cards .card-footer h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.portfolio-cards .card-footer p {
+  width: 330px;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Button */
+.see-project-btn {
+  padding: 10px 18px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.see-project-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .portfolio-section {
+    margin-top: 100px;
+  }
+  .port-title {
+    margin-bottom: 0px;
+  }
+  .portfolio-card img {
+    height: 240px !important;
+  }
+  .portfolio-cards {
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .portfolio-cards .card-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

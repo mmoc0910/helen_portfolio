@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Street Pulse</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/myport.css" />
+  <link rel="stylesheet" href="css/target.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/pr_courtly.css" />
+  <link rel="stylesheet" href="css/pr_whispurr.css" />
+  <link rel="stylesheet" href="css/pr_street.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1958/1958290.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- <div id="page-loader" role="status" aria-live="polite" aria-label="Đang tải trang">
+    <div class="loader-card" aria-hidden="false">
+      <div class="loader-glow" aria-hidden="true"></div>
+
+      <svg class="sparkle" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 2 L13.8 8.6 L20.6 9.6 L15.3 13.9 L16.8 20.6 L12 17.2 L7.2 20.6 L8.7 13.9 L3.4 9.6 L10.2 8.6 Z"
+          fill="url(#g)" />
+        <defs>
+          <linearGradient id="g" x1="0" x2="1">
+            <stop offset="0" stop-color="#60a5fa" />
+            <stop offset="1" stop-color="#7c3aed" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <img class="loader-img" src="https://media1.tenor.com/m/JhVlbsQoCboAAAAC/cute-dancing.gif" alt="Cute" />
+
+      <div class="loader-text">
+        <span class="loader-dots">
+          <span></span><span></span><span></span>
+        </span>
+      </div>
+    </div>
+  </div> -->
+
+  <div id="scrollTopBtn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="white">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </div>
+  <!-- <canvas id="particleCanvas"></canvas> -->
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower">
+    <!-- <span class="cursor-text">OPEN</span> -->
+  </div>
+
+  <!-- Header -->
+  <div class="header-wrapper">
+    <header class="site-header">
+      <div class="container">
+        <div class="top-row">
+          <div class="logo" id="logo"><span class="highlight-pink">Helen</span></div>
+          <div class="menu-toggle" onclick="toggleMenu(this)">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+
+        <nav class="menu">
+          <a href="about.html" class="clickable xnx">About Me</a>
+          <a href="myport.html" class="clickable ac">Portfolio</a>
+          <a href="target.html" class="clickable xnx">Expertise</a>
+          <a href="resume.html" class="clickable xnx">Resume</a>
+          <div class="icon-group">
+            <a href="https://ca.linkedin.com/in/helenvodesign" target="_blank" class="clickable">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank" class="clickable"><i class="fab fa-instagram"></i></a>
+          </div>
+          <a href="#" class="clickable hire-btn">Hire Me!</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <!-- Project Intro Section -->
+  <section class="project-intro">
+    <div class="project-container">
+      <!-- Left side -->
+      <div class="project-left">
+        <p class="project-role">✨ Graphic Design | June 2025 – Aug 2025</p>
+        <h1 class="project-title">STREET PULSE</h1>
+        <a href="#" target="_blank" class="project-link">Wear the Street. Live the Culture
+        </a>
+      </div>
+
+      <!-- Right side -->
+      <div class="project-right">
+        <p>
+          Street Pulse is a vibrant visual identity created for a street culture festival in Ho Chi Minh City. The
+          design blends bold typography, energetic colors, and dynamic layouts to capture the pulse of urban life.
+          Inspired by the rhythm of the streets and the diversity of local culture, this project aims to connect people
+          through creativity, style, and community spirit.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section class="tools-section">
+    <div class="tools-wrapper">
+      <div class="section-title">
+        <span>Tools</span>
+        <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
+      </div>
+
+      <div class="tools-items">
+        <button class="tool-btn">Adobe Illustrator</button>
+        <img src="assets/img/icon_pink.png" alt="sparkle" class="sparkle-img">
+
+        <button class="tool-btn">Adobe Indesign</button>
+        <img src="assets/img/icon_yellow.png" alt="sparkle" class="sparkle-img">
+
+        <button class="tool-btn">Adobe Photoshop</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="apply-project-section">
+    <div class="apply-header">
+      <div class="section-title abp">
+        <span>About the Project</span>
+        <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
+      </div>
+    </div>
+  </section>
+
+  <section class="apply-project-section apor">
+    <div class="ap-l">
+      <div class="app-ov">
+        <h3>Overview</h3>
+        <div class="dive"></div>
+        <div class="dot"></div>
+        <p>Street Pulse is a street culture festival in Ho Chi Minh City, held on October 12–13, 2025
+          , blending streetwear fashion, music, and urban art.</p>
+      </div>
+      <div class="app-ov de">
+        <h3>Design Goals</h3>
+        <div class="dive"></div>
+        <div class="dot"></div>
+        <p>Create a bold and cohesive visual identity that captures the energy and character of street culture.
+          Deliver consistent event branding through multiple print and digital assets: poster, ticket, booklet,
+          wristband.</p>
+      </div>
+    </div>
+    <div class="ap-r">
+
+    </div>
+  </section>
+
+  <section class="design-focus-section">
+    <div class="design-focus-header">
+      <h2><span>A High-Energy Fusion of<br><span class="highlight-blue">Streetwear, Music & Urban Art</span></span></h2>
+    </div>
+  </section>
+
+  <section id="aopl" class="apply-project-section">
+    <div class="apply-header">
+      <div class="section-title">
+        <span>Design Scope & Deliverables</span>
+        <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
+      </div>
+    </div>
+
+    <div class="apply-card-container">
+      <!-- Card 1 -->
+      <div class="apply-card card-yellow">
+        <h3>Booklet</h3>
+        <p class="question-text">Contains event schedule, performer profiles, sponsor acknowledgments, and contact
+          channels.</p>
+        <div class="dot"></div>
+        <div class="apply-card-image">
+          <img src="assets/img/de3.png" alt="Q1 Image">
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="apply-card card-blue">
+        <h3>Poster </h3>
+        <p class="question-text">Captures attention instantly, delivering the core message: “Step into a world where
+          fashion, music, and art collide”</p>
+        <div class="dot"></div>
+        <div class="apply-card-image">
+          <img src="assets/img/de4.png" alt="Q2 Image">
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="apply-card card-yellow">
+        <h3>Ticket</h3>
+        <p class="question-text">Combines essential event information with dynamic visual style for attendees.</p>
+        <div class="dot"></div>
+        <div class="apply-card-image">
+          <img src="assets/img/de1.png" alt="Q3 Image">
+        </div>
+      </div>
+
+      <div class="apply-card card-blue">
+        <h3>Wristband</h3>
+        <p class="question-text">Access control and attendee identity, with the slogan “Where style meets culture”</p>
+        <div class="dot"></div>
+        <div class="apply-card-image">
+          <img src="assets/img/de2.png" alt="Q3 Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="custom-section workicon">
+    <div class="section-title">
+      <span>Design Process</span>
+      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
+    </div>
+  </section>
+
+  <section class="custom-section work">
+    <p class="section-subtext">Four clear stages, each paired with supporting visuals</p>
+    <div style="margin-top: 30px;" class="experience-stack">
+      <div class="experience-list container">
+        <div class="experience-box blue">
+          <div class="pin-icon">
+            <img src="assets/img/pin-icon.png" alt="Pin icon">
+          </div>
+          <h3 class="experience-place">Research & Concept</h3>
+          <hr class="divider" />
+          <div class="experience-detail">
+            <h1>01</h1>
+            <p>Researched streetwear trends and visual direction from global music and street culture festivals.
+              Built a moodboard featuring neon colors, bold typography, graffiti textures, and urban cityscapes.</p>
+          </div>
+        </div>
+        <div class="experience-box pink">
+          <div class="pin-icon">
+            <img src="assets/img/pin-icon.png" alt="Pin icon">
+          </div>
+          <h3 class="experience-place">Brand Direction & Visual Identity</h3>
+          <hr class="divider" />
+          <div class="experience-detail">
+            <h1>02</h1>
+            <p>Selected street-style, modern fonts.
+              Defined a primary color palette: black, white, neon orange/yellow.
+            </p>
+          </div>
+        </div>
+        <div class="experience-box yellow">
+          <div class="pin-icon">
+            <img src="assets/img/pin-icon.png" alt="Pin icon">
+          </div>
+          <h3 class="experience-place">Layout & Prototyping</h3>
+          <hr class="divider" />
+          <div class="experience-detail">
+            <h1>03</h1>
+            <p>Created multiple layout variations for poster, ticket, and booklet.
+              Tested readability under outdoor lighting conditions.</p>
+          </div>
+        </div>
+        <div class="experience-box blue ccx">
+          <div class="pin-icon">
+            <img src="assets/img/pin-icon.png" alt="Pin icon">
+          </div>
+          <h3 class="experience-place">Finalization & Production</h3>
+          <hr class="divider" />
+          <div class="experience-detail">
+            <h1>04</h1>
+            <p>Prepared CMYK print-ready files with proper bleed and margins.
+              Produced optimized web versions for online promotion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tools-section">
+    <div class="tools-wrapper">
+      <div class="section-title">
+        <span>Acceptance Results</span>
+        <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
+      </div>
+  </section>
+
+  <section class="slider-section">
+    <div class="thumbs">
+      <div class="slidetext" id="slidetext">
+        <h1>01</h1>
+        <p>Experience the serene beauty and tranquility of the natural world.</p>
+      </div>
+      <div class="thumb-wrapper">
+        <div class="thumb active"
+          style="background-image: url('assets/img/slm.png'); background-size: cover; background-position: center;">
+        </div>
+        <span class="thumb-number">01</span>
+      </div>
+      <div class="thumb-wrapper">
+        <div class="thumb"
+          style="background-image: url('assets/img/sl2.png'); background-size: cover; background-position: center;">
+        </div>
+        <span class="thumb-number">02</span>
+      </div>
+      <div class="thumb-wrapper">
+        <div class="thumb"
+          style="background-image: url('assets/img/sl3.png'); background-size: cover; background-position: center;">
+        </div>
+        <span class="thumb-number">03</span>
+      </div>
+      <div class="thumb-wrapper">
+        <div class="thumb"
+          style="background-image: url('assets/img/sl4.png'); background-size: cover; background-position: center;">
+        </div>
+        <span class="thumb-number">04</span>
+      </div>
+      <div class="thumb-wrapper">
+        <div class="thumb"
+          style="background-image: url('assets/img/sl5.png'); background-size: cover; background-position: center;">
+        </div>
+        <span class="thumb-number">05</span>
+      </div>
+      <div class="thumb-wrapper">
+        <div class="thumb"
+          style="background-image: url('assets/img/sl6.png'); background-size: cover; background-position: center;">
+        </div>
+        <span class="thumb-number">06</span>
+      </div>
+      <div class="thumb-wrapper">
+        <div class="thumb"
+          style="background-image: url('assets/img/sl7.png'); background-size: cover; background-position: center;">
+        </div>
+        <span class="thumb-number">07</span>
+      </div>
+    </div>
+
+    <div class="slidercontainer">
+      <div class="slidertrack">
+        <div class="slidex"
+          style="background-image: url('assets/img/slm.png'); background-size: cover; background-position: center;">
+        </div>
+        <div class="slidex"
+          style="background-image: url('assets/img/sl2.png'); background-size: cover; background-position: center;">
+        </div>
+        <div class="slidex"
+          style="background-image: url('assets/img/sl3.png'); background-size: cover; background-position: center;">
+        </div>
+        <div class="slidex"
+          style="background-image: url('assets/img/sl4.png'); background-size: cover; background-position: center;">
+        </div>
+        <div class="slidex"
+          style="background-image: url('assets/img/sl5.png'); background-size: cover; background-position: center;">
+        </div>
+        <div class="slidex"
+          style="background-image: url('assets/img/sl6.png'); background-size: cover; background-position: center;">
+        </div>
+        <div class="slidex"
+          style="background-image: url('assets/img/sl7.png'); background-size: cover; background-position: center;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section-grid">
+    <div class="cardpic bg-blue">
+      <img src="assets/img/fo1.png" alt="Bracelets">
+    </div>
+    <div class="cardpic bg-yellow">
+      <img src="assets/img/fo3.png" alt="Bracelet on Hand">
+    </div>
+    <div class="cardpic bg-blue">
+      <img src="assets/img/fo2.png" alt="Tickets">
+    </div>
+    <div class="cardpic bg-yellow">
+      <img src="assets/img/fo4.png" alt="Poster">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-row">
+        <nav class="footer-nav">
+          <a href="#">Portfolio</a>
+          <a href="#">Expertise</a>
+          <a href="#">Resume</a>
+          <a href="#">FAQ</a>
+        </nav>
+
+        <div class="icon-group">
+          <a href="https://ca.linkedin.com/in/helenvodesign" target="_blank" class="clickable">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="clickable"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <h1 class="footer-title">Ready to Bring Your Vision to Life?</h1>
+      <p class="footer-text">
+        Let’s make something incredible together! Reach out to discuss your project,<br />
+        and let’s create designs that resonate and inspire.
+      </p>
+
+      <a href="#contact" class="footer-btn">Contact Me</a>
+
+
+      <p class="footer-copy">Helen ©all rights reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    const track = document.querySelector('.slidertrack');
+    const slides = document.querySelectorAll('.slidex');
+    const thumbWrappers = document.querySelectorAll('.thumb-wrapper');
+    const slideText = document.getElementById('slidetext');
+
+    const slidesData = [
+      { title: '01', desc: 'Experience the serene beauty and tranquility of the natural world.' },
+      { title: '02', desc: 'Dive into a realm of imagination with thought-provoking abstract designs.' },
+      { title: '03', desc: 'Explore the diverse cultures that make up our global tapestry.' },
+      { title: '04', desc: 'Immerse yourself in the captivating depths and mysteries of the ocean.' },
+      { title: '05', desc: 'Witness the awe-inspiring power and majesty of volcanic eruptions.' },
+      { title: '06', desc: 'Witness the awe-inspiring power and majesty of volcanic eruptions.' },
+      { title: '07', desc: 'Witness the awe-inspiring power and majesty of volcanic eruptions.' },
+    ];
+
+    let currentIndex = 0;
+    let autoPlay;
+
+    function updateSlides() {
+      if (slides.length) {
+        slides.forEach((slide, index) => {
+          slide.classList.remove('active', 'above', 'below');
+          if (index === currentIndex) {
+            slide.classList.add('active');
+          } else if (index === currentIndex - 1) {
+            slide.classList.add('above');
+          } else if (index === currentIndex + 1) {
+            slide.classList.add('below');
+          }
+        });
+
+        const container = document.querySelector('.slidercontainer');
+        if (container) {
+          const activeSlide = slides[currentIndex];
+          const containerCenter = container.offsetHeight / 2;
+          const activeSlideCenter = activeSlide.offsetTop + activeSlide.offsetHeight / 2;
+          const offset = containerCenter - activeSlideCenter;
+          track.style.transform = `translateY(${offset}px)`;
+        }
+      }
+
+      thumbWrappers.forEach((wrapper, index) => {
+        const thumb = wrapper.querySelector('.thumb');
+        if (thumb) {
+          thumb.classList.toggle('active', index === currentIndex);
+        }
+      });
+
+      if (slideText) {
+        slideText.querySelector('h1').textContent = slidesData[currentIndex].title;
+        slideText.querySelector('p').textContent = slidesData[currentIndex].desc;
+      }
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slidesData.length;
+      updateSlides();
+    }
+
+    thumbWrappers.forEach((wrapper, index) => {
+      wrapper.addEventListener('click', () => {
+        currentIndex = index;
+        updateSlides();
+        restartAutoPlay();
+      });
+    });
+
+    function startAutoPlay() {
+      autoPlay = setInterval(nextSlide, 2000);
+    }
+
+    function restartAutoPlay() {
+      clearInterval(autoPlay);
+      startAutoPlay();
+    }
+
+    updateSlides();
+    startAutoPlay();
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    });
+
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    document.getElementById("logo").addEventListener("click", function () {
+      window.location.href = "index.html";
+    });
+    const cursor = document.querySelector(".cursor");
+    const follower = document.querySelector(".cursor-follower");
+
+    let mouseX = 0,
+      mouseY = 0;
+
+    document.addEventListener("mousemove", (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+
+      gsap.to(cursor, {
+        x: mouseX,
+        y: mouseY,
+        duration: 0.08,
+        ease: "power1.out",
+      });
+
+      gsap.to(follower, {
+        x: mouseX,
+        y: mouseY,
+        duration: 0.1,
+        ease: "power2.out",
+      });
+    });
+
+    document.querySelectorAll(".clickable").forEach((el) => {
+      el.addEventListener("mouseenter", () => {
+        follower.classList.add("hover-effect");
+      });
+
+      el.addEventListener("mouseleave", () => {
+        follower.classList.remove("hover-effect");
+      });
+    });
+
+    function toggleMenu(toggleBtn) {
+      const menu = document.querySelector(".menu");
+      const header = document.querySelector(".header-wrapper");
+
+      menu.classList.toggle("active");
+      header.classList.toggle("expanded");
+      toggleBtn.classList.toggle("active");
+    }
+
+    const stack = document.querySelector(".photo-stack-rotate");
+    setInterval(() => {
+      const first = stack.querySelector(".photo:first-child");
+      stack.appendChild(first);
+    }, 3000);
+
+    document.querySelectorAll(".faq-question").forEach((question) => {
+      question.addEventListener("click", () => {
+        const card = question.parentElement;
+        card.classList.toggle("open");
+      });
+    });
+
+  </script>
+  <script>
+    /**
+     * ParticleNetwork Class
+     * Creates and manages an interactive particle network animation
+     */
+    class ParticleNetwork {
+      constructor(canvas, config = {}) {
+        this.canvas = canvas;
+        this.ctx = canvas.getContext('2d', { alpha: true });
+        if (!this.ctx) {
+          throw new Error('Could not initialize canvas context');
+        }
+
+        this.config = this.validateConfig({
+          particleCount: 120,
+          minRadius: 2,
+          maxRadius: 6,
+          particleColor: '#ffffff',
+          lineColor: '#ffffff',
+          lineWidth: 1,
+          lineOpacity: 0.15,
+          maxDistance: 150,
+          moveSpeed: 1,
+          backgroundColor: '#111111',
+          backgroundOpacity: 1,
+          particleOpacity: 0.8,
+          mouseRadius: 200,
+          mouseInteraction: true,
+          pulseEnabled: true,
+          pulseSpeed: 0.02,
+          ...config
+        });
+
+        this.particles = [];
+        this.animationId = null;
+        this.isRunning = false;
+        this.mousePosition = null;
+        this.pulseAngle = 0;
+        this.boundHandleResize = this.handleResize.bind(this);
+        this.boundHandleMouseMove = this.handleMouseMove.bind(this);
+        this.boundHandleMouseLeave = this.handleMouseLeave.bind(this);
+
+        this.handleResize();
+        this.createParticles();
+        this.setupEventListeners();
+      }
+
+      validateConfig(config) {
+        const numericParams = [
+          'particleCount', 'minRadius', 'maxRadius', 'lineWidth',
+          'lineOpacity', 'maxDistance', 'moveSpeed', 'backgroundOpacity',
+          'particleOpacity', 'mouseRadius', 'pulseSpeed'
+        ];
+        numericParams.forEach(param => {
+          if (typeof config[param] !== 'number' || isNaN(config[param])) {
+            throw new Error(`Invalid ${param}: must be a number`);
+          }
+        });
+
+        const booleanParams = ['mouseInteraction', 'pulseEnabled'];
+        booleanParams.forEach(param => {
+          if (typeof config[param] !== 'boolean') {
+            throw new Error(`Invalid ${param}: must be a boolean`);
+          }
+        });
+
+        const colorParams = ['backgroundColor', 'particleColor', 'lineColor'];
+        const hexColorRegex = /^#[0-9A-Fa-f]{6}$/;
+        colorParams.forEach(param => {
+          if (!hexColorRegex.test(config[param])) {
+            throw new Error(`Invalid ${param}: must be a valid hex color`);
+          }
+        });
+
+        return config;
+      }
+
+      setupEventListeners() {
+        window.addEventListener('resize', this.boundHandleResize);
+        this.canvas.addEventListener('mousemove', this.boundHandleMouseMove);
+        this.canvas.addEventListener('mouseleave', this.boundHandleMouseLeave);
+      }
+
+      cleanup() {
+        window.removeEventListener('resize', this.boundHandleResize);
+        this.canvas.removeEventListener('mousemove', this.boundHandleMouseMove);
+        this.canvas.removeEventListener('mouseleave', this.boundHandleMouseLeave);
+        this.stop();
+      }
+
+      handleMouseMove(e) {
+        const rect = this.canvas.getBoundingClientRect();
+        this.mousePosition = {
+          x: e.clientX - rect.left,
+          y: e.clientY - rect.top
+        };
+      }
+
+      handleMouseLeave() {
+        this.mousePosition = null;
+      }
+
+      handleResize() {
+        this.canvas.width = this.canvas.clientWidth;
+        this.canvas.height = this.canvas.clientHeight;
+      }
+
+      createParticles() {
+        this.particles = [];
+        for (let i = 0; i < this.config.particleCount; i++) {
+          const sizeRange = this.config.maxRadius - this.config.minRadius;
+          const randomSize = Math.random() * sizeRange + this.config.minRadius;
+          this.particles.push({
+            x: Math.random() * this.canvas.width,
+            y: Math.random() * this.canvas.height,
+            dx: (Math.random() - 0.5) * this.config.moveSpeed,
+            dy: (Math.random() - 0.5) * this.config.moveSpeed,
+            radius: randomSize
+          });
+        }
+      }
+
+      updateParticles() {
+        this.pulseAngle += this.config.pulseSpeed;
+        this.particles.forEach(particle => {
+          if (this.config.pulseEnabled) {
+            const pulseScale = Math.sin(this.pulseAngle) * 0.5 + 1;
+            particle.currentRadius = particle.radius * pulseScale;
+          } else {
+            particle.currentRadius = particle.radius;
+          }
+
+          particle.x += particle.dx;
+          particle.y += particle.dy;
+
+          if (this.config.mouseInteraction && this.mousePosition) {
+            const dx = this.mousePosition.x - particle.x;
+            const dy = this.mousePosition.y - particle.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < this.config.mouseRadius) {
+              const force = (this.config.mouseRadius - distance) / this.config.mouseRadius;
+              const angle = Math.atan2(dy, dx);
+              const repelX = Math.cos(angle) * force * 0.5;
+              const repelY = Math.sin(angle) * force * 0.5;
+              particle.dx -= repelX;
+              particle.dy -= repelY;
+            }
+          }
+
+          if (particle.x < 0 || particle.x > this.canvas.width) {
+            particle.dx = -particle.dx;
+          }
+          if (particle.y < 0 || particle.y > this.canvas.height) {
+            particle.dy = -particle.dy;
+          }
+
+          const speed = Math.sqrt(particle.dx * particle.dx + particle.dy * particle.dy);
+          if (speed > this.config.moveSpeed) {
+            particle.dx = (particle.dx / speed) * this.config.moveSpeed;
+            particle.dy = (particle.dy / speed) * this.config.moveSpeed;
+          }
+        });
+      }
+
+      drawParticles() {
+        this.ctx.fillStyle = this.config.particleColor;
+        this.ctx.globalAlpha = this.config.particleOpacity;
+        this.particles.forEach(particle => {
+          this.ctx.beginPath();
+          this.ctx.arc(particle.x, particle.y, particle.currentRadius || particle.radius, 0, Math.PI * 2);
+          this.ctx.fill();
+        });
+        this.ctx.globalAlpha = 1;
+      }
+      drawBackgroundGradient() {
+        const ctx = this.ctx;
+        const gradient = ctx.createLinearGradient(0, 0, 0, this.canvas.height);
+        gradient.addColorStop(0, '#ffFFFF');   // Trên: trắng
+        gradient.addColorStop(1, '#ffffff');   // Dưới: xanh nhạt
+
+        ctx.fillStyle = gradient;
+        ctx.globalAlpha = this.config.backgroundOpacity;
+        ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+        ctx.globalAlpha = 1;
+      }
+
+      drawConnections() {
+        for (let i = 0; i < this.particles.length; i++) {
+          for (let j = i + 1; j < this.particles.length; j++) {
+            const dx = this.particles[i].x - this.particles[j].x;
+            const dy = this.particles[i].y - this.particles[j].y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < this.config.maxDistance) {
+              const opacity = 1 - (distance / this.config.maxDistance);
+              const color = this.hexToRgb(this.config.lineColor);
+              this.ctx.beginPath();
+              this.ctx.strokeStyle = `rgba(${color}, ${opacity * this.config.lineOpacity})`;
+              this.ctx.lineWidth = this.config.lineWidth;
+              this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
+              this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
+              this.ctx.stroke();
+            }
+          }
+        }
+      }
+
+      hexToRgb(hex) {
+        hex = hex.replace(/^#/, '');
+
+        if (hex.length === 3) {
+          hex = hex.split('').map(c => c + c).join('');
+        }
+
+        const result = /^([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        if (!result) {
+          return '255,255,255';
+        }
+
+        return result.slice(1).map(n => parseInt(n, 16)).join(',');
+      }
+
+      stop() {
+        this.isRunning = false;
+        if (this.animationId) {
+          cancelAnimationFrame(this.animationId);
+          this.animationId = null;
+        }
+      }
+
+      start() {
+        if (!this.isRunning) {
+          this.isRunning = true;
+          this.animate();
+        }
+      }
+
+      animate() {
+        this.drawBackgroundGradient();
+
+        this.updateParticles();
+        this.drawConnections();
+        this.drawParticles();
+
+        if (this.isRunning) {
+          this.animationId = requestAnimationFrame(this.animate.bind(this));
+        }
+      }
+    }
+
+    // Khởi tạo khi DOM sẵn sàng
+    function getParticleCount() {
+      if (window.innerWidth <= 480) { // màn hình nhỏ (điện thoại)
+        return 20; // giảm particle
+      } else if (window.innerWidth <= 768) { // tablet
+        return 200;
+      }
+      return 340; // desktop hoặc lớn hơn
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const canvas = document.getElementById('particleCanvas');
+
+      function resizeCanvas() {
+        canvas.width = canvas.clientWidth;
+        canvas.height = canvas.clientHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', () => {
+        resizeCanvas();
+        // Có thể thêm restart hoặc update config nếu muốn
+      });
+
+      const network = new ParticleNetwork(canvas, {
+        particleCount: getParticleCount(),
+        minRadius: 0.7,
+        maxRadius: 0.8,
+        particleColor: '#1D6584',
+        lineColor: '#244655',
+        lineWidth: 0.4,
+        lineOpacity: 0.55,
+        maxDistance: 90,
+        moveSpeed: 0.8,
+        backgroundColor: '#BDE5F6',
+        backgroundOpacity: 1,
+        particleOpacity: 0.5,
+        mouseRadius: 100,
+        mouseInteraction: true,
+        pulseEnabled: true,
+        pulseSpeed: 0.02
+      });
+
+      network.start();
+    });
+
+  </script>
+
+  <!-- load
+  <script>
+    (function () {
+      const loader = document.getElementById('page-loader');
+      const MAX_AUTO_HIDE_MS = 6000;
+
+      function hideLoader() {
+        if (!loader || loader.classList.contains('hidden')) return;
+        loader.classList.add('hidden');
+        setTimeout(() => {
+          if (loader && loader.parentNode) loader.parentNode.removeChild(loader);
+        }, 480);
+      }
+
+      window.addEventListener('load', () => {
+        setTimeout(hideLoader, 1500);
+      });
+
+      setTimeout(() => {
+        hideLoader();
+      }, MAX_AUTO_HIDE_MS);
+    })();
+  </script> -->
+</body>
+
+</html>
