@@ -245,7 +245,7 @@
   transform: rotate(5deg);
 }
 
-.app-ov:hover {
+/* .app-ov:hover {
   height: 260px;
   font-size: 18px;
   transform: rotate(-5deg);
@@ -254,7 +254,7 @@
 .app-ov.de:hover {
   height: 320px;
   transform: rotate(5deg);
-}
+} */
 .app-ov .dot {
   position: absolute;
   top: 10px;
@@ -398,7 +398,7 @@
     transform: rotate(5deg);
   }
 
-  .app-ov:hover {
+  /* .app-ov:hover {
     height: 260px;
     font-size: 18px;
     transform: rotate(-5deg);
@@ -407,5 +407,24 @@
   .app-ov.de:hover {
     height: 320px;
     transform: rotate(5deg);
+  } */
+}
+
+.apply-card-image img {
+  border: 1px solid #030303;
+  height: 180px;
+}
+
+.apply-card {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .apply-card {
+    padding: 10px 12px 0 12px;
+    width: auto;
+  }
+  .apply-card-image img {
+    height: 220px;
   }
 }

@@ -872,3 +872,7 @@ section.learned-section {
     padding: 2px 4px;
   }
 }
+
+.discipline-card {
+  border: 1px solid #030303;
+}

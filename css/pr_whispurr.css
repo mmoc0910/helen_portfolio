@@ -1199,3 +1199,51 @@ img[src$="MOckup.png"] {
     right: 0px;
   }
 }
+
+.card-container {
+  gap: 24px;
+}
+
+.custom-card {
+  border: 1px solid #030303;
+  flex: 1;
+}
+
+.custom-card hr {
+  border-color: #030303;
+}
+
+@media (max-width: 768px) {
+  .chall {
+    width: auto !important;
+  }
+  .card-container {
+    gap: 0;
+  }
+}
+
+.statistic-label {
+  margin-bottom: 0;
+}
+
+.statistic-number {
+  margin-bottom: 0;
+}
+
+.statistic-description {
+  font-size: 20px;
+  margin-top: auto;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .statistic-box {
+    width: auto;
+    height: 240px;
+    padding: 0 20px;
+  }
+  .statistic-description {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}

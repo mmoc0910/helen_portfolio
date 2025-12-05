@@ -707,3 +707,101 @@
     margin-top: -20px !important;
   }
 }
+
+/* ---------------------------------------------------------- */
+.intro-wp {
+  margin-top: 120px;
+  max-width: 1400px;
+  margin-inline: auto;
+  padding: 70px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-content {
+  max-width: 592px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avaiable {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.intro-name {
+  font-weight: 600;
+  font-size: 60px;
+  margin: 16px 0 8px;
+}
+
+.intro-name span {
+  display: inline-block;
+  background-color: #ffe68c;
+}
+
+.intro-desc {
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #ffc9f0;
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .intro-wp {
+    padding: 0 0 70px;
+  }
+}
+
+.statistics-container {
+  gap: 24px;
+}
+
+.statistic-box {
+  border: 1px solid #030303;
+  flex: 1;
+  padding: 0 24px;
+  justify-content: flex-start;
+}
+
+.statistic-number {
+  margin: 24px 0 0;
+}
+
+.statistic-label {
+  color: #030303;
+  margin: 0;
+}
+
+.statistic-box .divider {
+  border-color: #030303;
+}
+
+.statistic-description {
+  margin-top: auto;
+  font-size: 20px;
+  color: #030303;
+}
+
+@media (max-width: 768px) {
+  .statistic-box {
+    width: auto;
+  }
+}
+
+.experience-detail {
+  margin: 0;
+}
+
+.slide {
+  border: 1px solid #030303;
+}
