@@ -1,0 +1,4 @@
+section.headline-section .headline-container {
+  display: flex;
+  gap: 16px;
+}
