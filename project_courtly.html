@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Courtly</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/myport.css" />
+    <link rel="stylesheet" href="css/target.css" />
+    <link rel="stylesheet" href="css/pr_courtly.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/1958/1958290.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Courtly</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/myport.css" />
-  <link rel="stylesheet" href="css/target.css" />
-  <link rel="stylesheet" href="css/pr_courtly.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1958/1958290.png">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-  <!-- <div id="page-loader" role="status" aria-live="polite" aria-label="Đang tải trang">
+  <body>
+    <!-- <div id="page-loader" role="status" aria-live="polite" aria-label="Đang tải trang">
     <div class="loader-card" aria-hidden="false">
       <div class="loader-glow" aria-hidden="true"></div>
 
@@ -41,682 +51,864 @@
       </div>
     </div>
   </div> -->
-  <div id="scrollTopBtn">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="white">
-      <path d="M12 19V5M5 12l7-7 7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-  </div>
-  <!-- <canvas id="particleCanvas"></canvas> -->
-  <!-- Custom Cursor -->
-  <div class="cursor"></div>
-  <div class="cursor-follower">
-    <!-- <span class="cursor-text">OPEN</span> -->
-  </div>
+    <div id="scrollTopBtn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="48"
+        height="48"
+        fill="white"
+      >
+        <path
+          d="M12 19V5M5 12l7-7 7 7"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+    <!-- <canvas id="particleCanvas"></canvas> -->
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower">
+      <!-- <span class="cursor-text">OPEN</span> -->
+    </div>
 
-  <!-- Header -->
-  <div class="header-wrapper">
-    <header class="site-header">
-      <div class="container">
-        <div class="top-row">
-          <div class="logo" id="logo"><span class="highlight-pink">Helen</span></div>
-          <div class="menu-toggle" onclick="toggleMenu(this)">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <!-- Header -->
+    <div class="header-wrapper">
+      <header class="site-header">
+        <div class="container">
+          <div class="top-row">
+            <div class="logo" id="logo">
+              <span class="highlight-pink">Helen</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu(this)">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+
+          <nav class="menu">
+            <a href="about.html" class="clickable">About Me</a>
+            <a href="myport.html" class="clickable ac">Portfolio</a>
+            <a href="target.html" class="clickable">Expertise</a>
+            <a href="resume.html" class="clickable">Resume</a>
+            <div class="icon-group">
+              <a
+                href="https://ca.linkedin.com/in/helenvodesign"
+                target="_blank"
+                class="clickable"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+
+              <a
+                href="mailto:helenvo0932@gmail.com"
+                target="_blank"
+                class="clickable"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+            </div>
+            <a href="#" class="clickable hire-btn">Hire Me!</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <!-- Project Intro Section -->
+    <section class="project-intro">
+      <div class="project-container">
+        <!-- Left side -->
+        <div class="project-left">
+          <p class="project-role">✨ UI/UX Design | Dec 2024 - Aug 2025</p>
+          <h1 class="project-title">COURTLY</h1>
+          <a href="https://courtly.com" target="_blank" class="project-link"
+            >courtly.com ↗</a
+          >
+        </div>
+
+        <!-- Right side -->
+        <div class="project-right">
+          <p>
+            Courtly is a web app designed to simplify the process of booking
+            tennis, badminton, and pickleball courts. The project focuses on
+            clean UX flows, real-time calendar availability, and a user-friendly
+            interface optimized for mobile and desktop use.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+      <div class="tools-wrapper">
+        <div class="section-title">
+          <span>Tools</span>
+          <img
+            src="assets/img/arrow-handdrawn.png"
+            alt="arrow"
+            class="arrow-icon"
+          />
+        </div>
+
+        <div class="tools-items">
+          <button class="tool-btn">Figma</button>
+          <img
+            src="assets/img/icon_blue.png"
+            alt="sparkle"
+            class="sparkle-img"
+          />
+
+          <button class="tool-btn">Procreate</button>
+          <img
+            src="assets/img/icon_pink.png"
+            alt="sparkle"
+            class="sparkle-img"
+          />
+
+          <button class="tool-btn">Adobe Illustrator</button>
+          <img
+            src="assets/img/icon_pink.png"
+            alt="sparkle"
+            class="sparkle-img"
+          />
+
+          <button class="tool-btn">Adobe After Effect</button>
+          <img
+            src="assets/img/icon_yellow.png"
+            alt="sparkle"
+            class="sparkle-img"
+          />
+
+          <button class="tool-btn">Adobe Photoshop</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="design-focus-section">
+      <div class="design-focus-card">
+        <img src="assets/img/courtly_pr.png" alt="Helen Logo" />
+      </div>
+      <div class="design-focus-header">
+        <h2>
+          <span
+            >Cheers to breaking conventions<br /><span class="highlight-blue"
+              >embracing flavor</span
+            ></span
+          >
+        </h2>
+      </div>
+    </section>
+
+    <section style="margin-bottom: 70px" class="target-discipline-section">
+      <div class="target-discipline-container">
+        <!-- Left: Title & Paragraph -->
+        <div
+          style="margin-top: 90px; max-width: 600px"
+          class="target-discipline-header"
+        >
+          <div class="section-title">
+            <span style="font-weight: 400">Challenge</span>
+            <img
+              src="assets/img/arrow-handdrawn.png"
+              alt="arrow"
+              class="arrow-icon"
+            />
+          </div>
+          <div>
+            <p style="margin-bottom: 32px">
+              Players struggled with outdated systems and scattered booking
+              sites.
+            </p>
+            <p>
+              The goal was simple: create one clean, reliable web platform that
+              makes booking a court fast and frustration-free.
+            </p>
           </div>
         </div>
 
-        <nav class="menu">
-          <a href="about.html" class="clickable">About Me</a>
-          <a href="myport.html" class="clickable ac">Portfolio</a>
-          <a href="target.html" class="clickable">Expertise</a>
-          <a href="resume.html" class="clickable">Resume</a>
+        <!-- Right: 2 Cards -->
+        <div class="discipline-cards">
+          <div class="discipline-card" style="background-color: #c6edff">
+            <div class="card-footer">
+              <div>
+                <h3 style="font-size: 20px; font-weight: 400">
+                  01 - Understanding User Pain Points
+                </h3>
+                <div>
+                  <p style="font-size: 20px; font-weight: 400">
+                    I spoke with casual players and reviewed competitor to
+                    pinpoint blockers.
+                  </p>
+                  <p style="font-size: 20px; font-weight: 400">
+                    Users wanted speed, clarity, and real-time availability,
+                    without unnecessary steps.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="discipline-card" style="background-color: #ffc9f0">
+            <div class="card-footer">
+              <div>
+                <h3 style="font-size: 20px; font-weight: 400">
+                  02 - Visual & Strategic Repositioning
+                </h3>
+                <div>
+                  <p style="font-size: 20px; font-weight: 400">
+                    I explored multiple design directions to create a fresh,
+                    modern, and easy-to-scan interface.
+                  </p>
+                  <p style="font-size: 20px; font-weight: 400">
+                    Clean layouts, simple language, and friendly visuals helped
+                    Courtly feel more approachable and intuitive.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me">
+      <div class="section-title">
+        <span>Process</span>
+        <img
+          src="assets/img/arrow-handdrawn.png"
+          alt="arrow"
+          class="arrow-icon"
+        />
+      </div>
+      <div class="about-container">
+        <div class="photo-stack">
+          <div class="pin-icon">📌</div>
+          <div class="stack-layer layer-1"></div>
+          <div class="stack-layer layer-2"></div>
+          <div class="stack-layer layer-3"></div>
+          <div class="photo-stack-rotate">
+            <img src="assets/img/process.png" class="photo" />
+            <img src="assets/img/process.png" class="photo" />
+            <img src="assets/img/process.png" class="photo" />
+          </div>
+        </div>
+        <div class="intro-text">
+          <p style="font-size: 22px">
+            01/ We did some intense market research .
+          </p>
+          <p>
+            I followed a user-centered approach throughout the design. Starting
+            with user flows and wireframes sketched in Figma, I laid the
+            foundation for a clear and intuitive layout. The interface was
+            designed to be fully responsive, with bold visuals and
+            straightforward navigation that works across devices. I added
+            hand-drawn touches using Procreate to give the design a more
+            personal and playful feel. To demonstrate how interactions would
+            work in real life, I created animated micro-interactions in After
+            Effects, showcasing smooth transitions between states.
+          </p>
+          <p>
+            Accessibility was a priority from the beginning—I made sure to
+            consider color contrast, touch-friendly elements, and clear
+            call-to-actions. The final design includes location-based court
+            search, a clean view of available court types, a simple three-step
+            booking process, and immediate visual feedback upon booking
+            confirmation.
+          </p>
+          <div class="nav-buttons">
+            <button class="circle-btn prev-btn">&#8249;</button>
+            <button class="circle-btn next-btn">&#8250;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Result Section -->
+    <section class="result-section">
+      <div class="result-container">
+        <div class="result-left">
+          <div class="section-title">
+            <span>Result</span>
+          </div>
+          <p class="result-text">
+            The final prototype received positive feedback for its clean layout
+            and simple user flow. Testers found the booking process intuitive
+            and appreciated the visual clarity across devices. This project
+            helped me grow my skills in responsive design, prototyping, and
+            motion interaction. The branding and interface now reflect a clear
+            and cohesive identity—one that feels friendly, modern, and easy to
+            trust. Overall, Courtly positions itself as a more user-focused and
+            accessible option compared to existing platforms.
+          </p>
+
+          <div class="small-image-box">
+            <img src="assets/img/r1.jpg" alt="Small Detail" />
+          </div>
+        </div>
+
+        <div class="result-right">
+          <img
+            src="assets/img/r2.png"
+            alt="Main Tennis Image"
+            class="main-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="prototype-section">
+      <a
+        href="https://www.figma.com/design/FILeTWVzuDfRls9bJRBqMe/Portfolio-PaperNote?node-id=97-1020&t=J146P2L1KfeRXdPG-0"
+        target="_blank"
+        class="prototype-btn"
+      >
+        Click To See Prototype
+      </a>
+    </section>
+
+    <!-- Service Showcase Section -->
+    <section class="service-section">
+      <div class="tablet-frame">
+        <button class="nav-btn left-btn">&#8249;</button>
+
+        <div class="tablet-content">
+          <img src="assets/img/dis_cou.png" alt="Service Mockup" />
+        </div>
+
+        <button class="nav-btn right-btn">&#8250;</button>
+      </div>
+
+      <div class="mobile-nav">
+        <button class="circle-btn">&#8249;</button>
+        <button class="circle-btn">&#8250;</button>
+      </div>
+    </section>
+
+    <!--  Project Examples  -->
+    <section
+      style="margin-top: -30px !important; margin-bottom: -60px"
+      class="featured-projects"
+    >
+      <div class="section-title">
+        <span>Other Work</span>
+      </div>
+
+      <div class="projects-wrapper">
+        <div
+          class="project-card blue tilt-left"
+          onclick="window.location.href='project_courtly.html'"
+        >
+          <img src="assets/img/courtly.png" alt="Courtly project" />
+          <h3>
+            Courtly<br />
+            <p style="font-weight: 300; margin: 0; font-size: 13px">
+              Court booking platform for tennis, pickleball, and badminton.
+            </p>
+          </h3>
+          <button class="btn"><span>See Project</span></button>
+        </div>
+        <div
+          class="project-card yellow tilt-none"
+          onclick="window.location.href='project_street.html'"
+        >
+          <img src="assets/img/streetpulse.png" alt="Street Pulse project" />
+          <h3>
+            Street Pulse<br />
+            <p style="font-weight: 300; margin: 0; font-size: 13px">
+              Bold event branding inspired by street culture.
+            </p>
+          </h3>
+          <button class="btn"><span>See Project</span></button>
+        </div>
+        <div
+          class="project-card pink tilt-right"
+          onclick="window.location.href='project_whispurr.html'"
+        >
+          <img src="assets/img/whis.png" alt="Pluff project" />
+          <h3>
+            Whispurr<br />
+            <p style="font-weight: 300; margin: 0; font-size: 13px">
+              Cozy diary app with interactive stuffies.
+            </p>
+          </h3>
+          <button class="btn"><span>See Project</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-row">
+          <nav class="footer-nav">
+            <a href="#">Portfolio</a>
+            <a href="#">Expertise</a>
+            <a href="#">Resume</a>
+            <a href="#">FAQ</a>
+          </nav>
+
           <div class="icon-group">
-            <a href="https://ca.linkedin.com/in/helenvodesign" target="_blank" class="clickable">
+            <a
+              href="https://ca.linkedin.com/in/helenvodesign"
+              target="_blank"
+              class="clickable"
+            >
               <i class="fab fa-linkedin"></i>
             </a>
-
-            <a href="https://www.instagram.com" target="_blank" class="clickable"><i class="fab fa-instagram"></i></a>
-          </div>
-          <a href="#" class="clickable hire-btn">Hire Me!</a>
-        </nav>
-      </div>
-    </header>
-  </div>
-
-  <!-- Project Intro Section -->
-  <section class="project-intro">
-    <div class="project-container">
-      <!-- Left side -->
-      <div class="project-left">
-        <p class="project-role">✨ UI/UX Design | Dec 2024 - Aug 2025</p>
-        <h1 class="project-title">COURTLY</h1>
-        <a href="https://courtly.com" target="_blank" class="project-link">courtly.com ↗</a>
-      </div>
-
-      <!-- Right side -->
-      <div class="project-right">
-        <p>
-          Courtly is a web app designed to simplify the process of booking tennis, badminton, and pickleball courts.
-          The project focuses on clean UX flows, real-time calendar availability, and a user-friendly interface
-          optimized
-          for mobile and desktop use.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tools Section -->
-  <section class="tools-section">
-    <div class="tools-wrapper">
-      <div class="section-title">
-        <span>Tools</span>
-        <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
-      </div>
-
-      <div class="tools-items">
-        <button class="tool-btn">Figma</button>
-        <img src="assets/img/icon_blue.png" alt="sparkle" class="sparkle-img">
-
-        <button class="tool-btn">Procreate</button>
-        <img src="assets/img/icon_pink.png" alt="sparkle" class="sparkle-img">
-
-        <button class="tool-btn">Adobe Illustrator</button>
-        <img src="assets/img/icon_pink.png" alt="sparkle" class="sparkle-img">
-
-        <button class="tool-btn">Adobe After Effect</button>
-        <img src="assets/img/icon_yellow.png" alt="sparkle" class="sparkle-img">
-
-        <button class="tool-btn">Adobe Photoshop</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="design-focus-section">
-    <div class="design-focus-card">
-      <img src="assets/img/courtly_pr.png" alt="Helen Logo" />
-    </div>
-    <div class="design-focus-header">
-      <h2><span>Cheers to breaking conventions<br><span class="highlight-blue">embracing flavor</span></span></h2>
-    </div>
-  </section>
-
-  <section style="margin-bottom: 70px;" class="target-discipline-section">
-    <div class="target-discipline-container">
-      <!-- Left: Title & Paragraph -->
-      <div style="margin-top: 90px;" class="target-discipline-header">
-        <div class="section-title">
-          <span>Challenge</span>
-          <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
-        </div>
-        <p>Users often faced frustration when trying to find and reserve courts due to scattered systems, outdated
-          platforms, or a lack of real-time availability. The challenge was to design a unified and intuitive platform
-          that makes the booking process seamless and accessible to everyone.</p>
-      </div>
-
-      <!-- Right: 2 Cards -->
-      <div class="discipline-cards">
-        <div class="discipline-card" style="background-color:#C6EDFF;">
-          <div class="card-footer">
-            <div>
-              <h3 style="font-weight: 200; font-size: 17px;">01 - Understanding User Pain Points</h3>
-              <p>CI conducted informal interviews with recreational players and analyzed similar booking platforms to
-                identify what worked and what didn’t. The key insight was that users wanted something fast, modern, and
-                clear—with no unnecessary steps or clutter.</p>
-            </div>
+            <a
+              href="mailto:helenvo0932@gmail.com"
+              target="_blank"
+              class="clickable"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.7163 3.03581C12.8995 2.98807 11.1005 2.98806 9.28371 3.0358L9.2296 3.03723C7.81116 3.07448 6.66979 3.10445 5.75507 3.27107C4.79739 3.44552 4.01905 3.7801 3.3615 4.47048C2.70671 5.15796 2.3885 5.96036 2.22489 6.9458C2.06911 7.8841 2.04538 9.04878 2.01599 10.4915L2.01482 10.5487C1.99506 11.5181 1.99506 12.4819 2.01482 13.4513L2.01599 13.5084C2.04538 14.9512 2.06911 16.1159 2.2249 17.0542C2.38851 18.0396 2.70672 18.842 3.36151 19.5295C4.01906 20.2199 4.7974 20.5545 5.75507 20.7289C6.66978 20.8955 7.81113 20.9255 9.22955 20.9628L9.28371 20.9642C11.1005 21.0119 12.8995 21.0119 14.7163 20.9642L14.7705 20.9628C16.1889 20.9255 17.3302 20.8955 18.2449 20.7289C19.2026 20.5545 19.9809 20.2199 20.6385 19.5295C21.2933 18.842 21.6115 18.0396 21.7751 17.0542C21.9309 16.1159 21.9546 14.9512 21.984 13.5084L21.9852 13.4513C22.0049 12.4819 22.0049 11.5181 21.9852 10.5487L21.984 10.4916C21.9546 9.0488 21.9309 7.88412 21.7751 6.94581C21.6115 5.96038 21.2933 5.15798 20.6385 4.47049C19.9809 3.78012 19.2026 3.44553 18.2449 3.27109C17.3302 3.10446 16.1888 3.07449 14.7704 3.03723L14.7163 3.03581ZM9.31875 4.4948C11.1122 4.44768 12.8878 4.44768 14.6812 4.49481C16.1665 4.53384 17.2044 4.56297 18.0055 4.7089C18.7753 4.84913 19.2553 5.08616 19.65 5.50052C19.8111 5.66971 19.9436 5.85179 20.0528 6.06062L14.5282 9.33474C13.3605 10.0268 12.6519 10.2937 12.0005 10.2937C11.3492 10.2937 10.6406 10.0268 9.47284 9.33474L3.94742 6.06015C4.0566 5.85151 4.18901 5.66958 4.35004 5.50051C4.7447 5.08614 5.22467 4.84911 5.99447 4.70889C6.79562 4.56296 7.83348 4.53383 9.31875 4.4948ZM3.55489 7.50498C3.45825 8.27596 3.43695 9.2507 3.40985 10.5798C3.39051 11.5285 3.39051 12.4715 3.40986 13.4202C3.44071 14.9337 3.46405 15.9876 3.59967 16.8045C3.72952 17.5866 3.95262 18.0822 4.35004 18.4995C4.7447 18.9139 5.22468 19.1509 5.99447 19.2911C6.79562 19.437 7.83349 19.4662 9.31876 19.5052C11.1122 19.5523 12.8878 19.5523 14.6812 19.5052C16.1665 19.4662 17.2044 19.437 18.0055 19.2911C18.7753 19.1509 19.2553 18.9139 19.65 18.4995C20.0474 18.0822 20.2705 17.5866 20.4003 16.8045C20.536 15.9876 20.5593 14.9337 20.5901 13.4202C20.6095 12.4715 20.6095 11.5285 20.5901 10.5798C20.5631 9.25103 20.5418 8.27644 20.4452 7.50554L15.216 10.6045C14.013 11.3175 13.0354 11.7531 12.0005 11.7531C10.9656 11.7531 9.98802 11.3175 8.78497 10.6045L3.55489 7.50498Z"
+                  fill="white"
+                /></svg
+            ></a>
           </div>
         </div>
-
-        <div class="discipline-card" style="background-color:#FFE0F5;">
-          <div class="card-footer">
-            <div>
-              <h3 style="font-weight: 200; font-size: 17px;">02 - Visual & Strategic Repositioning</h3>
-              <p>To make the brand feel more current and authentic, I took a holistic approach to the design process.
-                This included aligning with modern visual trends, simplifying messaging, and tailoring the experience to
-                match the expectations of a dynamic and diverse audience. The result was a fresh, cohesive brand and
-                interface that elevates the entire booking journey.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About me -->
-  <section class="about-me">
-    <div class="section-title">
-      <span>Process</span>
-      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
-    </div>
-    <div class="about-container">
-      <div class="photo-stack">
-        <div class="pin-icon">📌</div>
-        <div class="stack-layer layer-1"></div>
-        <div class="stack-layer layer-2"></div>
-        <div class="stack-layer layer-3"></div>
-        <div class="photo-stack-rotate">
-          <img src="assets/img/process.png" class="photo" />
-          <img src="assets/img/process.png" class="photo" />
-          <img src="assets/img/process.png" class="photo" />
-        </div>
-      </div>
-      <div class="intro-text">
-        <p style="font-size: 22px;">01/ We did some intense market research
-          .</p>
-        <p>
-          I followed a user-centered approach throughout the design. Starting with user flows and wireframes sketched in
-          Figma, I laid the foundation for a clear and intuitive layout. The interface was designed to be fully
-          responsive, with bold visuals and straightforward navigation that works across devices. I added hand-drawn
-          touches using Procreate to give the design a more personal and playful feel. To demonstrate how interactions
-          would work in real life, I created animated micro-interactions in After Effects, showcasing smooth transitions
-          between states.
-        </p>
-        <p>Accessibility was a priority from the beginning—I made sure to consider color contrast, touch-friendly
-          elements, and clear call-to-actions. The final design includes location-based court search, a clean view of
-          available court types, a simple three-step booking process, and immediate visual feedback upon booking
-          confirmation.</p>
-        <div class="nav-buttons">
-          <button class="circle-btn prev-btn">&#8249;</button>
-          <button class="circle-btn next-btn">&#8250;</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Result Section -->
-  <section class="result-section">
-    <div class="result-container">
-
-      <div class="result-left">
-        <div class="section-title">
-          <span>Result</span>
-        </div>
-        <p class="result-text">
-          The final prototype received positive feedback for its clean layout and simple user flow.
-          Testers found the booking process intuitive and appreciated the visual clarity across devices.
-          This project helped me grow my skills in responsive design, prototyping, and motion interaction.
-          The branding and interface now reflect a clear and cohesive identity—one that feels friendly,
-          modern, and easy to trust. Overall, Courtly positions itself as a more user-focused and
-          accessible option compared to existing platforms.
+        <h1 class="footer-title">Ready to Bring Your Vision to Life?</h1>
+        <p class="footer-text">
+          Let’s make something incredible together! Reach out to discuss your
+          project,<br />
+          and let’s create designs that resonate and inspire.
         </p>
 
-        <div class="small-image-box">
-          <img src="assets/img/r1.jpg" alt="Small Detail">
-        </div>
+        <a href="#contact" class="footer-btn">Contact Me</a>
+
+        <p class="footer-copy">Helen ©all rights reserved</p>
       </div>
+    </footer>
 
-      <div class="result-right">
-        <img src="assets/img/r2.png" alt="Main Tennis Image" class="main-image">
-      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+      const scrollBtn = document.getElementById("scrollTopBtn");
 
-    </div>
-  </section>
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          scrollBtn.style.display = "block";
+        } else {
+          scrollBtn.style.display = "none";
+        }
+      });
 
-  <section class="prototype-section">
-    <a href="https://www.figma.com/design/FILeTWVzuDfRls9bJRBqMe/Portfolio-PaperNote?node-id=97-1020&t=J146P2L1KfeRXdPG-0"
-      target="_blank" class="prototype-btn">
-      Click To See Prototype
-    </a>
-  </section>
+      scrollBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
 
-  <!-- Service Showcase Section -->
-  <section class="service-section">
-    <div class="tablet-frame">
-      <button class="nav-btn left-btn">&#8249;</button>
+      document.getElementById("logo").addEventListener("click", function () {
+        window.location.href = "index.html";
+      });
+      const cursor = document.querySelector(".cursor");
+      const follower = document.querySelector(".cursor-follower");
 
-      <div class="tablet-content">
-        <img src="assets/img/dis_cou.png" alt="Service Mockup">
-      </div>
+      let mouseX = 0,
+        mouseY = 0;
 
-      <button class="nav-btn right-btn">&#8250;</button>
-    </div>
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
 
-    <div class="mobile-nav">
-      <button class="circle-btn">&#8249;</button>
-      <button class="circle-btn">&#8250;</button>
-    </div>
-  </section>
+        gsap.to(cursor, {
+          x: mouseX,
+          y: mouseY,
+          duration: 0.08,
+          ease: "power1.out",
+        });
 
+        gsap.to(follower, {
+          x: mouseX,
+          y: mouseY,
+          duration: 0.1,
+          ease: "power2.out",
+        });
+      });
 
-  <!--  Project Examples  -->
-  <section style="margin-top: -30px !important; margin-bottom: -60px;" class="featured-projects">
-    <div class="section-title">
-      <span>Other Work</span>
-    </div>
+      document.querySelectorAll(".clickable").forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          follower.classList.add("hover-effect");
+        });
 
-    <div class="projects-wrapper">
-      <div class="project-card blue tilt-left" onclick="window.location.href='project_courtly.html'">
-        <img src="assets/img/courtly.png" alt="Courtly project">
-        <h3>Courtly<br>
-          <p style="font-weight: 300; margin: 0; font-size: 13px;">Court booking platform for tennis, pickleball, and
-            badminton.</p>
-        </h3>
-        <button class="btn"><span>See Project</span></button>
-      </div>
-      <div class="project-card yellow tilt-none" onclick="window.location.href='project_street.html'">
-        <img src="assets/img/streetpulse.png" alt="Street Pulse project">
-        <h3>Street Pulse<br>
-          <p style="font-weight: 300; margin: 0; font-size: 13px;">Bold event branding inspired by street culture.</p>
-        </h3>
-        <button class="btn"><span>See Project</span></button>
-      </div>
-      <div class="project-card pink tilt-right" onclick="window.location.href='project_whispurr.html'">
-        <img src="assets/img/whis.png" alt="Pluff project">
-        <h3>Whispurr<br>
-          <p style="font-weight: 300; margin: 0; font-size: 13px;">Cozy diary app with interactive stuffies.</p>
-        </h3>
-        <button class="btn"><span>See Project</span></button>
-      </div>
-    </div>
-  </section>
+        el.addEventListener("mouseleave", () => {
+          follower.classList.remove("hover-effect");
+        });
+      });
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-row">
-        <nav class="footer-nav">
-          <a href="#">Portfolio</a>
-          <a href="#">Expertise</a>
-          <a href="#">Resume</a>
-          <a href="#">FAQ</a>
-        </nav>
+      function toggleMenu(toggleBtn) {
+        const menu = document.querySelector(".menu");
+        const header = document.querySelector(".header-wrapper");
 
-        <div class="icon-group">
-          <a href="https://ca.linkedin.com/in/helenvodesign" target="_blank" class="clickable">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://www.instagram.com" target="_blank" class="clickable"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-      <h1 class="footer-title">Ready to Bring Your Vision to Life?</h1>
-      <p class="footer-text">
-        Let’s make something incredible together! Reach out to discuss your project,<br />
-        and let’s create designs that resonate and inspire.
-      </p>
-
-      <a href="#contact" class="footer-btn">Contact Me</a>
-
-
-      <p class="footer-copy">Helen ©all rights reserved</p>
-    </div>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script>
-    const scrollBtn = document.getElementById("scrollTopBtn");
-
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 200) {
-        scrollBtn.style.display = "block";
-      } else {
-        scrollBtn.style.display = "none";
+        menu.classList.toggle("active");
+        header.classList.toggle("expanded");
+        toggleBtn.classList.toggle("active");
       }
-    });
 
-    scrollBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
+      const stack = document.querySelector(".photo-stack-rotate");
+      setInterval(() => {
+        const first = stack.querySelector(".photo:first-child");
+        stack.appendChild(first);
+      }, 3000);
 
-    document.getElementById("logo").addEventListener("click", function () {
-      window.location.href = "index.html";
-    });
-    const cursor = document.querySelector(".cursor");
-    const follower = document.querySelector(".cursor-follower");
-
-    let mouseX = 0,
-      mouseY = 0;
-
-    document.addEventListener("mousemove", (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-
-      gsap.to(cursor, {
-        x: mouseX,
-        y: mouseY,
-        duration: 0.08,
-        ease: "power1.out",
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const card = question.parentElement;
+          card.classList.toggle("open");
+        });
       });
+    </script>
+    <script>
+      /**
+       * ParticleNetwork Class
+       * Creates and manages an interactive particle network animation
+       */
+      class ParticleNetwork {
+        constructor(canvas, config = {}) {
+          this.canvas = canvas;
+          this.ctx = canvas.getContext("2d", { alpha: true });
+          if (!this.ctx) {
+            throw new Error("Could not initialize canvas context");
+          }
 
-      gsap.to(follower, {
-        x: mouseX,
-        y: mouseY,
-        duration: 0.1,
-        ease: "power2.out",
-      });
-    });
+          this.config = this.validateConfig({
+            particleCount: 120,
+            minRadius: 2,
+            maxRadius: 6,
+            particleColor: "#ffffff",
+            lineColor: "#ffffff",
+            lineWidth: 1,
+            lineOpacity: 0.15,
+            maxDistance: 150,
+            moveSpeed: 1,
+            backgroundColor: "#111111",
+            backgroundOpacity: 1,
+            particleOpacity: 0.8,
+            mouseRadius: 200,
+            mouseInteraction: true,
+            pulseEnabled: true,
+            pulseSpeed: 0.02,
+            ...config,
+          });
 
-    document.querySelectorAll(".clickable").forEach((el) => {
-      el.addEventListener("mouseenter", () => {
-        follower.classList.add("hover-effect");
-      });
+          this.particles = [];
+          this.animationId = null;
+          this.isRunning = false;
+          this.mousePosition = null;
+          this.pulseAngle = 0;
+          this.boundHandleResize = this.handleResize.bind(this);
+          this.boundHandleMouseMove = this.handleMouseMove.bind(this);
+          this.boundHandleMouseLeave = this.handleMouseLeave.bind(this);
 
-      el.addEventListener("mouseleave", () => {
-        follower.classList.remove("hover-effect");
-      });
-    });
-
-    function toggleMenu(toggleBtn) {
-      const menu = document.querySelector(".menu");
-      const header = document.querySelector(".header-wrapper");
-
-      menu.classList.toggle("active");
-      header.classList.toggle("expanded");
-      toggleBtn.classList.toggle("active");
-    }
-
-    const stack = document.querySelector(".photo-stack-rotate");
-    setInterval(() => {
-      const first = stack.querySelector(".photo:first-child");
-      stack.appendChild(first);
-    }, 3000);
-
-    document.querySelectorAll(".faq-question").forEach((question) => {
-      question.addEventListener("click", () => {
-        const card = question.parentElement;
-        card.classList.toggle("open");
-      });
-    });
-
-  </script>
-  <script>
-    /**
-     * ParticleNetwork Class
-     * Creates and manages an interactive particle network animation
-     */
-    class ParticleNetwork {
-      constructor(canvas, config = {}) {
-        this.canvas = canvas;
-        this.ctx = canvas.getContext('2d', { alpha: true });
-        if (!this.ctx) {
-          throw new Error('Could not initialize canvas context');
+          this.handleResize();
+          this.createParticles();
+          this.setupEventListeners();
         }
 
-        this.config = this.validateConfig({
-          particleCount: 120,
-          minRadius: 2,
-          maxRadius: 6,
-          particleColor: '#ffffff',
-          lineColor: '#ffffff',
-          lineWidth: 1,
-          lineOpacity: 0.15,
-          maxDistance: 150,
-          moveSpeed: 1,
-          backgroundColor: '#111111',
+        validateConfig(config) {
+          const numericParams = [
+            "particleCount",
+            "minRadius",
+            "maxRadius",
+            "lineWidth",
+            "lineOpacity",
+            "maxDistance",
+            "moveSpeed",
+            "backgroundOpacity",
+            "particleOpacity",
+            "mouseRadius",
+            "pulseSpeed",
+          ];
+          numericParams.forEach((param) => {
+            if (typeof config[param] !== "number" || isNaN(config[param])) {
+              throw new Error(`Invalid ${param}: must be a number`);
+            }
+          });
+
+          const booleanParams = ["mouseInteraction", "pulseEnabled"];
+          booleanParams.forEach((param) => {
+            if (typeof config[param] !== "boolean") {
+              throw new Error(`Invalid ${param}: must be a boolean`);
+            }
+          });
+
+          const colorParams = ["backgroundColor", "particleColor", "lineColor"];
+          const hexColorRegex = /^#[0-9A-Fa-f]{6}$/;
+          colorParams.forEach((param) => {
+            if (!hexColorRegex.test(config[param])) {
+              throw new Error(`Invalid ${param}: must be a valid hex color`);
+            }
+          });
+
+          return config;
+        }
+
+        setupEventListeners() {
+          window.addEventListener("resize", this.boundHandleResize);
+          this.canvas.addEventListener("mousemove", this.boundHandleMouseMove);
+          this.canvas.addEventListener(
+            "mouseleave",
+            this.boundHandleMouseLeave
+          );
+        }
+
+        cleanup() {
+          window.removeEventListener("resize", this.boundHandleResize);
+          this.canvas.removeEventListener(
+            "mousemove",
+            this.boundHandleMouseMove
+          );
+          this.canvas.removeEventListener(
+            "mouseleave",
+            this.boundHandleMouseLeave
+          );
+          this.stop();
+        }
+
+        handleMouseMove(e) {
+          const rect = this.canvas.getBoundingClientRect();
+          this.mousePosition = {
+            x: e.clientX - rect.left,
+            y: e.clientY - rect.top,
+          };
+        }
+
+        handleMouseLeave() {
+          this.mousePosition = null;
+        }
+
+        handleResize() {
+          this.canvas.width = this.canvas.clientWidth;
+          this.canvas.height = this.canvas.clientHeight;
+        }
+
+        createParticles() {
+          this.particles = [];
+          for (let i = 0; i < this.config.particleCount; i++) {
+            const sizeRange = this.config.maxRadius - this.config.minRadius;
+            const randomSize =
+              Math.random() * sizeRange + this.config.minRadius;
+            this.particles.push({
+              x: Math.random() * this.canvas.width,
+              y: Math.random() * this.canvas.height,
+              dx: (Math.random() - 0.5) * this.config.moveSpeed,
+              dy: (Math.random() - 0.5) * this.config.moveSpeed,
+              radius: randomSize,
+            });
+          }
+        }
+
+        updateParticles() {
+          this.pulseAngle += this.config.pulseSpeed;
+          this.particles.forEach((particle) => {
+            if (this.config.pulseEnabled) {
+              const pulseScale = Math.sin(this.pulseAngle) * 0.5 + 1;
+              particle.currentRadius = particle.radius * pulseScale;
+            } else {
+              particle.currentRadius = particle.radius;
+            }
+
+            particle.x += particle.dx;
+            particle.y += particle.dy;
+
+            if (this.config.mouseInteraction && this.mousePosition) {
+              const dx = this.mousePosition.x - particle.x;
+              const dy = this.mousePosition.y - particle.y;
+              const distance = Math.sqrt(dx * dx + dy * dy);
+
+              if (distance < this.config.mouseRadius) {
+                const force =
+                  (this.config.mouseRadius - distance) /
+                  this.config.mouseRadius;
+                const angle = Math.atan2(dy, dx);
+                const repelX = Math.cos(angle) * force * 0.5;
+                const repelY = Math.sin(angle) * force * 0.5;
+                particle.dx -= repelX;
+                particle.dy -= repelY;
+              }
+            }
+
+            if (particle.x < 0 || particle.x > this.canvas.width) {
+              particle.dx = -particle.dx;
+            }
+            if (particle.y < 0 || particle.y > this.canvas.height) {
+              particle.dy = -particle.dy;
+            }
+
+            const speed = Math.sqrt(
+              particle.dx * particle.dx + particle.dy * particle.dy
+            );
+            if (speed > this.config.moveSpeed) {
+              particle.dx = (particle.dx / speed) * this.config.moveSpeed;
+              particle.dy = (particle.dy / speed) * this.config.moveSpeed;
+            }
+          });
+        }
+
+        drawParticles() {
+          this.ctx.fillStyle = this.config.particleColor;
+          this.ctx.globalAlpha = this.config.particleOpacity;
+          this.particles.forEach((particle) => {
+            this.ctx.beginPath();
+            this.ctx.arc(
+              particle.x,
+              particle.y,
+              particle.currentRadius || particle.radius,
+              0,
+              Math.PI * 2
+            );
+            this.ctx.fill();
+          });
+          this.ctx.globalAlpha = 1;
+        }
+        drawBackgroundGradient() {
+          const ctx = this.ctx;
+          const gradient = ctx.createLinearGradient(
+            0,
+            0,
+            0,
+            this.canvas.height
+          );
+          gradient.addColorStop(0, "#ffFFFF"); // Trên: trắng
+          gradient.addColorStop(1, "#ffffff"); // Dưới: xanh nhạt
+
+          ctx.fillStyle = gradient;
+          ctx.globalAlpha = this.config.backgroundOpacity;
+          ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+          ctx.globalAlpha = 1;
+        }
+
+        drawConnections() {
+          for (let i = 0; i < this.particles.length; i++) {
+            for (let j = i + 1; j < this.particles.length; j++) {
+              const dx = this.particles[i].x - this.particles[j].x;
+              const dy = this.particles[i].y - this.particles[j].y;
+              const distance = Math.sqrt(dx * dx + dy * dy);
+
+              if (distance < this.config.maxDistance) {
+                const opacity = 1 - distance / this.config.maxDistance;
+                const color = this.hexToRgb(this.config.lineColor);
+                this.ctx.beginPath();
+                this.ctx.strokeStyle = `rgba(${color}, ${
+                  opacity * this.config.lineOpacity
+                })`;
+                this.ctx.lineWidth = this.config.lineWidth;
+                this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
+                this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
+                this.ctx.stroke();
+              }
+            }
+          }
+        }
+
+        hexToRgb(hex) {
+          hex = hex.replace(/^#/, "");
+
+          if (hex.length === 3) {
+            hex = hex
+              .split("")
+              .map((c) => c + c)
+              .join("");
+          }
+
+          const result = /^([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+          if (!result) {
+            return "255,255,255";
+          }
+
+          return result
+            .slice(1)
+            .map((n) => parseInt(n, 16))
+            .join(",");
+        }
+
+        stop() {
+          this.isRunning = false;
+          if (this.animationId) {
+            cancelAnimationFrame(this.animationId);
+            this.animationId = null;
+          }
+        }
+
+        start() {
+          if (!this.isRunning) {
+            this.isRunning = true;
+            this.animate();
+          }
+        }
+
+        animate() {
+          this.drawBackgroundGradient();
+
+          this.updateParticles();
+          this.drawConnections();
+          this.drawParticles();
+
+          if (this.isRunning) {
+            this.animationId = requestAnimationFrame(this.animate.bind(this));
+          }
+        }
+      }
+
+      // Khởi tạo khi DOM sẵn sàng
+      function getParticleCount() {
+        if (window.innerWidth <= 480) {
+          // màn hình nhỏ (điện thoại)
+          return 20; // giảm particle
+        } else if (window.innerWidth <= 768) {
+          // tablet
+          return 200;
+        }
+        return 340; // desktop hoặc lớn hơn
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const canvas = document.getElementById("particleCanvas");
+
+        function resizeCanvas() {
+          canvas.width = canvas.clientWidth;
+          canvas.height = canvas.clientHeight;
+        }
+        resizeCanvas();
+        window.addEventListener("resize", () => {
+          resizeCanvas();
+          // Có thể thêm restart hoặc update config nếu muốn
+        });
+
+        const network = new ParticleNetwork(canvas, {
+          particleCount: getParticleCount(),
+          minRadius: 0.7,
+          maxRadius: 0.8,
+          particleColor: "#1D6584",
+          lineColor: "#244655",
+          lineWidth: 0.4,
+          lineOpacity: 0.55,
+          maxDistance: 90,
+          moveSpeed: 0.8,
+          backgroundColor: "#BDE5F6",
           backgroundOpacity: 1,
-          particleOpacity: 0.8,
-          mouseRadius: 200,
+          particleOpacity: 0.5,
+          mouseRadius: 100,
           mouseInteraction: true,
           pulseEnabled: true,
           pulseSpeed: 0.02,
-          ...config
         });
 
-        this.particles = [];
-        this.animationId = null;
-        this.isRunning = false;
-        this.mousePosition = null;
-        this.pulseAngle = 0;
-        this.boundHandleResize = this.handleResize.bind(this);
-        this.boundHandleMouseMove = this.handleMouseMove.bind(this);
-        this.boundHandleMouseLeave = this.handleMouseLeave.bind(this);
-
-        this.handleResize();
-        this.createParticles();
-        this.setupEventListeners();
-      }
-
-      validateConfig(config) {
-        const numericParams = [
-          'particleCount', 'minRadius', 'maxRadius', 'lineWidth',
-          'lineOpacity', 'maxDistance', 'moveSpeed', 'backgroundOpacity',
-          'particleOpacity', 'mouseRadius', 'pulseSpeed'
-        ];
-        numericParams.forEach(param => {
-          if (typeof config[param] !== 'number' || isNaN(config[param])) {
-            throw new Error(`Invalid ${param}: must be a number`);
-          }
-        });
-
-        const booleanParams = ['mouseInteraction', 'pulseEnabled'];
-        booleanParams.forEach(param => {
-          if (typeof config[param] !== 'boolean') {
-            throw new Error(`Invalid ${param}: must be a boolean`);
-          }
-        });
-
-        const colorParams = ['backgroundColor', 'particleColor', 'lineColor'];
-        const hexColorRegex = /^#[0-9A-Fa-f]{6}$/;
-        colorParams.forEach(param => {
-          if (!hexColorRegex.test(config[param])) {
-            throw new Error(`Invalid ${param}: must be a valid hex color`);
-          }
-        });
-
-        return config;
-      }
-
-      setupEventListeners() {
-        window.addEventListener('resize', this.boundHandleResize);
-        this.canvas.addEventListener('mousemove', this.boundHandleMouseMove);
-        this.canvas.addEventListener('mouseleave', this.boundHandleMouseLeave);
-      }
-
-      cleanup() {
-        window.removeEventListener('resize', this.boundHandleResize);
-        this.canvas.removeEventListener('mousemove', this.boundHandleMouseMove);
-        this.canvas.removeEventListener('mouseleave', this.boundHandleMouseLeave);
-        this.stop();
-      }
-
-      handleMouseMove(e) {
-        const rect = this.canvas.getBoundingClientRect();
-        this.mousePosition = {
-          x: e.clientX - rect.left,
-          y: e.clientY - rect.top
-        };
-      }
-
-      handleMouseLeave() {
-        this.mousePosition = null;
-      }
-
-      handleResize() {
-        this.canvas.width = this.canvas.clientWidth;
-        this.canvas.height = this.canvas.clientHeight;
-      }
-
-      createParticles() {
-        this.particles = [];
-        for (let i = 0; i < this.config.particleCount; i++) {
-          const sizeRange = this.config.maxRadius - this.config.minRadius;
-          const randomSize = Math.random() * sizeRange + this.config.minRadius;
-          this.particles.push({
-            x: Math.random() * this.canvas.width,
-            y: Math.random() * this.canvas.height,
-            dx: (Math.random() - 0.5) * this.config.moveSpeed,
-            dy: (Math.random() - 0.5) * this.config.moveSpeed,
-            radius: randomSize
-          });
-        }
-      }
-
-      updateParticles() {
-        this.pulseAngle += this.config.pulseSpeed;
-        this.particles.forEach(particle => {
-          if (this.config.pulseEnabled) {
-            const pulseScale = Math.sin(this.pulseAngle) * 0.5 + 1;
-            particle.currentRadius = particle.radius * pulseScale;
-          } else {
-            particle.currentRadius = particle.radius;
-          }
-
-          particle.x += particle.dx;
-          particle.y += particle.dy;
-
-          if (this.config.mouseInteraction && this.mousePosition) {
-            const dx = this.mousePosition.x - particle.x;
-            const dy = this.mousePosition.y - particle.y;
-            const distance = Math.sqrt(dx * dx + dy * dy);
-
-            if (distance < this.config.mouseRadius) {
-              const force = (this.config.mouseRadius - distance) / this.config.mouseRadius;
-              const angle = Math.atan2(dy, dx);
-              const repelX = Math.cos(angle) * force * 0.5;
-              const repelY = Math.sin(angle) * force * 0.5;
-              particle.dx -= repelX;
-              particle.dy -= repelY;
-            }
-          }
-
-          if (particle.x < 0 || particle.x > this.canvas.width) {
-            particle.dx = -particle.dx;
-          }
-          if (particle.y < 0 || particle.y > this.canvas.height) {
-            particle.dy = -particle.dy;
-          }
-
-          const speed = Math.sqrt(particle.dx * particle.dx + particle.dy * particle.dy);
-          if (speed > this.config.moveSpeed) {
-            particle.dx = (particle.dx / speed) * this.config.moveSpeed;
-            particle.dy = (particle.dy / speed) * this.config.moveSpeed;
-          }
-        });
-      }
-
-      drawParticles() {
-        this.ctx.fillStyle = this.config.particleColor;
-        this.ctx.globalAlpha = this.config.particleOpacity;
-        this.particles.forEach(particle => {
-          this.ctx.beginPath();
-          this.ctx.arc(particle.x, particle.y, particle.currentRadius || particle.radius, 0, Math.PI * 2);
-          this.ctx.fill();
-        });
-        this.ctx.globalAlpha = 1;
-      }
-      drawBackgroundGradient() {
-        const ctx = this.ctx;
-        const gradient = ctx.createLinearGradient(0, 0, 0, this.canvas.height);
-        gradient.addColorStop(0, '#ffFFFF');   // Trên: trắng
-        gradient.addColorStop(1, '#ffffff');   // Dưới: xanh nhạt
-
-        ctx.fillStyle = gradient;
-        ctx.globalAlpha = this.config.backgroundOpacity;
-        ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-        ctx.globalAlpha = 1;
-      }
-
-      drawConnections() {
-        for (let i = 0; i < this.particles.length; i++) {
-          for (let j = i + 1; j < this.particles.length; j++) {
-            const dx = this.particles[i].x - this.particles[j].x;
-            const dy = this.particles[i].y - this.particles[j].y;
-            const distance = Math.sqrt(dx * dx + dy * dy);
-
-            if (distance < this.config.maxDistance) {
-              const opacity = 1 - (distance / this.config.maxDistance);
-              const color = this.hexToRgb(this.config.lineColor);
-              this.ctx.beginPath();
-              this.ctx.strokeStyle = `rgba(${color}, ${opacity * this.config.lineOpacity})`;
-              this.ctx.lineWidth = this.config.lineWidth;
-              this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
-              this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
-              this.ctx.stroke();
-            }
-          }
-        }
-      }
-
-      hexToRgb(hex) {
-        hex = hex.replace(/^#/, '');
-
-        if (hex.length === 3) {
-          hex = hex.split('').map(c => c + c).join('');
-        }
-
-        const result = /^([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-        if (!result) {
-          return '255,255,255';
-        }
-
-        return result.slice(1).map(n => parseInt(n, 16)).join(',');
-      }
-
-      stop() {
-        this.isRunning = false;
-        if (this.animationId) {
-          cancelAnimationFrame(this.animationId);
-          this.animationId = null;
-        }
-      }
-
-      start() {
-        if (!this.isRunning) {
-          this.isRunning = true;
-          this.animate();
-        }
-      }
-
-      animate() {
-        this.drawBackgroundGradient();
-
-        this.updateParticles();
-        this.drawConnections();
-        this.drawParticles();
-
-        if (this.isRunning) {
-          this.animationId = requestAnimationFrame(this.animate.bind(this));
-        }
-      }
-    }
-
-    // Khởi tạo khi DOM sẵn sàng
-    function getParticleCount() {
-      if (window.innerWidth <= 480) { // màn hình nhỏ (điện thoại)
-        return 20; // giảm particle
-      } else if (window.innerWidth <= 768) { // tablet
-        return 200;
-      }
-      return 340; // desktop hoặc lớn hơn
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const canvas = document.getElementById('particleCanvas');
-
-      function resizeCanvas() {
-        canvas.width = canvas.clientWidth;
-        canvas.height = canvas.clientHeight;
-      }
-      resizeCanvas();
-      window.addEventListener('resize', () => {
-        resizeCanvas();
-        // Có thể thêm restart hoặc update config nếu muốn
+        network.start();
       });
+    </script>
 
-      const network = new ParticleNetwork(canvas, {
-        particleCount: getParticleCount(),
-        minRadius: 0.7,
-        maxRadius: 0.8,
-        particleColor: '#1D6584',
-        lineColor: '#244655',
-        lineWidth: 0.4,
-        lineOpacity: 0.55,
-        maxDistance: 90,
-        moveSpeed: 0.8,
-        backgroundColor: '#BDE5F6',
-        backgroundOpacity: 1,
-        particleOpacity: 0.5,
-        mouseRadius: 100,
-        mouseInteraction: true,
-        pulseEnabled: true,
-        pulseSpeed: 0.02
-      });
-
-      network.start();
-    });
-
-  </script>
-
-  <!-- load
+    <!-- load
   <script>
     (function () {
       const loader = document.getElementById('page-loader');
@@ -739,6 +931,5 @@
       }, MAX_AUTO_HIDE_MS);
     })();
   </script> -->
-</body>
-
+  </body>
 </html>

@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Whispurr</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/myport.css" />
+    <link rel="stylesheet" href="css/target.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/pr_courtly.css" />
+    <link rel="stylesheet" href="css/pr_whispurr.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/1958/1958290.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Whispurr</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/myport.css" />
-  <link rel="stylesheet" href="css/target.css" />
-  <link rel="stylesheet" href="css/about.css" />
-  <link rel="stylesheet" href="css/pr_courtly.css" />
-  <link rel="stylesheet" href="css/pr_whispurr.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1958/1958290.png">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-  <!-- <div id="page-loader" role="status" aria-live="polite" aria-label="Đang tải trang">
+  <body>
+    <!-- <div id="page-loader" role="status" aria-live="polite" aria-label="Đang tải trang">
     <div class="loader-card" aria-hidden="false">
       <div class="loader-glow" aria-hidden="true"></div>
 
@@ -44,770 +54,952 @@
     </div>
   </div> -->
 
-  <div id="scrollTopBtn">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="white">
-      <path d="M12 19V5M5 12l7-7 7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-  </div>
-  <!-- <canvas id="particleCanvas"></canvas> -->
-  <!-- Custom Cursor -->
-  <div class="cursor"></div>
-  <div class="cursor-follower">
-    <!-- <span class="cursor-text">OPEN</span> -->
-  </div>
+    <div id="scrollTopBtn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="48"
+        height="48"
+        fill="white"
+      >
+        <path
+          d="M12 19V5M5 12l7-7 7 7"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+    <!-- <canvas id="particleCanvas"></canvas> -->
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower">
+      <!-- <span class="cursor-text">OPEN</span> -->
+    </div>
 
-  <!-- Header -->
-  <div class="header-wrapper">
-    <header class="site-header">
-      <div class="container">
-        <div class="top-row">
-          <div class="logo" id="logo"><span class="highlight-pink">Helen</span></div>
-          <div class="menu-toggle" onclick="toggleMenu(this)">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <!-- Header -->
+    <div class="header-wrapper">
+      <header class="site-header">
+        <div class="container">
+          <div class="top-row">
+            <div class="logo" id="logo">
+              <span class="highlight-pink">Helen</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu(this)">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
           </div>
+
+          <nav class="menu">
+            <a href="about.html" class="clickable xnx">About Me</a>
+            <a href="myport.html" class="clickable ac">Portfolio</a>
+            <a href="target.html" class="clickable xnx">Expertise</a>
+            <a href="resume.html" class="clickable xnx">Resume</a>
+            <div class="icon-group">
+              <a
+                href="https://ca.linkedin.com/in/helenvodesign"
+                target="_blank"
+                class="clickable"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+
+              <a
+                href="mailto:helenvo0932@gmail.com"
+                target="_blank"
+                class="clickable"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+            </div>
+            <a href="#" class="clickable hire-btn">Hire Me!</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <!-- Project Intro Section -->
+    <section class="project-intro">
+      <div class="project-container">
+        <!-- Left side -->
+        <div class="project-left">
+          <p class="project-role">✨ UI/UX Design | June 2025 – Aug 2025</p>
+          <h1 class="project-title">WHISPURR</h1>
+          <a href="#" target="_blank" class="project-link"
+            >A Cozy Space to Rest Your Heart
+          </a>
         </div>
 
-        <nav class="menu">
-          <a href="about.html" class="clickable xnx">About Me</a>
-          <a href="myport.html" class="clickable ac">Portfolio</a>
-          <a href="target.html" class="clickable xnx">Expertise</a>
-          <a href="resume.html" class="clickable xnx">Resume</a>
+        <!-- Right side -->
+        <div class="project-right">
+          <p>
+            Whispurr is a mobile app that helps users feel emotionally supported
+            through daily interactions with their chosen virtual “stuffie” — a
+            cute, animated stuffed animal. The app blends journaling, mood
+            tracking, and AI-driven companionship to create a calming and
+            personalized self-care experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+      <div class="tools-wrapper">
+        <div class="section-title">
+          <span>Tools</span>
+          <img
+            src="assets/img/arrow-handdrawn.png"
+            alt="arrow"
+            class="arrow-icon"
+          />
+        </div>
+
+        <div class="tools-items">
+          <button class="tool-btn">Figma</button>
+          <img
+            src="assets/img/icon_blue.png"
+            alt="sparkle"
+            class="sparkle-img"
+          />
+
+          <button class="tool-btn">Adobe Illustrator</button>
+          <img
+            src="assets/img/icon_pink.png"
+            alt="sparkle"
+            class="sparkle-img"
+          />
+
+          <button class="tool-btn">Adobe After Effect</button>
+          <img
+            src="assets/img/icon_yellow.png"
+            alt="sparkle"
+            class="sparkle-img"
+          />
+
+          <button class="tool-btn">Adobe Photoshop</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="design-focus-section">
+      <div class="design-focus-header">
+        <h2>
+          <span
+            >Welcome to WHISPURR<br /><span class="highlight-blue"
+              >Your Emotional Companion</span
+            ></span
+          >
+        </h2>
+      </div>
+    </section>
+
+    <section class="tag-section">
+      <div class="tag-card">
+        A self-care app where your stuffed animal listens, comforts, and writes
+        to you.
+      </div>
+      <div class="tag-card sec">
+        Whispurr invites users to slow down and reflect with daily diary entries
+        written for them by their stuffie companion, based on their mood,
+        routines, and prompts.
+      </div>
+    </section>
+    <section class="phone-section">
+      <div class="card small">
+        <img src="assets/img/p1.png" alt="Small card image" />
+        <div class="backth"></div>
+      </div>
+
+      <div class="card large">
+        <img src="assets/img/p2.png" alt="Large card image" />
+        <div class="backth"></div>
+      </div>
+    </section>
+
+    <section class="custom-section workicon">
+      <div class="section-title">
+        <span>Breaking the Norms of Self-Care Apps</span>
+        <img
+          src="assets/img/arrow-handdrawn.png"
+          alt="arrow"
+          class="arrow-icon"
+        />
+      </div>
+    </section>
+
+    <section class="custom-section work">
+      <p class="section-subtext brk">
+        Whispurr offers a whimsical, emotionally intelligent alternative to
+        traditional journaling and wellness apps.
+      </p>
+    </section>
+
+    <section class="section-break">
+      <div class="break brleft">
+        <img src="assets/img/brt.png" alt="" class="img1" />
+        <img src="assets/img/brd.png" alt="" class="img2" />
+      </div>
+      <div class="break brmid">
+        <img src="assets/img/MOckup.png" alt="" />
+        <div class="card-br"></div>
+        <div class="emo"></div>
+      </div>
+      <div class="break brright">
+        <img src="assets/img/brtf.png" alt="" class="img3" />
+        <img src="assets/img/brdf.png" alt="" class="img4" />
+      </div>
+    </section>
+
+    <section class="custom-section">
+      <div class="section-title">
+        <span>Challenges Encountered</span>
+        <img
+          src="assets/img/arrow-handdrawn.png"
+          alt="arrow"
+          class="arrow-icon"
+        />
+      </div>
+      <div class="card-container">
+        <div class="custom-card chall blue">
+          <div class="pin-icon">
+            <img src="assets/img/pin-icon.png" alt="Pin icon" />
+          </div>
+          <h3 class="experience-place">01</h3>
+          <hr class="divider" />
+          <p class="experience-detail">
+            Most self-care apps feel task-driven or clinical. We wanted Whispurr
+            to feel like a soft, emotional space something users want to return
+            to, not something they have to use.
+          </p>
+        </div>
+        <div class="custom-card chall pink">
+          <div class="pin-icon">
+            <img src="assets/img/pin-icon.png" alt="Pin icon" />
+          </div>
+          <h3 class="experience-place">02</h3>
+          <hr class="divider" />
+          <p class="experience-detail">
+            The challenge was to create a daily check-in experience that’s
+            gentle, comforting, and emotionally engaging like talking to a
+            friend who always listens.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="custom-section workicon">
+      <div class="section-title">
+        <span>Working Process</span>
+        <img
+          src="assets/img/arrow-handdrawn.png"
+          alt="arrow"
+          class="arrow-icon"
+        />
+      </div>
+    </section>
+
+    <section class="custom-section work">
+      <p class="section-subtext">We focused on two key principles:</p>
+      <div style="margin-top: 30px" class="experience-stack">
+        <div class="experience-list container">
+          <div class="experience-box blue">
+            <div class="pin-icon">
+              <img src="assets/img/pin-icon.png" alt="Pin icon" />
+            </div>
+            <h3 class="experience-place">Comfort-driven UX</h3>
+            <hr class="divider" />
+            <div class="experience-detail">
+              <h1>01</h1>
+              <p>
+                Gentle animations, cozy colors, and character dialogue that
+                feels emotionally responsive.
+              </p>
+            </div>
+          </div>
+          <div class="experience-box pink">
+            <div class="pin-icon">
+              <img src="assets/img/pin-icon.png" alt="Pin icon" />
+            </div>
+            <h3 class="experience-place">Micro-interactions</h3>
+            <hr class="divider" />
+            <div class="experience-detail">
+              <h1>02</h1>
+              <p>
+                Small prompts and affirmations that build user trust over time
+                without overwhelming them.
+              </p>
+            </div>
+          </div>
+          <div class="experience-box yellow">
+            <div class="pin-icon">
+              <img src="assets/img/pin-icon.png" alt="Pin icon" />
+            </div>
+            <h3 class="experience-place">Personalization at Scale</h3>
+            <hr class="divider" />
+            <div class="experience-detail">
+              <h1>03</h1>
+              <p>
+                Adaptive themes, customizable avatars, and tailored content
+                recommendations that make each user feel the app is uniquely
+                theirs without adding setup friction.
+              </p>
+            </div>
+          </div>
+          <div class="experience-box blue ccx">
+            <div class="pin-icon">
+              <img src="assets/img/pin-icon.png" alt="Pin icon" />
+            </div>
+            <h3 class="experience-place">Ask Your Stuffie</h3>
+            <hr class="divider" />
+            <div class="experience-detail">
+              <h1>04</h1>
+              <p>
+                We also tested features like “Ask your stuffie” — a mini
+                interaction page where users can ask their companion playful
+                questions like “What should I eat today?” and receive comforting
+                responses.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-rs">
+      <div class="section-inner">
+        <div class="image-boxleft">
+          <div class="img-box iml"></div>
+          <div class="text-content">
+            <h3>Research & Strategy</h3>
+            <p>
+              User interviews revealed that many people — especially students
+              and young professionals — seek comfort in routines and emotional
+              validation.
+            </p>
+            <p>
+              We found that users resonate with gentle interaction, nostalgic
+              design, and the feeling of being “seen.” This shaped our direction
+              toward soft storytelling and visual empathy.
+            </p>
+          </div>
+        </div>
+        <div class="image-boxright">
+          <div class="img-box"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="learned-section">
+      <div class="section-title">
+        <span>Acceptance Results</span>
+        <img
+          src="assets/img/arrow-handdrawn.png"
+          alt="arrow"
+          class="arrow-icon"
+        />
+      </div>
+    </section>
+    <section class="learned-sectionxx">
+      <div class="sectionphone">
+        <img src="assets/img/p5.png" class="main-img" alt="Main" />
+        <img src="assets/img/p11.png" class="extra-img extra1" alt="Extra1" />
+        <img src="assets/img/p4.png" class="extra-img extra2" alt="Extra2" />
+        <img src="assets/img/p3.png" class="extra-img extra3" alt="Extra3" />
+        <img src="assets/img/p22.png" class="extra-img extra4" alt="Extra4" />
+      </div>
+      <div class="learned-grid">
+        <div class="learned-box">
+          <img src="assets/img/l2.png" alt="icon1" />
+          <p>
+            Users praised the calming UI, emotionally thoughtful responses, and
+            subtle gamified features like journaling streaks.
+          </p>
+        </div>
+
+        <div class="learned-box">
+          <img src="assets/img/l3.png" alt="icon2" />
+          <p>
+            Whispurr’s interface encourages consistent self-reflection without
+            pressure. The stuffed animals are not only companions but
+            storytellers — turning self-care into a cozy daily ritual.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discover -->
+    <section class="statistics-section">
+      <div class="section-title">
+        <span>Discover WHISPURR’s Key Features</span>
+        <img
+          src="assets/img/arrow-handdrawn.png"
+          alt="arrow"
+          class="arrow-icon"
+        />
+      </div>
+      <div class="statistics-container">
+        <div class="statistic-box pink-stat">
+          <h2 class="statistic-number" data-target="12">01</h2>
+          <p class="statistic-label">Diaryz</p>
+          <hr class="divider" />
+          <p class="statistic-description">
+            Your daily diary page where your stuffie writes reflections for you.
+          </p>
+        </div>
+        <div class="statistic-box yellow-stat">
+          <h2 class="statistic-number" data-target="50">02</h2>
+          <p class="statistic-label">Whisper</p>
+          <hr class="divider" />
+          <p class="statistic-description">
+            A page where you ask questions and get gentle replies.
+          </p>
+        </div>
+        <div class="statistic-box pink-stat">
+          <h2 class="statistic-number" data-target="12">03</h2>
+          <p class="statistic-label">Mood Tracker</p>
+          <hr class="divider" />
+          <p class="statistic-description">
+            Easily log how you're feeling with adorable icons.
+          </p>
+        </div>
+        <div class="statistic-box yellow-stat">
+          <h2 class="statistic-number" data-target="50">04</h2>
+          <p class="statistic-label">Customization</p>
+          <hr class="divider" />
+          <p class="statistic-description">
+            Name and decorate your stuffie to make it truly yours.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      style="margin-top: 80px; margin-bottom: 30px"
+      class="slider-section abit"
+    >
+      <div class="section-title">
+        <span>WHISPURR App Interactions</span>
+        <img
+          src="assets/img/arrow-handdrawn.png"
+          alt="arrow"
+          class="arrow-icon wis-ic"
+        />
+      </div>
+    </section>
+    <section class="phone-section video">
+      <h1><span class="hig">Thanks</span><br /><span>for Scrolling</span></h1>
+      <a
+        href="https://www.figma.com/proto/fwmGjmaineCrpv4jcBXpNY/Whispurr?node-id=109-1543&t=TIYMFhfIfaMN5SjS-1"
+        class="btn-blackxx"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Click To See Prototype
+      </a>
+
+      <div class="img-hand-wrapper">
+        <img class="hand" src="assets/img/hand.png" alt="" />
+        <video autoplay muted loop playsinline>
+          <source src="assets/video/vd_whis.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="bgbl">
+        <a
+          href="https://www.figma.com/proto/fwmGjmaineCrpv4jcBXpNY/Whispurr?node-id=109-1543&t=TIYMFhfIfaMN5SjS-1"
+          class="btn-black"
+          >Click To See Prototype</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-row">
+          <nav class="footer-nav">
+            <a href="#">Portfolio</a>
+            <a href="#">Expertise</a>
+            <a href="#">Resume</a>
+            <a href="#">FAQ</a>
+          </nav>
+
           <div class="icon-group">
-            <a href="https://ca.linkedin.com/in/helenvodesign" target="_blank" class="clickable">
+            <a
+              href="https://ca.linkedin.com/in/helenvodesign"
+              target="_blank"
+              class="clickable"
+            >
               <i class="fab fa-linkedin"></i>
             </a>
-
-            <a href="https://www.instagram.com" target="_blank" class="clickable"><i class="fab fa-instagram"></i></a>
+            <a
+              href="mailto:helenvo0932@gmail.com"
+              target="_blank"
+              class="clickable"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
           </div>
-          <a href="#" class="clickable hire-btn">Hire Me!</a>
-        </nav>
-      </div>
-    </header>
-  </div>
-
-  <!-- Project Intro Section -->
-  <section class="project-intro">
-    <div class="project-container">
-      <!-- Left side -->
-      <div class="project-left">
-        <p class="project-role">✨ UI/UX Design | June 2025 – Aug 2025</p>
-        <h1 class="project-title">WHISPURR</h1>
-        <a href="#" target="_blank" class="project-link">A Cozy Space to Rest Your Heart
-        </a>
-      </div>
-
-      <!-- Right side -->
-      <div class="project-right">
-        <p>
-          Whispurr is a mobile app that helps users feel emotionally supported through daily interactions with their
-          chosen virtual “stuffie” — a cute, animated stuffed animal. The app blends journaling, mood tracking, and
-          AI-driven companionship to create a calming and personalized self-care experience.
+        </div>
+        <h1 class="footer-title">Ready to Bring Your Vision to Life?</h1>
+        <p class="footer-text">
+          Let’s make something incredible together! Reach out to discuss your
+          project,<br />
+          and let’s create designs that resonate and inspire.
         </p>
+
+        <a href="#contact" class="footer-btn">Contact Me</a>
+
+        <p class="footer-copy">Helen ©all rights reserved</p>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Tools Section -->
-  <section class="tools-section">
-    <div class="tools-wrapper">
-      <div class="section-title">
-        <span>Tools</span>
-        <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
-      </div>
-
-      <div class="tools-items">
-        <button class="tool-btn">Figma</button>
-        <img src="assets/img/icon_blue.png" alt="sparkle" class="sparkle-img">
-
-        <button class="tool-btn">Adobe Illustrator</button>
-        <img src="assets/img/icon_pink.png" alt="sparkle" class="sparkle-img">
-
-        <button class="tool-btn">Adobe After Effect</button>
-        <img src="assets/img/icon_yellow.png" alt="sparkle" class="sparkle-img">
-
-        <button class="tool-btn">Adobe Photoshop</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="design-focus-section">
-    <div class="design-focus-header">
-      <h2><span>Welcome to WHISPURR<br><span class="highlight-blue">Your Emotional Companion</span></span></h2>
-    </div>
-  </section>
-
-  <section class="tag-section">
-    <div class="tag-card">
-      A self-care app where your stuffed animal listens, comforts, and writes to you.
-    </div>
-    <div class="tag-card sec">
-      Whispurr invites users to slow down and reflect with daily diary entries written for them by their stuffie
-      companion, based on their mood, routines, and prompts.
-    </div>
-  </section>
-  <section class="phone-section">
-    <div class="card small">
-      <img src="assets/img/p1.png" alt="Small card image">
-      <div class="backth"></div>
-    </div>
-
-    <div class="card large">
-      <img src="assets/img/p2.png" alt="Large card image">
-      <div class="backth"></div>
-    </div>
-  </section>
-
-  <section class="custom-section workicon">
-    <div class="section-title">
-      <span>Breaking the Norms of Self-Care Apps</span>
-      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
-    </div>
-  </section>
-
-  <section class="custom-section work">
-    <p class="section-subtext brk">Whispurr offers a whimsical, emotionally intelligent alternative to traditional
-      journaling and wellness apps.</p>
-  </section>
-
-  <section class="section-break">
-    <div class="break brleft">
-      <img src="assets/img/brt.png" alt="" class="img1">
-      <img src="assets/img/brd.png" alt="" class="img2">
-    </div>
-    <div class="break brmid">
-      <img src="assets/img/MOckup.png" alt="">
-      <div class="card-br"></div>
-      <div class="emo"></div>
-    </div>
-    <div class="break brright">
-      <img src="assets/img/brtf.png" alt="" class="img3">
-      <img src="assets/img/brdf.png" alt="" class="img4">
-    </div>
-  </section>
-
-  <section class="custom-section">
-    <div class="section-title">
-      <span>Challenges Encountered</span>
-      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
-    </div>
-    <div class="card-container">
-      <div class="custom-card chall blue">
-        <div class="pin-icon">
-          <img src="assets/img/pin-icon.png" alt="Pin icon">
-        </div>
-        <h3 class="experience-place">01</h3>
-        <hr class="divider" />
-        <p class="experience-detail">Most self-care apps feel task-driven or clinical. We wanted Whispurr to feel like a
-          soft, emotional space something users want to return to, not something they have to use.
-        </p>
-      </div>
-      <div class="custom-card chall pink">
-        <div class="pin-icon">
-          <img src="assets/img/pin-icon.png" alt="Pin icon">
-        </div>
-        <h3 class="experience-place">02</h3>
-        <hr class="divider" />
-        <p class="experience-detail">The challenge was to create a daily check-in experience that’s gentle, comforting,
-          and emotionally engaging like talking to a friend who always listens.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="custom-section workicon">
-    <div class="section-title">
-      <span>Working Process</span>
-      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
-    </div>
-  </section>
-
-  <section class="custom-section work">
-    <p class="section-subtext">We focused on two key principles:</p>
-    <div style="margin-top: 30px;" class="experience-stack">
-      <div class="experience-list container">
-        <div class="experience-box blue">
-          <div class="pin-icon">
-            <img src="assets/img/pin-icon.png" alt="Pin icon">
-          </div>
-          <h3 class="experience-place">Comfort-driven UX</h3>
-          <hr class="divider" />
-          <div class="experience-detail">
-            <h1>01</h1>
-            <p>Gentle animations, cozy colors, and character dialogue that feels emotionally responsive.</p>
-          </div>
-        </div>
-        <div class="experience-box pink">
-          <div class="pin-icon">
-            <img src="assets/img/pin-icon.png" alt="Pin icon">
-          </div>
-          <h3 class="experience-place">Micro-interactions</h3>
-          <hr class="divider" />
-          <div class="experience-detail">
-            <h1>02</h1>
-            <p>Small prompts and affirmations that build user trust over time without overwhelming them.
-            </p>
-          </div>
-        </div>
-        <div class="experience-box yellow">
-          <div class="pin-icon">
-            <img src="assets/img/pin-icon.png" alt="Pin icon">
-          </div>
-          <h3 class="experience-place">Personalization at Scale</h3>
-          <hr class="divider" />
-          <div class="experience-detail">
-            <h1>03</h1>
-            <p>Adaptive themes, customizable avatars, and tailored content recommendations that make each user feel the
-              app is uniquely theirs without adding setup friction.</p>
-          </div>
-        </div>
-        <div class="experience-box blue ccx">
-          <div class="pin-icon">
-            <img src="assets/img/pin-icon.png" alt="Pin icon">
-          </div>
-          <h3 class="experience-place">Ask Your Stuffie</h3>
-          <hr class="divider" />
-          <div class="experience-detail">
-            <h1>04</h1>
-            <p>We also tested features like “Ask your stuffie” — a mini interaction page where users can ask their
-              companion playful questions like “What should I eat today?” and receive comforting responses.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-rs">
-    <div class="section-inner">
-      <div class="image-boxleft">
-        <div class="img-box iml"></div>
-        <div class="text-content">
-          <h3>Research & Strategy</h3>
-          <p>User interviews revealed that many people — especially students and young professionals — seek comfort in
-            routines and emotional validation.</p>
-          <p>We found that users resonate with gentle interaction, nostalgic design, and the feeling of being “seen.”
-            This
-            shaped our direction toward soft storytelling and visual empathy.</p>
-        </div>
-      </div>
-      <div class="image-boxright">
-        <div class="img-box"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="learned-section">
-    <div class="section-title">
-      <span>Acceptance Results</span>
-      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
-    </div>
-  </section>
-  <section class="learned-sectionxx">
-    <div class="sectionphone">
-      <img src="assets/img/p5.png" class="main-img" alt="Main">
-      <img src="assets/img/p11.png" class="extra-img extra1" alt="Extra1">
-      <img src="assets/img/p4.png" class="extra-img extra2" alt="Extra2">
-      <img src="assets/img/p3.png" class="extra-img extra3" alt="Extra3">
-      <img src="assets/img/p22.png" class="extra-img extra4" alt="Extra4">
-    </div>
-    <div class="learned-grid">
-      <div class="learned-box">
-        <img src="assets/img/l2.png" alt="icon1">
-        <p>Users praised the calming UI, emotionally thoughtful responses, and subtle gamified features like journaling
-          streaks.
-        </p>
-      </div>
-
-      <div class="learned-box">
-        <img src="assets/img/l3.png" alt="icon2">
-        <p>Whispurr’s interface encourages consistent self-reflection without pressure. The stuffed animals are not only
-          companions but storytellers — turning self-care into a cozy daily ritual.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Discover -->
-  <section class="statistics-section">
-    <div class="section-title">
-      <span>Discover WHISPURR’s Key Features</span>
-      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon">
-    </div>
-    <div class="statistics-container">
-      <div class="statistic-box pink-stat">
-        <h2 class="statistic-number" data-target="12">01</h2>
-        <p class="statistic-label">Diaryz</p>
-        <hr class="divider" />
-        <p class="statistic-description">Your daily diary page where your stuffie writes reflections for you.
-        </p>
-      </div>
-      <div class="statistic-box yellow-stat">
-        <h2 class="statistic-number" data-target="50">02</h2>
-        <p class="statistic-label">Whisper</p>
-        <hr class="divider" />
-        <p class="statistic-description">A page where you ask questions and get gentle replies.
-        </p>
-      </div>
-      <div class="statistic-box pink-stat">
-        <h2 class="statistic-number" data-target="12">03</h2>
-        <p class="statistic-label">Mood Tracker</p>
-        <hr class="divider" />
-        <p class="statistic-description">Easily log how you're feeling with adorable icons.</p>
-      </div>
-      <div class="statistic-box yellow-stat">
-        <h2 class="statistic-number" data-target="50">04</h2>
-        <p class="statistic-label">Customization</p>
-        <hr class="divider" />
-        <p class="statistic-description">Name and decorate your stuffie to make it truly yours.</p>
-      </div>
-    </div>
-  </section>
-
-  <section style="margin-top: 80px; margin-bottom: 30px;" class="slider-section abit">
-    <div class="section-title">
-      <span>WHISPURR App Interactions</span>
-      <img src="assets/img/arrow-handdrawn.png" alt="arrow" class="arrow-icon wis-ic">
-    </div>
-  </section>
-  <section class="phone-section video">
-    <h1><span class="hig">Thanks</span><br><span>for Scrolling</span></h1>
-    <a href="https://www.figma.com/proto/fwmGjmaineCrpv4jcBXpNY/Whispurr?node-id=109-1543&t=TIYMFhfIfaMN5SjS-1"
-      class="btn-blackxx" target="_blank" rel="noopener noreferrer">
-      Click To See Prototype
-    </a>
-
-    <div class="img-hand-wrapper">
-      <img class="hand" src="assets/img/hand.png" alt="">
-      <video autoplay muted loop playsinline>
-        <source src="assets/video/vd_whis.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="bgbl">
-      <a href="https://www.figma.com/proto/fwmGjmaineCrpv4jcBXpNY/Whispurr?node-id=109-1543&t=TIYMFhfIfaMN5SjS-1"
-        class="btn-black">Click To See Prototype</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-row">
-        <nav class="footer-nav">
-          <a href="#">Portfolio</a>
-          <a href="#">Expertise</a>
-          <a href="#">Resume</a>
-          <a href="#">FAQ</a>
-        </nav>
-
-        <div class="icon-group">
-          <a href="https://ca.linkedin.com/in/helenvodesign" target="_blank" class="clickable">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://www.instagram.com" target="_blank" class="clickable"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-      <h1 class="footer-title">Ready to Bring Your Vision to Life?</h1>
-      <p class="footer-text">
-        Let’s make something incredible together! Reach out to discuss your project,<br />
-        and let’s create designs that resonate and inspire.
-      </p>
-
-      <a href="#contact" class="footer-btn">Contact Me</a>
-
-
-      <p class="footer-copy">Helen ©all rights reserved</p>
-    </div>
-  </footer>
-
-  <script>
-    function swapOnHover(img, newSrc, originalSrc) {
-      img.addEventListener('mouseenter', () => img.src = newSrc);
-      img.addEventListener('mouseleave', () => img.src = originalSrc);
-    }
-
-    swapOnHover(document.querySelector('.img1'), 'assets/img/hvlt.png', 'assets/img/brt.png');
-    swapOnHover(document.querySelector('.img2'), 'assets/img/hvld.png', 'assets/img/brd.png');
-    swapOnHover(document.querySelector('.img3'), 'assets/img/hvltf.png', 'assets/img/brtf.png');
-    swapOnHover(document.querySelector('.img4'), 'assets/img/hvldf.png', 'assets/img/brdf.png');
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script>
-    const scrollBtn = document.getElementById("scrollTopBtn");
-
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 200) {
-        scrollBtn.style.display = "block";
-      } else {
-        scrollBtn.style.display = "none";
+    <script>
+      function swapOnHover(img, newSrc, originalSrc) {
+        img.addEventListener("mouseenter", () => (img.src = newSrc));
+        img.addEventListener("mouseleave", () => (img.src = originalSrc));
       }
-    });
 
-    scrollBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
+      swapOnHover(
+        document.querySelector(".img1"),
+        "assets/img/hvlt.png",
+        "assets/img/brt.png"
+      );
+      swapOnHover(
+        document.querySelector(".img2"),
+        "assets/img/hvld.png",
+        "assets/img/brd.png"
+      );
+      swapOnHover(
+        document.querySelector(".img3"),
+        "assets/img/hvltf.png",
+        "assets/img/brtf.png"
+      );
+      swapOnHover(
+        document.querySelector(".img4"),
+        "assets/img/hvldf.png",
+        "assets/img/brdf.png"
+      );
+    </script>
 
-    document.getElementById("logo").addEventListener("click", function () {
-      window.location.href = "index.html";
-    });
-    const cursor = document.querySelector(".cursor");
-    const follower = document.querySelector(".cursor-follower");
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+      const scrollBtn = document.getElementById("scrollTopBtn");
 
-    let mouseX = 0,
-      mouseY = 0;
-
-    document.addEventListener("mousemove", (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-
-      gsap.to(cursor, {
-        x: mouseX,
-        y: mouseY,
-        duration: 0.08,
-        ease: "power1.out",
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          scrollBtn.style.display = "block";
+        } else {
+          scrollBtn.style.display = "none";
+        }
       });
 
-      gsap.to(follower, {
-        x: mouseX,
-        y: mouseY,
-        duration: 0.1,
-        ease: "power2.out",
-      });
-    });
-
-    document.querySelectorAll(".clickable").forEach((el) => {
-      el.addEventListener("mouseenter", () => {
-        follower.classList.add("hover-effect");
+      scrollBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
       });
 
-      el.addEventListener("mouseleave", () => {
-        follower.classList.remove("hover-effect");
+      document.getElementById("logo").addEventListener("click", function () {
+        window.location.href = "index.html";
       });
-    });
+      const cursor = document.querySelector(".cursor");
+      const follower = document.querySelector(".cursor-follower");
 
-    function toggleMenu(toggleBtn) {
-      const menu = document.querySelector(".menu");
-      const header = document.querySelector(".header-wrapper");
+      let mouseX = 0,
+        mouseY = 0;
 
-      menu.classList.toggle("active");
-      header.classList.toggle("expanded");
-      toggleBtn.classList.toggle("active");
-    }
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
 
-    const stack = document.querySelector(".photo-stack-rotate");
-    setInterval(() => {
-      const first = stack.querySelector(".photo:first-child");
-      stack.appendChild(first);
-    }, 3000);
+        gsap.to(cursor, {
+          x: mouseX,
+          y: mouseY,
+          duration: 0.08,
+          ease: "power1.out",
+        });
 
-    document.querySelectorAll(".faq-question").forEach((question) => {
-      question.addEventListener("click", () => {
-        const card = question.parentElement;
-        card.classList.toggle("open");
+        gsap.to(follower, {
+          x: mouseX,
+          y: mouseY,
+          duration: 0.1,
+          ease: "power2.out",
+        });
       });
-    });
 
-  </script>
-  <script>
-    /**
-     * ParticleNetwork Class
-     * Creates and manages an interactive particle network animation
-     */
-    class ParticleNetwork {
-      constructor(canvas, config = {}) {
-        this.canvas = canvas;
-        this.ctx = canvas.getContext('2d', { alpha: true });
-        if (!this.ctx) {
-          throw new Error('Could not initialize canvas context');
+      document.querySelectorAll(".clickable").forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          follower.classList.add("hover-effect");
+        });
+
+        el.addEventListener("mouseleave", () => {
+          follower.classList.remove("hover-effect");
+        });
+      });
+
+      function toggleMenu(toggleBtn) {
+        const menu = document.querySelector(".menu");
+        const header = document.querySelector(".header-wrapper");
+
+        menu.classList.toggle("active");
+        header.classList.toggle("expanded");
+        toggleBtn.classList.toggle("active");
+      }
+
+      const stack = document.querySelector(".photo-stack-rotate");
+      setInterval(() => {
+        const first = stack.querySelector(".photo:first-child");
+        stack.appendChild(first);
+      }, 3000);
+
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const card = question.parentElement;
+          card.classList.toggle("open");
+        });
+      });
+    </script>
+    <script>
+      /**
+       * ParticleNetwork Class
+       * Creates and manages an interactive particle network animation
+       */
+      class ParticleNetwork {
+        constructor(canvas, config = {}) {
+          this.canvas = canvas;
+          this.ctx = canvas.getContext("2d", { alpha: true });
+          if (!this.ctx) {
+            throw new Error("Could not initialize canvas context");
+          }
+
+          this.config = this.validateConfig({
+            particleCount: 120,
+            minRadius: 2,
+            maxRadius: 6,
+            particleColor: "#ffffff",
+            lineColor: "#ffffff",
+            lineWidth: 1,
+            lineOpacity: 0.15,
+            maxDistance: 150,
+            moveSpeed: 1,
+            backgroundColor: "#111111",
+            backgroundOpacity: 1,
+            particleOpacity: 0.8,
+            mouseRadius: 200,
+            mouseInteraction: true,
+            pulseEnabled: true,
+            pulseSpeed: 0.02,
+            ...config,
+          });
+
+          this.particles = [];
+          this.animationId = null;
+          this.isRunning = false;
+          this.mousePosition = null;
+          this.pulseAngle = 0;
+          this.boundHandleResize = this.handleResize.bind(this);
+          this.boundHandleMouseMove = this.handleMouseMove.bind(this);
+          this.boundHandleMouseLeave = this.handleMouseLeave.bind(this);
+
+          this.handleResize();
+          this.createParticles();
+          this.setupEventListeners();
         }
 
-        this.config = this.validateConfig({
-          particleCount: 120,
-          minRadius: 2,
-          maxRadius: 6,
-          particleColor: '#ffffff',
-          lineColor: '#ffffff',
-          lineWidth: 1,
-          lineOpacity: 0.15,
-          maxDistance: 150,
-          moveSpeed: 1,
-          backgroundColor: '#111111',
+        validateConfig(config) {
+          const numericParams = [
+            "particleCount",
+            "minRadius",
+            "maxRadius",
+            "lineWidth",
+            "lineOpacity",
+            "maxDistance",
+            "moveSpeed",
+            "backgroundOpacity",
+            "particleOpacity",
+            "mouseRadius",
+            "pulseSpeed",
+          ];
+          numericParams.forEach((param) => {
+            if (typeof config[param] !== "number" || isNaN(config[param])) {
+              throw new Error(`Invalid ${param}: must be a number`);
+            }
+          });
+
+          const booleanParams = ["mouseInteraction", "pulseEnabled"];
+          booleanParams.forEach((param) => {
+            if (typeof config[param] !== "boolean") {
+              throw new Error(`Invalid ${param}: must be a boolean`);
+            }
+          });
+
+          const colorParams = ["backgroundColor", "particleColor", "lineColor"];
+          const hexColorRegex = /^#[0-9A-Fa-f]{6}$/;
+          colorParams.forEach((param) => {
+            if (!hexColorRegex.test(config[param])) {
+              throw new Error(`Invalid ${param}: must be a valid hex color`);
+            }
+          });
+
+          return config;
+        }
+
+        setupEventListeners() {
+          window.addEventListener("resize", this.boundHandleResize);
+          this.canvas.addEventListener("mousemove", this.boundHandleMouseMove);
+          this.canvas.addEventListener(
+            "mouseleave",
+            this.boundHandleMouseLeave
+          );
+        }
+
+        cleanup() {
+          window.removeEventListener("resize", this.boundHandleResize);
+          this.canvas.removeEventListener(
+            "mousemove",
+            this.boundHandleMouseMove
+          );
+          this.canvas.removeEventListener(
+            "mouseleave",
+            this.boundHandleMouseLeave
+          );
+          this.stop();
+        }
+
+        handleMouseMove(e) {
+          const rect = this.canvas.getBoundingClientRect();
+          this.mousePosition = {
+            x: e.clientX - rect.left,
+            y: e.clientY - rect.top,
+          };
+        }
+
+        handleMouseLeave() {
+          this.mousePosition = null;
+        }
+
+        handleResize() {
+          this.canvas.width = this.canvas.clientWidth;
+          this.canvas.height = this.canvas.clientHeight;
+        }
+
+        createParticles() {
+          this.particles = [];
+          for (let i = 0; i < this.config.particleCount; i++) {
+            const sizeRange = this.config.maxRadius - this.config.minRadius;
+            const randomSize =
+              Math.random() * sizeRange + this.config.minRadius;
+            this.particles.push({
+              x: Math.random() * this.canvas.width,
+              y: Math.random() * this.canvas.height,
+              dx: (Math.random() - 0.5) * this.config.moveSpeed,
+              dy: (Math.random() - 0.5) * this.config.moveSpeed,
+              radius: randomSize,
+            });
+          }
+        }
+
+        updateParticles() {
+          this.pulseAngle += this.config.pulseSpeed;
+          this.particles.forEach((particle) => {
+            if (this.config.pulseEnabled) {
+              const pulseScale = Math.sin(this.pulseAngle) * 0.5 + 1;
+              particle.currentRadius = particle.radius * pulseScale;
+            } else {
+              particle.currentRadius = particle.radius;
+            }
+
+            particle.x += particle.dx;
+            particle.y += particle.dy;
+
+            if (this.config.mouseInteraction && this.mousePosition) {
+              const dx = this.mousePosition.x - particle.x;
+              const dy = this.mousePosition.y - particle.y;
+              const distance = Math.sqrt(dx * dx + dy * dy);
+
+              if (distance < this.config.mouseRadius) {
+                const force =
+                  (this.config.mouseRadius - distance) /
+                  this.config.mouseRadius;
+                const angle = Math.atan2(dy, dx);
+                const repelX = Math.cos(angle) * force * 0.5;
+                const repelY = Math.sin(angle) * force * 0.5;
+                particle.dx -= repelX;
+                particle.dy -= repelY;
+              }
+            }
+
+            if (particle.x < 0 || particle.x > this.canvas.width) {
+              particle.dx = -particle.dx;
+            }
+            if (particle.y < 0 || particle.y > this.canvas.height) {
+              particle.dy = -particle.dy;
+            }
+
+            const speed = Math.sqrt(
+              particle.dx * particle.dx + particle.dy * particle.dy
+            );
+            if (speed > this.config.moveSpeed) {
+              particle.dx = (particle.dx / speed) * this.config.moveSpeed;
+              particle.dy = (particle.dy / speed) * this.config.moveSpeed;
+            }
+          });
+        }
+
+        drawParticles() {
+          this.ctx.fillStyle = this.config.particleColor;
+          this.ctx.globalAlpha = this.config.particleOpacity;
+          this.particles.forEach((particle) => {
+            this.ctx.beginPath();
+            this.ctx.arc(
+              particle.x,
+              particle.y,
+              particle.currentRadius || particle.radius,
+              0,
+              Math.PI * 2
+            );
+            this.ctx.fill();
+          });
+          this.ctx.globalAlpha = 1;
+        }
+        drawBackgroundGradient() {
+          const ctx = this.ctx;
+          const gradient = ctx.createLinearGradient(
+            0,
+            0,
+            0,
+            this.canvas.height
+          );
+          gradient.addColorStop(0, "#ffFFFF"); // Trên: trắng
+          gradient.addColorStop(1, "#ffffff"); // Dưới: xanh nhạt
+
+          ctx.fillStyle = gradient;
+          ctx.globalAlpha = this.config.backgroundOpacity;
+          ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+          ctx.globalAlpha = 1;
+        }
+
+        drawConnections() {
+          for (let i = 0; i < this.particles.length; i++) {
+            for (let j = i + 1; j < this.particles.length; j++) {
+              const dx = this.particles[i].x - this.particles[j].x;
+              const dy = this.particles[i].y - this.particles[j].y;
+              const distance = Math.sqrt(dx * dx + dy * dy);
+
+              if (distance < this.config.maxDistance) {
+                const opacity = 1 - distance / this.config.maxDistance;
+                const color = this.hexToRgb(this.config.lineColor);
+                this.ctx.beginPath();
+                this.ctx.strokeStyle = `rgba(${color}, ${
+                  opacity * this.config.lineOpacity
+                })`;
+                this.ctx.lineWidth = this.config.lineWidth;
+                this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
+                this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
+                this.ctx.stroke();
+              }
+            }
+          }
+        }
+
+        hexToRgb(hex) {
+          hex = hex.replace(/^#/, "");
+
+          if (hex.length === 3) {
+            hex = hex
+              .split("")
+              .map((c) => c + c)
+              .join("");
+          }
+
+          const result = /^([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+          if (!result) {
+            return "255,255,255";
+          }
+
+          return result
+            .slice(1)
+            .map((n) => parseInt(n, 16))
+            .join(",");
+        }
+
+        stop() {
+          this.isRunning = false;
+          if (this.animationId) {
+            cancelAnimationFrame(this.animationId);
+            this.animationId = null;
+          }
+        }
+
+        start() {
+          if (!this.isRunning) {
+            this.isRunning = true;
+            this.animate();
+          }
+        }
+
+        animate() {
+          this.drawBackgroundGradient();
+
+          this.updateParticles();
+          this.drawConnections();
+          this.drawParticles();
+
+          if (this.isRunning) {
+            this.animationId = requestAnimationFrame(this.animate.bind(this));
+          }
+        }
+      }
+
+      // Khởi tạo khi DOM sẵn sàng
+      function getParticleCount() {
+        if (window.innerWidth <= 480) {
+          // màn hình nhỏ (điện thoại)
+          return 20; // giảm particle
+        } else if (window.innerWidth <= 768) {
+          // tablet
+          return 200;
+        }
+        return 340; // desktop hoặc lớn hơn
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const canvas = document.getElementById("particleCanvas");
+
+        function resizeCanvas() {
+          canvas.width = canvas.clientWidth;
+          canvas.height = canvas.clientHeight;
+        }
+        resizeCanvas();
+        window.addEventListener("resize", () => {
+          resizeCanvas();
+          // Có thể thêm restart hoặc update config nếu muốn
+        });
+
+        const network = new ParticleNetwork(canvas, {
+          particleCount: getParticleCount(),
+          minRadius: 0.7,
+          maxRadius: 0.8,
+          particleColor: "#1D6584",
+          lineColor: "#244655",
+          lineWidth: 0.4,
+          lineOpacity: 0.55,
+          maxDistance: 90,
+          moveSpeed: 0.8,
+          backgroundColor: "#BDE5F6",
           backgroundOpacity: 1,
-          particleOpacity: 0.8,
-          mouseRadius: 200,
+          particleOpacity: 0.5,
+          mouseRadius: 100,
           mouseInteraction: true,
           pulseEnabled: true,
           pulseSpeed: 0.02,
-          ...config
         });
 
-        this.particles = [];
-        this.animationId = null;
-        this.isRunning = false;
-        this.mousePosition = null;
-        this.pulseAngle = 0;
-        this.boundHandleResize = this.handleResize.bind(this);
-        this.boundHandleMouseMove = this.handleMouseMove.bind(this);
-        this.boundHandleMouseLeave = this.handleMouseLeave.bind(this);
-
-        this.handleResize();
-        this.createParticles();
-        this.setupEventListeners();
-      }
-
-      validateConfig(config) {
-        const numericParams = [
-          'particleCount', 'minRadius', 'maxRadius', 'lineWidth',
-          'lineOpacity', 'maxDistance', 'moveSpeed', 'backgroundOpacity',
-          'particleOpacity', 'mouseRadius', 'pulseSpeed'
-        ];
-        numericParams.forEach(param => {
-          if (typeof config[param] !== 'number' || isNaN(config[param])) {
-            throw new Error(`Invalid ${param}: must be a number`);
-          }
-        });
-
-        const booleanParams = ['mouseInteraction', 'pulseEnabled'];
-        booleanParams.forEach(param => {
-          if (typeof config[param] !== 'boolean') {
-            throw new Error(`Invalid ${param}: must be a boolean`);
-          }
-        });
-
-        const colorParams = ['backgroundColor', 'particleColor', 'lineColor'];
-        const hexColorRegex = /^#[0-9A-Fa-f]{6}$/;
-        colorParams.forEach(param => {
-          if (!hexColorRegex.test(config[param])) {
-            throw new Error(`Invalid ${param}: must be a valid hex color`);
-          }
-        });
-
-        return config;
-      }
-
-      setupEventListeners() {
-        window.addEventListener('resize', this.boundHandleResize);
-        this.canvas.addEventListener('mousemove', this.boundHandleMouseMove);
-        this.canvas.addEventListener('mouseleave', this.boundHandleMouseLeave);
-      }
-
-      cleanup() {
-        window.removeEventListener('resize', this.boundHandleResize);
-        this.canvas.removeEventListener('mousemove', this.boundHandleMouseMove);
-        this.canvas.removeEventListener('mouseleave', this.boundHandleMouseLeave);
-        this.stop();
-      }
-
-      handleMouseMove(e) {
-        const rect = this.canvas.getBoundingClientRect();
-        this.mousePosition = {
-          x: e.clientX - rect.left,
-          y: e.clientY - rect.top
-        };
-      }
-
-      handleMouseLeave() {
-        this.mousePosition = null;
-      }
-
-      handleResize() {
-        this.canvas.width = this.canvas.clientWidth;
-        this.canvas.height = this.canvas.clientHeight;
-      }
-
-      createParticles() {
-        this.particles = [];
-        for (let i = 0; i < this.config.particleCount; i++) {
-          const sizeRange = this.config.maxRadius - this.config.minRadius;
-          const randomSize = Math.random() * sizeRange + this.config.minRadius;
-          this.particles.push({
-            x: Math.random() * this.canvas.width,
-            y: Math.random() * this.canvas.height,
-            dx: (Math.random() - 0.5) * this.config.moveSpeed,
-            dy: (Math.random() - 0.5) * this.config.moveSpeed,
-            radius: randomSize
-          });
-        }
-      }
-
-      updateParticles() {
-        this.pulseAngle += this.config.pulseSpeed;
-        this.particles.forEach(particle => {
-          if (this.config.pulseEnabled) {
-            const pulseScale = Math.sin(this.pulseAngle) * 0.5 + 1;
-            particle.currentRadius = particle.radius * pulseScale;
-          } else {
-            particle.currentRadius = particle.radius;
-          }
-
-          particle.x += particle.dx;
-          particle.y += particle.dy;
-
-          if (this.config.mouseInteraction && this.mousePosition) {
-            const dx = this.mousePosition.x - particle.x;
-            const dy = this.mousePosition.y - particle.y;
-            const distance = Math.sqrt(dx * dx + dy * dy);
-
-            if (distance < this.config.mouseRadius) {
-              const force = (this.config.mouseRadius - distance) / this.config.mouseRadius;
-              const angle = Math.atan2(dy, dx);
-              const repelX = Math.cos(angle) * force * 0.5;
-              const repelY = Math.sin(angle) * force * 0.5;
-              particle.dx -= repelX;
-              particle.dy -= repelY;
-            }
-          }
-
-          if (particle.x < 0 || particle.x > this.canvas.width) {
-            particle.dx = -particle.dx;
-          }
-          if (particle.y < 0 || particle.y > this.canvas.height) {
-            particle.dy = -particle.dy;
-          }
-
-          const speed = Math.sqrt(particle.dx * particle.dx + particle.dy * particle.dy);
-          if (speed > this.config.moveSpeed) {
-            particle.dx = (particle.dx / speed) * this.config.moveSpeed;
-            particle.dy = (particle.dy / speed) * this.config.moveSpeed;
-          }
-        });
-      }
-
-      drawParticles() {
-        this.ctx.fillStyle = this.config.particleColor;
-        this.ctx.globalAlpha = this.config.particleOpacity;
-        this.particles.forEach(particle => {
-          this.ctx.beginPath();
-          this.ctx.arc(particle.x, particle.y, particle.currentRadius || particle.radius, 0, Math.PI * 2);
-          this.ctx.fill();
-        });
-        this.ctx.globalAlpha = 1;
-      }
-      drawBackgroundGradient() {
-        const ctx = this.ctx;
-        const gradient = ctx.createLinearGradient(0, 0, 0, this.canvas.height);
-        gradient.addColorStop(0, '#ffFFFF');   // Trên: trắng
-        gradient.addColorStop(1, '#ffffff');   // Dưới: xanh nhạt
-
-        ctx.fillStyle = gradient;
-        ctx.globalAlpha = this.config.backgroundOpacity;
-        ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-        ctx.globalAlpha = 1;
-      }
-
-      drawConnections() {
-        for (let i = 0; i < this.particles.length; i++) {
-          for (let j = i + 1; j < this.particles.length; j++) {
-            const dx = this.particles[i].x - this.particles[j].x;
-            const dy = this.particles[i].y - this.particles[j].y;
-            const distance = Math.sqrt(dx * dx + dy * dy);
-
-            if (distance < this.config.maxDistance) {
-              const opacity = 1 - (distance / this.config.maxDistance);
-              const color = this.hexToRgb(this.config.lineColor);
-              this.ctx.beginPath();
-              this.ctx.strokeStyle = `rgba(${color}, ${opacity * this.config.lineOpacity})`;
-              this.ctx.lineWidth = this.config.lineWidth;
-              this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
-              this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
-              this.ctx.stroke();
-            }
-          }
-        }
-      }
-
-      hexToRgb(hex) {
-        hex = hex.replace(/^#/, '');
-
-        if (hex.length === 3) {
-          hex = hex.split('').map(c => c + c).join('');
-        }
-
-        const result = /^([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-        if (!result) {
-          return '255,255,255';
-        }
-
-        return result.slice(1).map(n => parseInt(n, 16)).join(',');
-      }
-
-      stop() {
-        this.isRunning = false;
-        if (this.animationId) {
-          cancelAnimationFrame(this.animationId);
-          this.animationId = null;
-        }
-      }
-
-      start() {
-        if (!this.isRunning) {
-          this.isRunning = true;
-          this.animate();
-        }
-      }
-
-      animate() {
-        this.drawBackgroundGradient();
-
-        this.updateParticles();
-        this.drawConnections();
-        this.drawParticles();
-
-        if (this.isRunning) {
-          this.animationId = requestAnimationFrame(this.animate.bind(this));
-        }
-      }
-    }
-
-    // Khởi tạo khi DOM sẵn sàng
-    function getParticleCount() {
-      if (window.innerWidth <= 480) { // màn hình nhỏ (điện thoại)
-        return 20; // giảm particle
-      } else if (window.innerWidth <= 768) { // tablet
-        return 200;
-      }
-      return 340; // desktop hoặc lớn hơn
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const canvas = document.getElementById('particleCanvas');
-
-      function resizeCanvas() {
-        canvas.width = canvas.clientWidth;
-        canvas.height = canvas.clientHeight;
-      }
-      resizeCanvas();
-      window.addEventListener('resize', () => {
-        resizeCanvas();
-        // Có thể thêm restart hoặc update config nếu muốn
+        network.start();
       });
+    </script>
 
-      const network = new ParticleNetwork(canvas, {
-        particleCount: getParticleCount(),
-        minRadius: 0.7,
-        maxRadius: 0.8,
-        particleColor: '#1D6584',
-        lineColor: '#244655',
-        lineWidth: 0.4,
-        lineOpacity: 0.55,
-        maxDistance: 90,
-        moveSpeed: 0.8,
-        backgroundColor: '#BDE5F6',
-        backgroundOpacity: 1,
-        particleOpacity: 0.5,
-        mouseRadius: 100,
-        mouseInteraction: true,
-        pulseEnabled: true,
-        pulseSpeed: 0.02
-      });
-
-      network.start();
-    });
-
-  </script>
-
-  <!-- load
+    <!-- load
   <script>
     (function () {
       const loader = document.getElementById('page-loader');
@@ -830,6 +1022,5 @@
       }, MAX_AUTO_HIDE_MS);
     })();
   </script> -->
-</body>
-
+  </body>
 </html>
