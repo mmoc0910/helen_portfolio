@@ -575,3 +575,132 @@
     background-color: white;
   }
 }
+
+/* ---------------------------------------------------------------------- */
+.about-slide-wp {
+  position: relative;
+  width: 546px;
+  height: 480px;
+  padding: 60px 0 60px;
+}
+
+.about-slide-layer-wp {
+  position: absolute;
+  width: 546px;
+  height: 480px;
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  transition: transform 0.5s linear, opacity 0.5s linear;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .about-slide-wp {
+    width: 325px;
+    height: 286px;
+    padding: 0;
+  }
+  .about-slide-layer-wp {
+    width: 325px;
+    height: 286px;
+  }
+}
+
+.about-slide-layer-wp.is-top {
+  z-index: 100;
+}
+
+.about-slide-layer-wp.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about-slide-layer {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 16px;
+  border: 1px solid #030303;
+  padding: 12px;
+  transition: transform 0.5s linear;
+}
+
+.about-slide-layer-image {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #030303;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.about-slide-layer img {
+  width: 100%;
+  height: auto;
+}
+
+.about-slide-layer-wp:nth-child(1) .about-slide-layer {
+  transform: rotate(12deg);
+}
+.about-slide-layer-wp:nth-child(2) .about-slide-layer {
+  transform: rotate(-12deg);
+}
+.about-slide-layer-wp:nth-child(3) .about-slide-layer {
+  transform: rotate(0deg);
+}
+
+.about-slide-layer-wp.is-top .about-slide-layer {
+  transform: rotate(0deg);
+}
+
+.about-slide-layer-wp.out-next {
+  transform: translateX(-500px) scale(0.05);
+  opacity: 0;
+}
+.about-slide-layer-wp.out-next .about-slide-layer {
+  transform: rotate(-360deg);
+}
+
+.intro-text-anim {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.intro-text-anim.text-out {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.intro-text-anim.text-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    margin-bottom: 0;
+  }
+}
+
+.projects-wrapper {
+  justify-content: flex-start;
+  gap: 26px;
+  flex-wrap: nowrap;
+}
+
+.project-card {
+  box-sizing: border-box;
+  width: 432px;
+  height: auto;
+}
+
+.project-card img {
+  height: 250px;
+}
+
+.btn:hover {
+    background: inherit;
+}
+
+.project-card button span {
+  color: #000;
+}
