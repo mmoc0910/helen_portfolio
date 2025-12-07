@@ -682,9 +682,8 @@
 }
 
 .projects-wrapper {
-  justify-content: flex-start;
-  gap: 26px;
-  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 0;
 }
 
 .project-card {
@@ -703,4 +702,10 @@
 
 .project-card button span {
   color: #000;
+}
+
+@media (max-width: 768px) {
+    .featured-projects {
+        margin-top: 60px !important;
+    }
 }
