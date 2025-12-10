@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       },
       0
     )
+    .from(".intro-content .intro-desc", { opacity: 0, y: 50, duảtion: 1 }, 0)
     .from(
       ".intro-content .location",
       {
@@ -42,45 +43,45 @@ document.addEventListener("DOMContentLoaded", (event) => {
       0
     );
 
-  const el = document.querySelector(".intro-desc-text");
-  if (!el) return;
+  // const el = document.querySelector(".intro-desc-text");
+  // if (!el) return;
 
-  const fullText = el.getAttribute("data-text") || "";
-  el.textContent = "";
+  // const fullText = el.getAttribute("data-text") || "";
+  // el.textContent = "";
 
-  const chars = fullText.split("");
-  let currentText = "";
+  // const chars = fullText.split("");
+  // let currentText = "";
 
-  // timeline typing
-  const tl_intro_desc = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".intro-desc",
-      start: "top 80%",
-      // markers: true,
-    },
-  });
+  // // timeline typing
+  // const tl_intro_desc = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: ".intro-desc",
+  //     start: "top 80%",
+  //     // markers: true,
+  //   },
+  // });
 
-  const baseDelay = 0.01; 
-  const randomExtra = 0.03; 
+  // const baseDelay = 0.01;
+  // const randomExtra = 0.03;
 
-  chars.forEach((char) => {
-    tl_intro_desc.to(
-      {},
-      {
-        duration: baseDelay + Math.random() * randomExtra,
-        onComplete: () => {
-          currentText += char;
-          el.textContent = currentText;
-        },
-      }
-    );
-  });
+  // chars.forEach((char) => {
+  //   tl_intro_desc.to(
+  //     {},
+  //     {
+  //       duration: baseDelay + Math.random() * randomExtra,
+  //       onComplete: () => {
+  //         currentText += char;
+  //         el.textContent = currentText;
+  //       },
+  //     }
+  //   );
+  // });
 
-  tl_intro_desc.to(".t-cursor", {
-    opacity: 0,
-    duration: 0.5,
-    ease: "power1.out",
-  });
+  // tl_intro_desc.to(".t-cursor", {
+  //   opacity: 0,
+  //   duration: 0.5,
+  //   ease: "power1.out",
+  // });
 
   gsap.utils.toArray(".section-heading").forEach((el) => {
     gsap.from(el, {
@@ -180,7 +181,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   gsap.from(title1.chars, {
     opacity: 0,
-    y: -20,
+    // y: -20,
     stagger: 0.05,
     duration: 0.5,
     scrollTrigger: {
@@ -191,7 +192,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   gsap.from(title2.chars, {
     opacity: 0,
-    y: -20,
+    // y: -20,
     stagger: 0.05,
     duration: 0.5,
     scrollTrigger: {
