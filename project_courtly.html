@@ -126,9 +126,7 @@
         <div class="project-left">
           <p class="project-role">✨ UI/UX Design | Dec 2024 - Aug 2025</p>
           <h1 class="project-title">COURTLY</h1>
-          <a href="https://courtly.com" target="_blank" class="project-link"
-            >courtly.com ↗</a
-          >
+          <a href="#" class="project-link">courtly.com ↗</a>
         </div>
 
         <!-- Right side -->
@@ -146,7 +144,7 @@
     <!-- Tools Section -->
     <section class="tools-section">
       <div class="tools-wrapper">
-        <div class="section-title">
+        <div class="section-title section-heading">
           <span>Tools</span>
           <img
             src="assets/img/arrow-handdrawn.png"
@@ -163,23 +161,9 @@
             class="sparkle-img"
           />
 
-          <button class="tool-btn">Procreate</button>
-          <img
-            src="assets/img/icon_pink.png"
-            alt="sparkle"
-            class="sparkle-img"
-          />
-
           <button class="tool-btn">Adobe Illustrator</button>
           <img
             src="assets/img/icon_pink.png"
-            alt="sparkle"
-            class="sparkle-img"
-          />
-
-          <button class="tool-btn">Adobe After Effect</button>
-          <img
-            src="assets/img/icon_yellow.png"
             alt="sparkle"
             class="sparkle-img"
           />
@@ -278,7 +262,7 @@
 
     <!-- About me -->
     <section class="about-me">
-      <div class="section-title">
+      <div class="section-title section-heading">
         <span>Process</span>
         <img
           src="assets/img/arrow-handdrawn.png"
@@ -435,7 +419,7 @@
 
     <section class="prototype-section">
       <a
-        href="https://www.figma.com/design/FILeTWVzuDfRls9bJRBqMe/Portfolio-PaperNote?node-id=97-1020&t=J146P2L1KfeRXdPG-0"
+        href="https://www.figma.com/proto/HhZP1biBSIgDVtQ2qVavjs/Courtly?node-id=299-7191&t=MJTbI9rDOjL1yO19-1"
         target="_blank"
         class="prototype-btn"
       >
@@ -446,19 +430,25 @@
     <!-- Service Showcase Section -->
     <section class="service-section">
       <div class="tablet-frame">
-        <button class="nav-btn left-btn">&#8249;</button>
+        <!-- <button class="nav-btn left-btn">&#8249;</button> -->
 
-        <div class="tablet-content">
+        <!-- <div class="tablet-content">
           <img src="assets/img/dis_cou.png" alt="Service Mockup" />
-        </div>
+        </div> -->
+        <video class="tablet-content" controls playsinline>
+          <source
+            src="assets/video/Recording 2025-12-03 015704.mp4"
+            type="video/mp4"
+          />
+        </video>
 
-        <button class="nav-btn right-btn">&#8250;</button>
+        <!-- <button class="nav-btn right-btn">&#8250;</button> -->
       </div>
 
-      <div class="mobile-nav">
+      <!-- <div class="mobile-nav">
         <button class="circle-btn">&#8249;</button>
         <button class="circle-btn">&#8250;</button>
-      </div>
+      </div> -->
     </section>
 
     <!--  Project Examples  -->
@@ -471,11 +461,14 @@
           class="project-card blue tilt-left"
           onclick="window.location.href='project_courtly.html'"
         >
-          <img src="assets/img/courtly.png" alt="Courtly project" />
+          <img
+            src="assets/img/377d2cc54eb920bdfd357e19d5314f5b465e147f (1).png"
+            alt="Courtly project"
+          />
           <h3>
-            Courtly<br />
+            I like me better<br />
             <p style="font-size: 16px; margin: 0">
-              Court booking platform for tennis, pickleball, and badminton.
+              Music Video - Motion Graphic
             </p>
           </h3>
           <button class="btn"><span>See Project</span></button>
@@ -1119,7 +1112,9 @@
         prevBtn.addEventListener("click", handlePrev);
       });
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="js/pr_courtly.js"></script>
     <!-- load
   <script>
     (function () {

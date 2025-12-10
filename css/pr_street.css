@@ -415,8 +415,11 @@
   height: 180px;
 }
 
-.apply-card {
+.apply-card-wp {
   flex: 1;
+}
+.apply-card {
+  width: 100%;
 }
 
 @media (max-width: 768px) {

@@ -739,6 +739,9 @@
 
 .intro-name span {
   display: inline-block;
+}
+
+.intro-name span:nth-child(2) {
   background-color: #ffe68c;
 }
 
@@ -804,4 +807,48 @@
 
 .slide {
   border: 1px solid #030303;
+}
+
+.statistic-box-wp {
+  flex: 1;
+  display: flex;
+}
+
+.experience-box-wp {
+  position: sticky;
+  top: 100px;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.experience-box {
+  position: relative;
+  top: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.t-cursor {
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 2px;
+  opacity: 1;
+  animation: blink 0.7s infinite;
+  color: #2e7cff;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Optional: để GSAP animate y cho đẹp */
+.intro-desc {
+  display: inline-block;
+  line-height: 1.6;
 }

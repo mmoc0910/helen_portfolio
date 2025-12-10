@@ -1,4 +1,9 @@
 section.headline-section .headline-container {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  /* gap: 16px; */
+}
+
+.apply-card.apply-card-learned{
+  flex: 1;
 }

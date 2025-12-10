@@ -123,3 +123,4 @@ document.querySelectorAll(".faq-question").forEach((question) => {
     card.classList.toggle("open");
   });
 });
+

@@ -293,6 +293,7 @@ span.highlight-blue {
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
 }
 .apply-card:hover {
   transform: translateY(-8px);
@@ -389,10 +390,10 @@ span.highlight-blue {
   transition: all 0.3s ease; /* Cho animation mượt */
 }
 
-.process-step:hover {
-  transform: translateY(-5px); /* Nhô lên 5px */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Thêm bóng nhẹ */
-}
+/* .process-step:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+} */
 
 .process-step::after {
   content: "";
@@ -736,7 +737,11 @@ section.learned-section {
     align-items: center;
   }
   .apply-card {
-    width: 90%;
+    width: 100%;
+  }
+  .apply-card-wp {
+    width: 100%;
+    box-sizing: border-box;
   }
   .apply-header p {
     width: 320px;

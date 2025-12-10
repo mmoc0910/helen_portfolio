@@ -689,8 +689,11 @@ section.headline-section .headline-container h2 {
   gap: 24px;
 }
 
-.apply-card {
+.apply-card-wp {
   flex: 1;
+}
+.apply-card {
+  width: 100%;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -1135,4 +1138,8 @@ section.headline-section .headline-container h2 {
   .storyboard-arrow-icon-mobile {
     display: block;
   }
+}
+
+.apply-card.apply-card-learned{
+  flex: 1;
 }
